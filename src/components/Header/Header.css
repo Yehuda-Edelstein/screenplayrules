@@ -1,6 +1,13 @@
-.categories {
-position: relative;
-display: inline-block;
+.title {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #dropDownBox {
@@ -24,3 +31,8 @@ display: block;
 .categories:hover #dropDownBox {
 display: block;
 }
+
+.style:hover #dropDownBox {
+display: block;
+}
+    
