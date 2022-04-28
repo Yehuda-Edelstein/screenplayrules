@@ -1,11 +1,11 @@
-import './Header.css'
+import './style.index.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Header(props) {
     return (
         <div>
-            <Link to='/'><div className='title'>Screenstyle | logo maybe</div></Link> 
+            <Link to='/' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='title'>Screenstyle</div></Link> 
             <div className='navBar'>
                 <div className='categories' id='dropDown'>Categories
                     <div className='' id='dropDownBox'>
@@ -27,8 +27,8 @@ function Header(props) {
                         <a href="intros">INTROS</a>
                     </div>
                 </div>
-                <div className='contact'>Contact</div>
-                <div className='about'>About</div>
+                <Link to='contact' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='contact'>Contact</div></Link>
+                <Link to='about' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='about'>About</div></Link>
             </div>
         </div>
     );
