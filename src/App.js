@@ -1,15 +1,13 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import FadeIn from './components/Main/FadeIn/FadeIn';
+import Header from './components/header/index';
+import Main from './components/main/index';
 
 function App() {
   return (
     <div> 
       <Header />
       <Main />
-      
+      {/* <Footer /> */}
     </div>
   );
 }
