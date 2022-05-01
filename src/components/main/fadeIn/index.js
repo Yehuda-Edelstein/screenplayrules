@@ -1,7 +1,5 @@
 import React from 'react';
 import './style.index.css'
-import pic1 from '../../../images/Screen Shot 2022-04-29 at 12.16.15 PM.png'
-import pic2 from '../../../images/Screen Shot 2022-04-29 at 12.16.25 PM.png'
 
 function FadeIn(props) {
     return (
@@ -15,15 +13,15 @@ function FadeIn(props) {
             <br></br>
                 Here's a comparison:
             <br></br>
-                <img className='picture' src={pic1} alt='' width={'250px'}/>
-                <img className='picture' src={pic2} alt='' width={'250px'}></img>
+                <img className='picture' src='' alt='with fade in' width={'250px'}/>
+                <img className='picture' src='' alt='without fade in' width={'250px'}/>
             <br></br>
                 It doesn't seem like much, but I think it helps give the script
                 a cleaner start. Trim the fat, you know?
             <br></br>
             </div>
-            <div>
-                <a href="slugs">SLUGS</a>
+            <div className='blogFooter'>
+                <a href="slugs" id='courrier'>NEXT</a>
             </div> 
         </div>
     );

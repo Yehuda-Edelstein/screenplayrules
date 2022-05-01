@@ -8,6 +8,7 @@ function Header(props) {
             <Link to='/' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='title'>SCREENSTYLE</div></Link> 
             <div className='navBar'>
                 <div className='categories' id='dropDown'>CATEGORIES
+                {/* need better name for CATEGORIES */}
                     <div className='' id='dropDownBox'>
                         <a href="fadein">FADE IN?</a>
                         <a href="slugs">SLUGS</a>
@@ -17,6 +18,7 @@ function Header(props) {
                     </div>
                 </div>
                 <div className='style' id='dropDown'>STYLE
+                {/* need better name for STYLE */}
                     <div className='' id='dropDownBox'>
                         <a href="textdecoration">TEXT DEC'</a>
                         <a href="montages">MONTAGES</a>
