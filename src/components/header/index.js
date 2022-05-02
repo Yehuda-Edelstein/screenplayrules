@@ -17,6 +17,7 @@ function Header(props) {
                         {/* <a href="dialogue">DIALOGUE</a> */}
                         <a href="voiceovers">(V.O.) , (O.S.)</a> {/* this goes together with dialogue pretty much */}
                         <a href="transitions">TRANSITIONS</a>
+                        <a id='bitsLink' href="textDecoration">BITS</a>
                         <a href="fadeout">FADE OUT?</a>
                     </div>
                 </div>
@@ -32,6 +33,7 @@ function Header(props) {
                         <a href="musiccues">MUSIC CUES</a>
                         {/* <a href="overblack">OVER BLACK</a> */}
                         <a href="beats">BEATS</a>
+                        {/* <a href="fourthwall">FOURTH WALL</a> */}
                     </div>
                 </div>
                 <Link to='contact' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='contact'>CONTACT</div></Link>
