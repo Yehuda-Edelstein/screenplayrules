@@ -15,7 +15,7 @@ import Intros from './intros';
 
 function Main(props) {
     return (
-        <div>
+        <div> 
             <Routes>
                 <Route path='/' element={<div>default component goes here</div>} />
                 <Route path='fadein' element={<FadeIn />} />
@@ -29,7 +29,12 @@ function Main(props) {
                 <Route path='musiccues' element={<MusicCues />} />
                 <Route path='voiceovers' element={<VoiceOvers />} />
                 <Route path='beats' element={<Beats />} />
-                <Route path='intros' element={<Intros />} />               
+                <Route path='intros' element={<Intros />} /> 
+                {/* <Route path='wrylys' element={<Wrylys />} />*/}
+                {/* <Route path='dialogue' element={<Dialogue />} />*/}
+                {/* <Route path='slang' element={<Slang />} />*/}
+                {/* <Route path='superimpose' element={<Superimpose />} />*/}
+                {/* <Route path='overblack' element={<Overblack />} />*/}
                 <Route
                 path="*"
                 element={

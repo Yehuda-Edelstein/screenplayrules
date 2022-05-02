@@ -4,7 +4,8 @@ import Main from './components/main/index';
 
 function App() {
   return (
-    <div> 
+    <div>
+       {/* maybe change screenstyle term to screengrade  */}
       <Header />
       <Main />
       {/* <Footer /> */}
