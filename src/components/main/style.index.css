@@ -1,0 +1,15 @@
+.blogHeader {
+    font-family: 'Courier Final Draft', Courier, monospace;
+}
+
+.blogText {
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: monospace;
+}
+
+.blogFooter a, .blogText a {
+        color: black;
+        text-decoration: none;
+}
+
+.blogFooter a:hover, .blogText a:hover {background-color: #f1f1f1}

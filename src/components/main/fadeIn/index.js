@@ -6,12 +6,10 @@ import withoutBold from '../../../images/withoutBold.png'
 function FadeIn(props) {
     return (
         <div className='container'>
+            <div className='blogHeader'>FADE IN?</div>
             <div className='blogText'>
                 The question mark in the dropdown sort of gives it way, but for
-                any Gumps out there let me spell it out for you: FADE IN is unnecessary.
-                Keeping it won't bring down your screengrade too much though, as it is still rather
-                common practice to see those words atop the first page, but I think it's time we let the FADEs become a thing of the past -- more on FADE OUT
-                later.
+                any Gumps out there let me spell it out for you: <span id='courrier'>FADE IN</span> is unnecessary and totally antiquated. Yeah, it's a staple, so keeping it won't bring down your screengrade too much, but it's ridiculous. It didn't even make sense when cameras could <span id='italic'>only</span> fade in -- obviously the first line on page 1 is where the script starts, and the last line on page 110 is where it ends. Plus, I think slugs look best as the first words on a page regardless, but more on that in the next section. Either way, I think it's time we let the <span id='courrier'>FADE</span>s become a thing of the past.
             <br></br>
                 Here's a comparison:
             <br></br>

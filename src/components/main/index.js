@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.index.css'
 import { Routes, Route } from 'react-router-dom';
 import FadeIn from './fadeIn/';
 import Slugs from './slugs/'
@@ -12,6 +13,7 @@ import MusicCues from './musicCues';
 import VoiceOvers from './voiceOvers';
 import Beats from './beats'
 import Intros from './intros';
+import Dialogue from './dialogue';
 
 function Main(props) {
     return (
@@ -30,8 +32,8 @@ function Main(props) {
                 <Route path='voiceovers' element={<VoiceOvers />} />
                 <Route path='beats' element={<Beats />} />
                 <Route path='intros' element={<Intros />} /> 
+                <Route path='dialogue' element={<Dialogue />} />
                 {/* <Route path='wrylys' element={<Wrylys />} />*/}
-                {/* <Route path='dialogue' element={<Dialogue />} />*/}
                 {/* <Route path='slang' element={<Slang />} />*/}
                 {/* <Route path='superimpose' element={<Superimpose />} />*/}
                 {/* <Route path='overblack' element={<Overblack />} />*/}
