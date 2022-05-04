@@ -30,7 +30,7 @@ function Slugs(props) {
                     <li><span id='courrier'>EVENING</span></li>
                     <li><span id='courrier'>NIGHT</span></li>
                 </ul>
-                For relative times: 
+                For <a href='glossary/relativetime'>relative times</a>: 
                 <ul>
                     <li><span id='courrier'>LATER</span></li>
                     <li><span id='courrier'>MOMENTS LATER</span></li>
@@ -40,13 +40,13 @@ function Slugs(props) {
                 If you want a more specific time, you'll need to <a href='superimpose'>superimpose</a> it.
                     {/* add a link back to slugs from superimpose page */}
             <br></br>
-                Next you'll want to <span id='bold'>bold</span> your <span id='bold'><span id='courrier'>SLUGLINES</span></span>. 
+                Next you should <span id='bold'>bold</span> your <span id='bold'><span id='courrier'>SLUGLINES</span></span>. 
                 This helps alleviate the natural, page-to-page monotony screenplays tend to attract. I mean, at the end of the day it's just a bunch of letters, right? Break those scenes up with a bit of <span id='bold'>bold</span>:
             <br></br>
                 <img className='picture' src={withoutBold} alt='without bold' width={'250px'}/>
                 <img className='picture' src={withBold} alt='with bold' width={'250px'}/>
             <br></br>
-                Many professionals are already moving away from bare slugs so you don't want to get left behind in the days of old. It's time to accept the days of...
+                Many professionals are already moving away from bare slugs {/* maybe add a href to bare sluglines */} so you don't want to get left behind in the days of old. It's time to accept the days of...
             </div>
             <br></br>
             <div className='screengradeHeader' onClick={show}>CLICK HERE TO IMPROVE YOUR SCREENGRADE KNOWLEDGE</div>
