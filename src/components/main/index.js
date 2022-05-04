@@ -10,9 +10,7 @@ import TextDec from './textDec';
 import Montages from './montages';
 import Flashbacks from './flashbacks';
 import MusicCues from './musicCues';
-import VoiceOvers from './voiceOvers';
 import Beats from './beats'
-import Intros from './intros';
 import Dialogue from './dialogue';
 
 function Main(props) {
@@ -29,9 +27,7 @@ function Main(props) {
                 <Route path='montages' element={<Montages />} />
                 <Route path='flashbacks' element={<Flashbacks />} />
                 <Route path='musiccues' element={<MusicCues />} />
-                <Route path='voiceovers' element={<VoiceOvers />} />
                 <Route path='beats' element={<Beats />} />
-                <Route path='intros' element={<Intros />} /> 
                 <Route path='dialogue' element={<Dialogue />} />
                 {/* <Route path='wrylys' element={<Wrylys />} />*/}
                 {/* <Route path='slang' element={<Slang />} />*/}
