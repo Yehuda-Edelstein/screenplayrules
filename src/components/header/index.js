@@ -13,8 +13,6 @@ function Header(props) {
                         <a href="fadein">FADE IN?</a>
                         <a href="slugs">SLUGS</a>
                         <a href="action">ACTION</a>
-                        {/* maybe make these two one section */}
-                        <a href="intros">INTROS</a>
                         <a href="dialogue">DIALOGUE</a>
                         <a href="transitions">TRANSITIONS</a>
                         <a id='extrasLink' href="textDecoration">EXTRAS</a>
@@ -53,11 +51,13 @@ function Header(props) {
 
                     ...add more
                     
-                    ...add a glossery section with terms like screengrade, screengrading, screenblock or block, wrylys, charys or character parethisis, script time, script name vs character name etc. 
+                    ...add a glossery section with terms like screengrade, screengrading, screenblock or block, wrylys, charys or character parethisis, script time, script name vs character name, white lines, parallel/stacked caps, etc. 
 
                     ...add a rulebook (maybe these two add ons be where default component is)
 
                     ... add a types section with different types of ways to write blocks
+
+                    ... "if you don't understand something hover over it and it may just take you to where you want to go."
 
                     Follow these screenplay rules so that your screenplay rules!
                  */}
