@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
-import withoutBold from '../../../images/withoutBold.png'
-import withBold from '../../../images/withBold.png'
-import scroll from '../../../images/scroll.png'
-
+import withoutBold from '../../../images/slugs/withoutBold.png'
+import withBold from '../../../images/slugs/withBold.png'
+import scroll from '../../../images/slugs/scroll.png'
 
 function Slugs(props) {
     const [handleShow, setHandleShow] = useState(false)
@@ -54,7 +53,7 @@ function Slugs(props) {
             {handleShow && 
             <div className='screengradeBlogText'>
                 <div id='blogTextFirstLine'>
-                    <div className='closeButton' id='courrier' onClick={close}>X</div>
+                    <div className='closeButton' id='courrier' onClick={close}>CLOSE</div>
                 </div>
                 As I hinted at earlier, it's a definite plus to land slugs at the tops of you pages, although, it's usually a best case scenario and not always possible. So, don't worry too much about it. That being said, don't ever have a slugline without at least one line of description under it on the <span id='italic'>same</span> page. It's insensitive to tease a reader with a juicy slug and then make them scroll or turn to the next page to see what's going on.
                 There's a page-turner and then there's this:
