@@ -1,6 +1,6 @@
 import React from 'react';
 
-function VoiceOvers(props) {
+function Dialogue(props) {
     return (
         <div className='container'>
             <div className='blogText'>
@@ -19,4 +19,4 @@ function VoiceOvers(props) {
     );
 }
 
-export default VoiceOvers;
+export default Dialogue;
