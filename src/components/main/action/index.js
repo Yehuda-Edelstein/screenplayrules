@@ -76,7 +76,7 @@ function Action(props) {
                     <br></br>
                             3. Long paragraphs are bad, just like long sentences are. Better to have three seperate <a href='glossary/blocks'>blocks</a> for a total of five lines (seven including <a href='glossary/whitelines'>white lines</a>) than one block for a total of five lines. Don't be afraid to break that bad boy up.
                     <br></br>
-                            4. The <span id='yellow'><span id='courrier'>S</span></span> and <span id='yellow'><span id='courrier'>B</span></span> are highlighted because <a href='glossary/parallelcaps'>parallel capitalized letters</a> (or stacked caps) are offputting. Now, even though only the <span id='yellow'><span id='courrier'>B</span></span> is actually problomatic, I highlighted both letters to shed more light on the issue. Know that this applies whether they're at the start of the line, end of the line, or anywhere in between. You may think I'm nuts but I've done my research and readers do respond better to scripts that minamize stacked caps. Worse than that, is doing it with the same capitalized letter. Worse even than that (see!) is with full words. Personally, I wouldn't even start succeeding paragraphs with the same word or letter either. But, hey, that's just me. Anyways, the fix here is easy -- we just add the word <span id='courrier'>"back"</span> before <span id='courrier'>DUMPSTER</span>
+                            4. The <span id='yellow'><span id='courrier'>S</span></span> and <span id='yellow'><span id='courrier'>B</span></span> are highlighted because <a href='glossary/parallelcaps'>parallel capitalized letters</a> (or stacked caps) are offputting. Now, even though only the <span id='yellow'><span id='courrier'>B</span></span> is actually problomatic, I highlighted both letters to shed more light on the issue. Know that this applies whether they're at the start of the line, end of the line, or anywhere in between. You may think I'm nuts but I've done my research and readers do respond better to scripts that minamize stacked caps. Worse than that, is doing it with the same capitalized letter. Worse even than that (see!) is with full words. Personally, I wouldn't even start succeeding paragraphs with the same word or letter either. But, hey, that's just me. Anyways, the fix here is easy -- we just add the word <span id='courrier'>"large"</span> before <span id='courrier'>DUMPSTER</span>
                     <br></br>
                             5. Finally, for the <span id='red'><span id='courrier'>Brady</span></span>'s in <span id='red'>red</span>. Similar to 3., you should refrain from using the same pronoun or name twice in a row. Try and alternate between the two as seen in the corrected version here:
                     <br></br>
@@ -115,7 +115,7 @@ function Action(props) {
                     <br></br>
                         <img className='picture' src={screengradeCleanWithAgeAndHighlights}  alt='with age' width={'250px'}/>
                     <br></br>
-                        The <span id='yellow'>yellow</span> letters are less severe than the <span id='red'>red</span> ones with regards to parallel capitalization, but both should be adjusted. Let's just change the line to "<span id='courrier'>In his hand is a CIGARETTE</span>" --
+                        The <span id='yellow'>yellow</span> letters are a less severe version of parallel capitalization, where parellel letters are both in <span id='courrier'>CAPS</span>, but different. Though less severe is still severe so let's just change the line to "<span id='courrier'>In his hand is a CIGARETTE</span>" --
                     <br></br>
                         <img className='picture' src={hh}  alt='with age' width={'250px'}/>
                     <br></br>
@@ -123,7 +123,7 @@ function Action(props) {
                     <br></br>
                         <img className='picture' src={clean}  alt='with age' width={'250px'}/>
                     <br></br>
-                        There we go. Just switch out "<span id='courrier'>hit</span>" with "<span id='courrier'>drag</span>". See? Not so difficult. Screengrading on the go will become second nature to you in no time.
+                        There we go. Just switch out "<span id='courrier'>hit</span>" with "<span id='courrier'>drag</span>" and we're golden. See? Not so difficult. Screengrading on the go will become second nature to you in no time.
                     </div>
                 }   
             <div className='blogFooter'>
