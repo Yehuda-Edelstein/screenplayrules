@@ -1,16 +1,15 @@
 import React, { useState }  from 'react';
-import longDescription from '../../../images/longDescription.png'
-import longDescriptionWithEdits from '../../../images/longDescriptionWithEdits.png'
-import finishedLongDescription from '../../../images/finishedLongDescription.png'
-import screengradeLongDescriptionWithEdits from  '../../../images/screengradeLongDescriptionWithEdits.png'
-import descriptionFixed from '../../../images/descriptionFixed.png'
-import withAge from '../../../images/withAge.png'
-import withoutAge from '../../../images/withoutAge.png'
-import withAgeAfterEdits from '../../../images/withAgeAfterEdits.png'
-import screengradeCleanWithAge from '../../../images/screengradeCleanWithAge.png'
-import screengradeCleanWithAgeAndHighlights from '../../../images/screengradeCleanWithAgeAndHighlights.png'
-import hh from '../../../images/hh.png'
-import clean from '../../../images/clean.png'
+import longDescription from '../../../images/action/longDescription.png'
+import longDescriptionWithEdits from '../../../images/action/longDescriptionWithEdits.png'
+import finishedLongDescription from '../../../images/action/finishedLongDescription.png'
+import screengradeLongDescriptionWithEdits from  '../../../images/action/screengradeLongDescriptionWithEdits.png'
+import descriptionFixed from '../../../images/action/descriptionFixed.png'
+import withAge from '../../../images/action/withAge.png'
+import withoutAge from '../../../images/action/withoutAge.png'
+import screengradeCleanWithAge from '../../../images/action/screengradeCleanWithAge.png'
+import screengradeCleanWithAgeAndHighlights from '../../../images/action/screengradeCleanWithAgeAndHighlights.png'
+import hh from '../../../images/action/hh.png'
+import clean from '../../../images/action/clean.png'
 
 function Action(props) {
     const [handleShow, setHandleShow] = useState(false)
@@ -68,7 +67,7 @@ function Action(props) {
                             <div className='screengradeBlogText'>
                             <div id='blogTextFirstLine'>
                                 <div>For a cleaner look:</div>
-                                    <div className='closeButton' id='courrier' onClick={close}>X</div>
+                                <div className='closeButton' id='courrier' onClick={close}>CLOSE</div>
                             </div>
                     <br></br>
                             <img className='picture' src={screengradeLongDescriptionWithEdits} alt='long description with 
@@ -105,7 +104,7 @@ function Action(props) {
                     <div className='screengradeBlogText'>
                         It's always better for your screengrade to include the age:
                         <div id='blogTextFirstLine'>   
-                        <div className='closeButton' id='courrier' onClick={closeSecond}>X</div>
+                        <div className='closeButton' id='courrier' onClick={closeSecond}>CLOSE</div>
                         
                     <br></br>
                         <img className='picture' src={screengradeCleanWithAge}  alt='with age' width={'250px'}/>

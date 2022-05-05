@@ -1,7 +1,6 @@
 import React from 'react';
-import './style.index.css'
-import withFadeIn from '../../../images/withFadeIn.png'
-import withoutBold from '../../../images/withoutBold.png'
+import withFadeIn from '../../../images/fadeIn/withFadeIn.png'
+import withoutFadeIn from '../../../images/fadeIn/withoutFadeIn.png'
 
 function FadeIn(props) {
     return (
@@ -14,7 +13,7 @@ function FadeIn(props) {
                 Here's a comparison:
             <br></br>
                 <img className='picture' src={withFadeIn} alt='with fade in' width={'250px'}/>
-                <img className='picture' src={withoutBold} alt='without fade in' width={'250px'}/>
+                <img className='picture' src={withoutFadeIn} alt='without fade in' width={'250px'}/>
             <br></br>
                 It doesn't seem like much, but I think it helps give the script
                 a cleaner start. Trim the fat, you know?
