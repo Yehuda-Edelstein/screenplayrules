@@ -59,6 +59,8 @@ function Header(props) {
 
                     ... "if you don't understand something hover over it and it may just take you to where you want to go."
 
+                    ... set up mailing list to alert when stuff is edited. or added.
+
                     Follow these screenplay rules so that your screenplay rules!
                  */}
                  
