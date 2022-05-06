@@ -1,0 +1,51 @@
+.screentourNavBar {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    /* disables highlighting */
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
+}
+
+#dropDownBox {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+#dropDownBox a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+#dropDownBox #extrasLink {
+    color: white;
+    background-color: black;
+    padding: 12px 16px;
+    display: block;
+
+}
+
+#dropDownBox a:hover {background-color: #f1f1f1}
+
+#dropDownBox #extrasLink:hover {background-color: #3d3d3d}
+
+
+.categories:hover #dropDownBox {
+display: block;
+}
+
+.style:hover #dropDownBox {
+display: block;
+}

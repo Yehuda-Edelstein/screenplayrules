@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap');
+
 .container {
     max-width: 680px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 20px;
@@ -12,7 +14,9 @@
     font-family: 'Courier Final Draft', Courier, monospace;
     text-align: center;
     font-size: 20pt;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
 }
 
 .screengradeHeader {
@@ -20,24 +24,40 @@
 }
 
 .blogText {
-    font-family: monospace;
-    font-size: 13pt;
+    font-family: 'Inconsolata', monospace;
+    font-size: 15pt;
+    line-height: 125%;
 }
+
+sup {
+    font-size: 8pt;
+}
+
 
 .screengradeBlogText {
     font-family: monospace;
     background-color: #d6daec;
 }
 
+.pictureContainer {
+    display: grid;
+    justify-content: center;
+    background-color: #f1f1f1;
+}
+
 .picture {
-    border: 1px solid black;
-    border-radius: 8px;
+    border: 1px solid gray;
+    /* border-radius: 8px; */
+    width: 600px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .blogFooter {
     border-top: 1px solid black;
+    padding: 20px 10px 0 20px;
     margin-top: 20px;
-    font-size: 13;
+    font-size: 13pt;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -46,6 +66,30 @@
 .blogFooter a, .blogText a {
         color: black;
         text-decoration: none;
+}
+
+.localGlossary {
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
+
+.localGlossaryHeader {
+    padding: 20px 10px 0 20px;
+    font-family: 'Courier Final Draft', Courier, monospace;
+    font-size: 15pt;
+    text-align: center;
+}
+
+.localGlossaryList {
+    font-family: 'Inconsolata', monospace;
+    line-height: 125%;
+}
+
+.localGlossaryFooter {
+    font-family: 'Inconsolata', monospace;
+    font-size: 10pt;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .screengradeHeader, .closeButton {

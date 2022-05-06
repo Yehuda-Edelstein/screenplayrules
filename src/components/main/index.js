@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router';
 import './style.index.css'
 import Screentour from './screentour';
-import ScreentourNavBar from './screentour/navbar';
 import Home from './home';
 import FadeIn from './screentour/components/fadeIn';
 import Slugs from './screentour/components/slugs';

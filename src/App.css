@@ -2,6 +2,13 @@
   text-align: center;
 }
 
+.mainLink {
+  font-family: 'Courier Final Draft', Courier, monospace;
+  font-size: 13pt;
+}
+
+.mainLink:hover {background-color: #f1f1f1}
+
 #bold {
   font-weight: bold;
 }
@@ -16,7 +23,7 @@
 
 #courrier {
   font-family: 'Courier Final Draft', Courier, monospace;
-  font-size: 11pt;
+  font-size: 15pt;
 }
 
 #yellow {
@@ -26,10 +33,3 @@
 #red {
   background-color: #ffc9c9;
 }
-
-#mainLink {
-  font-family: 'Courier Final Draft', Courier, monospace;
-  font-size: 11pt;
-}
-
-#mainLink:hover {background-color: #f1f1f1}
