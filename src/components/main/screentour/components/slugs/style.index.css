@@ -1,0 +1,25 @@
+.sluglineExample {
+    font-family: 'Courier Final Draft', Courier, monospace;
+    font-size: 30pt;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.timeListContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timeList {
+    list-style: disc;
+    
+}
+
+.timeList label {
+    border-bottom: 1px solid black;
+    font-size: larger;
+}
+
+.listItems {
+    margin-top: 10px;
+}
