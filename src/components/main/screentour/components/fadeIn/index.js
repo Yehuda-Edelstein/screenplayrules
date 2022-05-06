@@ -46,11 +46,11 @@ function FadeIn(props) {
                 <div className='localGlossaryHeader'>LOCAL GLOSS'</div>
                 <ol className='localGlossaryList'>
                     <li><span id='bold'>Screengrade</span></li>
-                    <div>A non plot-related and compltley artibitrary metric for grading a screenplay, based purely on its visual asthetic. <span id='italic'>See: about section for further explanation.</span></div>
+                    <div className='definition'>A non plot-related and compltley artibitrary metric for grading a screenplay, based purely on its visual asthetic. <span id='italic'>See: about section for further explanation.</span></div>
                     <li><span id='bold'>110</span></li>
-                    <div>Represents either the last page of screenplay, or a  completed screenplay that's ready to go. <span id='italic'>Ex: "I just wanna' get this spec to 110 and sell it, bro"</span></div>
+                    <div className='definition'>Represents either the last page of screenplay, or a  completed screenplay that's ready to go. <span id='italic'>Ex: "I just wanna' get this spec to 110 and sell it, bro"</span></div>
                     <li><span id='bold'>Slugs</span></li>
-                    <div>Or sluglines. An industry nickname for scene headings.</div>
+                    <div className='definition'>Or sluglines. An industry nickname for scene headings.</div>
                 </ol>
                 <div className='localGlossaryFooter'><span>**full definitions found in glossary above**</span></div>
             </div>

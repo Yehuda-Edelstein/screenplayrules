@@ -85,6 +85,14 @@ sup {
     line-height: 125%;
 }
 
+.localGlossaryList li {
+    margin-top: 10px;
+}
+
+.definition {
+    padding-top: 5px;
+}
+
 .localGlossaryFooter {
     font-family: 'Inconsolata', monospace;
     font-size: 10pt;
