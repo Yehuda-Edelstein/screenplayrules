@@ -19,8 +19,28 @@
     border-bottom: 1px solid black;
 }
 
+.screengradeContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .screengradeHeader {
     font-family: 'Courier Final Draft', Courier, monospace;
+    background-color: #d6daec;
+    font-size: 15pt;
+    line-height: 125%;
+    width: 100%;
+    text-align: center;
+}
+
+.closeButton {
+    font-family: 'Courier Final Draft', Courier, monospace;
+    background-color: #d6daec;
+    font-size: 15pt;
+    line-height: 125%;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid black;
 }
 
 .blogText {
@@ -35,14 +55,22 @@ sup {
 
 
 .screengradeBlogText {
-    font-family: monospace;
+    font-family: 'Inconsolata', monospace;
+    font-size: 13pt;
+    line-height: 125%;
     background-color: #d6daec;
+    padding: 30px 20px 10px 20px;
 }
 
 .pictureContainer {
     display: grid;
     justify-content: center;
     background-color: #f1f1f1;
+}
+
+.screengradePictureContainer {
+    display: grid;
+    justify-content: center;
 }
 
 .picture {
