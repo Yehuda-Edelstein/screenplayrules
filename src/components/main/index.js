@@ -1,38 +1,43 @@
 import React from 'react';
+import { Routes, Route } from 'react-router';
 import './style.index.css'
-import { Routes, Route } from 'react-router-dom';
-import FadeIn from './fadeIn/';
-import Slugs from './slugs/'
-import Action from './action';
-import Transitions from './transitions';
-import FadeOut from './fadeout';
-import TextDec from './textDec';
-import Montages from './montages';
-import Flashbacks from './flashbacks';
-import MusicCues from './musicCues';
-import Beats from './beats'
-import Dialogue from './dialogue';
+import Screentour from './screentour';
+import Home from './home';
+import FadeIn from './screentour/components/fadeIn';
+import Slugs from './screentour/components/slugs';
+import Action from './screentour/components/action';
+import Transitions from './screentour/components/transitions';
+import FadeOut from './screentour/components/fadeIn';
+import TextDec from './screentour/components/textDec';
+import Montages from './screentour/components/montages';
+import Flashbacks from './screentour/components/flashbacks';
+import MusicCues from './screentour/components/musicCues';
+import Beats from './screentour/components/beats';
+import Dialogue from './screentour/components/dialogue';
 
 function Main(props) {
     return (
         <div> 
             <Routes>
-                <Route path='/' element={<div>default component goes here</div>} />
-                <Route path='fadein' element={<FadeIn />} />
-                <Route path='slugs' element={<Slugs />} />
-                <Route path='action' element={<Action />} />
-                <Route path='transitions' element={<Transitions />} />
-                <Route path='fadeout' element={<FadeOut />} />
-                <Route path='textdecoration' element={<TextDec />} />
-                <Route path='montages' element={<Montages />} />
-                <Route path='flashbacks' element={<Flashbacks />} />
-                <Route path='musiccues' element={<MusicCues />} />
-                <Route path='beats' element={<Beats />} />
-                <Route path='dialogue' element={<Dialogue />} />
-                {/* <Route path='wrylys' element={<Wrylys />} />*/}
-                {/* <Route path='slang' element={<Slang />} />*/}
-                {/* <Route path='superimpose' element={<Superimpose />} />*/}
-                {/* <Route path='overblack' element={<Overblack />} />*/}
+                <Route path='/' element={<Home />} />
+                <Route path='screentour' element={<Screentour />} />
+                {/* <Route path='screentour/:id' element={<ScreentourNavBar />} /> */}
+                    {/* SCREENTOUR ROUTES */}
+                    <Route path='screentour/fadein' element={<FadeIn />} />
+                    <Route path='screentour/slugs' element={<Slugs />} />
+                    <Route path='screentour/action' element={<Action />} />
+                    <Route path='screentour/transitions' element={<Transitions />} />
+                    <Route path='screentour/fadeout' element={<FadeOut />} />
+                        {/* SCREENTOUR EXTRA ROUTES */}
+                        <Route path='screentour/textdecoration' element={<TextDec />} />
+                        <Route path='screentour/montages' element={<Montages />} />
+                        <Route path='screentour/flashbacks' element={<Flashbacks />} />
+                        <Route path='screentour/musiccues' element={<MusicCues />} />
+                        <Route path='screentour/beats' element={<Beats />} />
+                        <Route path='screentour/dialogue' element={<Dialogue />} />
+                        {/* <Route path='screentour/slang' element={<Slang />} />*/}
+                        {/* <Route path='screentour/superimpose' element={<Superimpose />} />*/}
+                        {/* <Route path='screentour/overblack' element={<Overblack />} />*/}
                 <Route
                 path="*"
                 element={
@@ -41,6 +46,7 @@ function Main(props) {
                 </div>
                 }/>
             </Routes>
+                
         </div>
     );
 }
