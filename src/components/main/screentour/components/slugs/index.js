@@ -120,11 +120,11 @@ function Slugs(props) {
                 <div className='localGlossaryHeader'>LOCAL GLOSS'</div>
                 <ol className='localGlossaryList'>
                     <li><span id='bold'>Actual</span></li>
-                    <div className='definition'>Universally understood time. Outside of story, not plot-contingent.</div>
+                    <div className='definition'>Universal time. Outside of story, not plot-contingent.</div>
                     <li><span id='bold'>Relative</span></li>
-                    <div className='definition'>Relative </div>
+                    <div className='definition'>Time understood through story, relative to the plot. </div>
                     <li><span id='bold'>Superimpose</span></li>
-                    <div className='definition'>Superimpose</div>
+                    <div className='definition'>Letters, numbers, symbols, or images, displayed on screen. Overlaid so that both original picture and superimposed addition are visible.</div>
                 </ol>
                 <div className='localGlossaryFooter'><span>**full definitions found in glossary above**</span></div>
             </div>
