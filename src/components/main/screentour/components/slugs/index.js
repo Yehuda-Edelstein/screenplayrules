@@ -33,7 +33,7 @@ function Slugs(props) {
                 </div>
             <br></br>
             <br></br>
-                This abbreviation tells us whether the scene will be happening inside or outside, or both. Interior (<span id='courrier'>INT.</span>) for inside, exterior (<span id='courrier'>EXT.</span>) for outside, and a combination (<span id='courrier'>INT.</span>/<span id='courrier'>EXT.</span>) for scenes that switch between the two.
+                This abbreviation tells us whether the scene will be happening inside or outside, or both. Interior "<span id='courrier'>INT.</span>" for inside, exterior "<span id='courrier'>EXT.</span>" for outside, and a combination "<span id='courrier'>INT.</span>/<span id='courrier'>EXT.</span>" for scenes that switch between the two.
             <br></br>
             <br></br>
                 Note: if you're new to screenwriting, which you probably are, refrain from using "<span id='courrier'>INT.</span>/<span id='courrier'>EXT.</span>" Instead, use description to establish a location change, or just cut to a new scene. 
