@@ -105,7 +105,7 @@ function Slugs(props) {
                         There's a page-turner and then there's this:
                     <br></br>
                         <div className='screengradePictureContainer'>
-                            <img className='picture' src={scroll} alt='with bold' width={'250px'}/>
+                            <img className='picture' src={scroll} alt='scroll to see' width={'250px'}/>
                         </div>
                         Disgusting.
                     <br></br>
