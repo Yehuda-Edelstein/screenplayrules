@@ -35,7 +35,7 @@ function Transitions(props) {
             <br></br>
             <br></br>
                 <div className='pictureContainer'>
-                    <img className='picture' src={cutToExample}  alt='with age' width={'250px'}/>
+                    <img className='picture' src={cutToExample}  alt='cut to example' width={'250px'}/>
                 </div>
             <br></br>
                 <span id='courrier'>CUT TO</span> is the default, so it's unnecessary -- it's accepted that when a new slugline appears, we will be cutting to that scene. I mean, how else are we supposed to get there? 
@@ -62,9 +62,9 @@ function Transitions(props) {
             <br></br>
             <br></br>
                 <div className='pictureContainer'>
-                    <img className='picture' src={dissolveToExample}  alt='with age' width={'250px'}/>
+                    <img className='picture' src={dissolveToExample}  alt='dissolve to example' width={'250px'}/>
                     <div className='pictureLabel'><span id='courrier'>VS.</span></div>
-                    <img className='picture' src={quickCutToExample}  alt='with age' width={'250px'}/>
+                    <img className='picture' src={quickCutToExample}  alt='quick cut to example' width={'250px'}/>
                 </div>
             <br></br>
                 The notable difference between the two, as I used them, is time:
@@ -86,10 +86,10 @@ function Transitions(props) {
                 <div className='pictureContainer'>
                     <br></br>
                     <div className='pictureLabel'>REGULAR SLUGS</div>
-                    <img className='picture' src={regularSlugs}  alt='with age' width={'250px'}/>
+                    <img className='picture' src={regularSlugs}  alt='regular slugs' width={'250px'}/>
                     <br></br>
                     <div className='pictureLabel'>INTERCUT SLUGS</div>
-                    <img className='picture' src={intercutSlugs}  alt='with age' width={'250px'}/>
+                    <img className='picture' src={intercutSlugs}  alt='intercut slugs' width={'250px'}/>
                 </div>
             <br></br>
                 The rule of thumb for intercut slugs, is once both locations have been established one after the other with their own slug, you can then use intercut slugs to switch between them. 
@@ -105,12 +105,11 @@ function Transitions(props) {
                     {handleShow &&
                         <div className='screengradeBlogText'>
                             <div className='screengradePictureContainer'>
-                                <img className='picture' src={screengradeIntercutSlugs}  alt='with age' width={'250px'}  />
+                                <img className='picture' src={screengradeIntercutSlugs}  alt='screengrade version of intercut slugs' width={'250px'}  />
                             </div>
                             Some simple corrections will do the trick. I think you can handle it.
                         </div>
                     }
-
             </div>
             <div className='blogFooter'>
                 <a href="fadeout" id='courrier'>NEXT</a>
