@@ -228,7 +228,7 @@ function Dialogue(props) {
                         {'250px'}  />
                         </div>
                     <br></br>
-                        Now you can really feel the tension. Don't worry, we'll get back to our guy, <span id='courrier'>Brady</span> in the next section.
+                        Now you can really feel the tension. Don't worry, we'll get back to our guy, <span id='courrier'>Brady</span> in the coming sections.
                     <br></br>
                     <br></br>
                         {!handleShowSecond
