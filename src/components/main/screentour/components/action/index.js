@@ -53,7 +53,7 @@ function Action(props) {
                 <br></br>
                 <br></br>
                     <div className='pictureContainer'>
-                        <img className='picture' src={longDescriptionWithEdits} alt='long description with extra stuff crossed out' width={'250px'}/>
+                        <img className='picture' src={longDescriptionWithEdits} alt='long description with edits' width={'250px'}/>
                     </div>
                 <br></br>
                     1. For starters, it's too long -- like I said before, trim the fat. Any lines I crossed out were unnecessary. This isn't a Russian novel, we don't need vivid imagery. Keep it simple. Obviously, if you're writing a sci-fi piece set in 3022, some of your scenes will likely need extensive explanations, but if that's not the case, cut to the chase. One-word sentences are fine too. Good, even. They can add a subtle intensity to your description and keep the reader wanting more. Hopefully.
@@ -75,7 +75,7 @@ function Action(props) {
                 <br></br>
                 <br></br>
                     <div className='pictureContainer'>
-                        <img className='picture' src={finishedLongDescription} alt='long description with extra stuff crossed out' width={'250px'}/>
+                        <img className='picture' src={finishedLongDescription} alt='finished long description' width={'250px'}/>
                     </div>
                 <br></br>
                     Not to shabby, huh. Okay. Now, let's fix that intro.
@@ -137,7 +137,7 @@ function Action(props) {
                         <img className='picture' src={withAge}  alt='with age' width={'250px'}/>
                     <br></br>
                         <div className='pictureLabel'>WITHOUT</div>
-                        <img className='picture' src={withoutAge}  alt='with age' width={'250px'}/>
+                        <img className='picture' src={withoutAge}  alt='without age' width={'250px'}/>
                 </div>
             <br></br>
                 Since by us, "<span id='courrier'>Brady</span>" is our main character, we'll include his age. 
@@ -179,12 +179,12 @@ function Action(props) {
                         It's always better for your screengrade to include the age:
                     <br></br>
                         <div className='screengradePictureContainer'>
-                            <img className='picture' src={screengradeCleanWithAge}  alt='with age' width={'250px'}/>
+                            <img className='picture' src={screengradeCleanWithAge}  alt='screengrade clean with age' width={'250px'}/>
                         </div>
                         Uh oh --
                     <br></br>
                         <div className='screengradePictureContainer'>
-                            <img className='picture' src={screengradeCleanWithAgeAndHighlights}  alt='with age' width={'250px'}/>
+                            <img className='picture' src={screengradeCleanWithAgeAndHighlights}  alt='screengrade with age and highlights' width={'250px'}/>
                         </div>
                         The <span id='yellow'>yellow</span> letters here are a less severe version of stacked capitalization, as we saw earlier, where the stacked letters are both in <span id='courrier'>CAPS</span>, but different. 
                     <br></br>
@@ -192,12 +192,12 @@ function Action(props) {
                         Though less severe is still severe so let's just change the line to "<span id='courrier'>In his hand is a CIGARETTE</span>"
                     <br></br>
                         <div className='screengradePictureContainer'>
-                            <img className='picture' src={hh}  alt='with age' width={'250px'}/>
+                            <img className='picture' src={hh}  alt='stacked letters' width={'250px'}/>
                         </div>
                         Another quick adjustment --
                     <br></br>
                         <div className='screengradePictureContainer'>
-                            <img className='picture' src={clean}  alt='with age' width={'250px'}/>
+                            <img className='picture' src={clean}  alt='clean, no edits' width={'250px'}/>
                         </div>
                         There we go. Just switch out "<span id='courrier'>hit</span>" with "<span id='courrier'>drag</span>" and we're golden. See? Not so difficult. Screengrading on the go will become second nature to you in no time.
                     </div>
