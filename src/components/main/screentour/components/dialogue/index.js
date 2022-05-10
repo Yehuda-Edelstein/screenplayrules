@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './style.index.css'
 import continuedSamePage from '../../../../../images/dialogue/continuedSamePage.png'
 import continuedNewPage from '../../../../../images/dialogue/continuedNewPage.png'
 import prelapExample from '../../../../../images/dialogue/prelapExample.png'
@@ -16,7 +17,6 @@ function Dialogue(props) {
     const [handleShow, setHandleShow] = useState(false)
     const [handleShowSecond, setHandleShowSecond] = useState(false)
 
-    
     function show() {
         setHandleShow(true)
     }
@@ -37,133 +37,239 @@ function Dialogue(props) {
         <div className='container'>
             <div className='blogHeader'>DIALOGUE</div>
             <div className='blogText'>
-                So, you've got your where, when, what, and who. But, what's your who saying? Now, eventhough there aren't any screenplay rules specific to <span id='italic'>actual</span> dialogue (since any dialogue written should follow the rules I described earlier in the action section) there <span id='italic'>are</span> screenplay rules regarding dialogue as a screenwriting block in general.
+                So, you've got your where, when, what, and who. But, what's your who saying? 
+            <br></br>
+            <br></br>
+                Now, eventhough there aren't any screenplay rules specific to actual dialogue (since any dialogue written should follow the rules I described earlier in the action section) there are screenplay rules regarding dialogue as a block in general.
             <br></br>
             <br></br>
                 <div className='blogSubHeader'>CHARIES</div>
-                We'll start with character parenthetisis or <a href='glossary/charies'>charies</a> (pronounced 'carries'). These are the parenthetisis that go beside the <span id='courrier'>CHARACTER</span> name, right above the dialogue. The most common chary is <span id='courrier'>(CONT'D)</span> and implies that a character's dialogue continues, either to the next page, or through a description:
+                Character parenthetisis or charies (pronounced: 'carries') are parenthetisis that go beside the <span id='courrier'>CHARACTER</span> name, right above the dialogue. 
             <br></br>
-                1. <img className='picture' src={continuedSamePage}  alt='with age' width={'250px'}/>
             <br></br>
-                2. <img className='picture' src={continuedNewPage}  alt='with age' width={'250px'}/>
+                The most common chary is <span id='courrier'>(CONT'D)</span> and implies that a character's dialogue continues, either to the next page, or through a description:
+            <br></br>
+            <br></br>
+                <div className='pictureContainer'>
+            <br></br>
+                    <div className='pictureLabel'>1.</div>
+                    <img className='picture' src={continuedSamePage}  alt='with age' width={'250px'}/>
+                    <div className='pictureLabel'>2.</div>
+                    <img className='picture' src={continuedNewPage}  alt='with age' width={'250px'}/>
+                </div>
             <br></br>
                 As far as other charies go, here's a list of acceptable ones to use:
                 <ul>
-                    <li><span id='courrier'>(V.O.)</span> = Voice Over</li> 
-                    <li><span id='courrier'>(O.S.)</span> = Off Screen</li>
-                    <li><span id='courrier'>(PRE-LAP)</span> = Dialogue that starts before we cut to that scene</li> {/* maybe reword this definition */}
+                    <div className='chariesList'>
+                        <li><span id='courrier'>(V.O.)</span> = Voice Over</li> 
+                        <li><span id='courrier'>(O.S.)</span> = Off Screen</li>
+                        <li><span id='courrier'>(PRE-LAP)</span> = Dialogue for the current scene that starts in the previous one</li> {/* maybe reword this definition */}
+                    </div>
                 </ul>
                 <div className='blogSubHeader' id='smaller'>(O.S.) vs (PRE-LAP)</div>
-
-                    The difference between <span id='courrier'>(O.S.)</span> and <span id='courrier'>(PRE-LAP)</span> is their <a href='glossary/scripttime'>script time</a>. When someone speaks off screen, it's still happening in <a href='glossary/scripttime'>script present time</a>, whereas <span id='courrier'>(PRE-LAP)</span> refers to dialogue in <a href='glossary/scripttime'>script future time</a> that <span id='italic'>looks</span> as if it starts in script presnt time. Here's an example of that:
+                    The difference between the charies <span id='courrier'>(O.S.)</span> and <span id='courrier'>(PRE-LAP)</span> is their script time<sup>1</sup>. 
                 <br></br>
-                    <img className='picture' src={prelapExample}  alt='with age' width={'250px'}/>
                 <br></br>
-                    If you're confused, let me break it down: The first line of dialogue happens for the audience during the first scene, but for the character happens in the second. Right? <span id='courrier'>CHARACTER</span> isn't saying "<span id='courrier'>Man, it's eerie here</span>" during the daytime scene. It only seems like that to the viewer, but he (or she, relax it's an amorphous, genderless entity) is actually saying this during the nighttime scene, and will be filmed as such. A reason you would use <span id='courrier'>(PRE-LAP)</span> in a script is to let the reader know we'll be jumping forward in time. Note: If you're new to screenwriting stick to the basics. Trying to fit a <span id='courrier'>(PRE-LAP)</span> where it doesn't belong looks bad, and is an amatuar move. And amatuars don't get <a href='glossary/options'>optioned</a>. So don't do it. Trust me, there's nothing I want more than for you to option the heck out of your spec.
+                    See, when someone speaks off screen, it's still happening in script present time<sup>2</sup>, whereas <span id='courrier'>(PRE-LAP)</span> refers to dialogue in script future time<sup>3</sup> that <span id='italic'>looks</span> as if it starts in script presnt time. Here's an example of that:
+                <br></br>
+                <br></br>
+                    <div className='pictureContainer'>
+                        <img className='picture' src={prelapExample}  alt='with age' width={'250px'}/>
+                    </div>
+                <br></br>
+                    If you're confused, let me break it down: 
+                <br></br>
+                <br></br>
+                    The first line of dialogue happens for the audience during the first scene, but for the character, it happens in the second. Right? <span id='courrier'>CHARACTER</span> isn't saying "<span id='courrier'>Man, it's eerie here</span>" during the daytime scene. It only seems that way to the viewer, but he (or she -- relax it's an amorphous, genderless entity) is actually saying this during the nighttime scene, and will be filmed as such.
+                <br></br>
+                <br></br>
+                     A reason you would use <span id='courrier'>(PRE-LAP)</span> in a script is to let the reader know we'll be jumping forward in time.
+                <br></br>
+                <br></br>
+                      Note: If you're new to screenwriting stick to the basics. Trying to fit a <span id='courrier'>(PRE-LAP)</span> where it doesn't belong looks bad, and is an amatuar move. And amatuars don't get optioned<sup>4</sup>. So don't do it. Trust me, there's nothing I want more than for you to option the heck out of your spec.
+                <br></br>
                 <br></br>
                     On the other side of the spectrum, <span id='courrier'>(O.S.)</span> has a continuous script time: 
                 <br></br>
-                    <img className='picture' src={offscreenExample}  alt='with age' width={'250px'}/>
                 <br></br>
-                    Starting to get it? Notice, both cases require <span id='courrier'>(CONT'D)</span> on the second block of dialogue because both blocks will be filmed together. Also, as I alluded to previously, these cases, along with <span id='courrier'>(V.O.)</span>, are the only acceptable times to have an unintroduced character give dialogue -- when they are not in the shot, in any capacity, but will be, either momentarily, or at some point in the script. The exception to <span id='italic'>this</span> exception is with a <span id=''>NARRATOR</span> who remains off screen the entire film. Although, you'd need to use <span id='courrier'>(V.O.)</span> in that case. Always. The reason for which you'll understand shortly. Hopefully. Anyways. Moving right along...
+                    <div className='pictureContainer'>
+                        <img className='picture' src={offscreenExample}  alt='with age' width={'250px'}/>
+                    </div>
+                <br></br>
+                    Starting to get it? 
                 <br></br>
                 <br></br>
-                    You may be asking yourself: <span id='italic'>"What's the difference between (v.o.) and (o.s.)?"</span> First off, charies are always in <span id='courrier'>ALL CAPS</span>. Second, I'm getting to that, hotshot.
+                    Notice, both cases require <span id='courrier'>(CONT'D)</span> on the second block of dialogue because both blocks will be filmed together. Also, as I alluded to previously, these cases, along with <span id='courrier'>(V.O.)</span>, are the only acceptable times to have an unintroduced character give dialogue -- when they are not in the shot, in any capacity, but will be, either momentarily, or at some point in the script.
+                <br></br>
+                <br></br>
+                     The exception to <span id='italic'>this</span> exception is with a <span id='courrier'>NARRATOR</span> who remains off screen the entire film. Although, you'd need to use <span id='courrier'>(V.O.)</span> in that case. Always. The reason for which you'll understand shortly. Hopefully. Anyways. Moving right along...
+                <br></br>
+                <br></br>
+                    You may be asking yourself: <span id='italic'>What's the difference between (v.o.) and (o.s.)?</span> 
+                <br></br>
+                <br></br>
+                    First off, charies are always in <span id='courrier'>ALL CAPS</span>. Second, I'm getting to that, hotshot.
                 <br></br>
                 <br></br>
                 <div className='blogSubHeader' id='smaller'>(O.S.) vs (V.O.)</div>
-                    The difference between these two charies is simple: If the character's voice is recorded from a scene taken by the camera (presumably with some type of boom mic) then it's <span id='courrier'>(O.S.)</span>. Any dialogue recorded in a studio, then added in, is <span id='courrier'>(V.O.)</span>. Think of a narrator in a movie. Tyler-Durden-slash-Edward-Norton didn't sit in a chair on set and record all his narration on camera for a scene that would never be in the movie. He obviosuly recorded it in an air-conditioned studio. As for movies like Forrest Gump, where part of the narration is on camera but then switches to a voiceover, I'm not sure how it was written, but you can see for yourself if they have the script on <a href='https://www.scriptslug.com'>Scriptslug</a>. Either way, it doesn't matter. The screenplay rule over here is simple: If the dialogue is recorded after or before filming, it's <span id='courrier'>(V.O.)</span>. Otherwise, it's <span id='courrier'>(O.S.)</span>, baby.
+                    The difference between these two charies is simple: If the character's voice is recorded from a scene taken by the camera (presumably with some type of boom mic) then it's <span id='courrier'>(O.S.)</span>. Any dialogue recorded in a studio, then added in, is <span id='courrier'>(V.O.)</span>. 
+                <br></br>
+                <br></br>
+                    Think of a narrator in a movie. Edward Norton didn't sit in a chair on set and record all his narration for Fight Club on camera for a scene that would never be in the movie. He obviosuly recorded it in an air-conditioned studio. 
+                <br></br>
+                <br></br>
+                    As for movies like Forrest Gump, where part of the narration is on camera, but then switches to a voiceover, I'm not sure how it was written, but you can see for yourself if they have the script on <a href='https://www.scriptslug.com'>Scriptslug</a>.
+                <br></br>
+                <br></br>
+                    Either way, it doesn't matter. The screenplay rule over here is simple: If the dialogue is recorded after or before filming, it's <span id='courrier'>(V.O.)</span>. Otherwise, it's <span id='courrier'>(O.S.)</span>, baby.
                 <br></br>
                 <br></br>
                     Here's an example of <span id='courrier'>(V.O.) with a twist</span>:
                 <br></br>
-                    <img className='picture' src={voiceoverContinued}  alt='with age' width={'250px'}/>
+                <br></br>
+                    <div className='pictureContainer'>
+                        <img className='picture' src={voiceoverContinued}  alt='with age' width={'250px'}/>
+                    </div>
                 <br></br>
                     The twist here is in the shape of a rule, and the rule is that <span id='courrier'>(CONT'D)</span> needs to be present no matter if another chary preceeds it. Whether it's <span id='courrier'>(V.O.)</span> or <span id='courrier'>(O.S.)</span>, if it's continuous dialogue (recorded or filmed in one take) it needs a <span id='courrier'>(CONT'D)</span> after it.
                 <br></br>
                 <br></br>
-                    Note: I'm not sure how a <span id='courrier'>(PRE-LAP)</span> could ever be continuous dialogue from a previous block, but if you figure out a way that it can, you'll need to slap a <span id='courrier'>(CONT'D)</span> after it as well. 
+                    Note: I'm not sure how a <span id='courrier'>(PRE-LAP)</span> could ever be continuous dialogue from a previous block, but if you figure out a way that it can, you'll need to go and slap a <span id='courrier'>(CONT'D)</span> after it as well. 
                 <br></br>
                 <br></br>
                     Note #2: I've seen one other chary used for dialogue spoken off camera rightly dubbed <span id='courrier'>(O.C.)</span>, but don't ever use it. It's the same as <span id='courrier'>(O.S.)</span> which is more common, so just stick with that. Don't be that guy, you know? Or girl. Or amorphous, genderless entity. Anyways...
                 <br></br>
                 <br></br>
-                    Back to our guy, <span id='courrier'>Brady</span>. He's doing okay. But, he seems lonely. Let's give him a love interest and get the ball rolling:
+                    Back to our guy, <span id='courrier'>Brady</span>. He's doing okay. But, he seems lonely. Let's give him a love interest and get that ball rolling:
                 <br></br>    
                 <br></br>
-                    <img className='picture' src={withDialogueAndHighlights}  alt='with age' width={'250px'}/>
+                    <div className='pictureContainer'>
+                        <img className='picture' src={withDialogueAndHighlights}  alt='with age' width={'250px'}
+                    />
+                    </div>
                 <br></br>
                 <br></br>
-                        1. The <span id='courrier'><span id='yellow'>(O.S.)</span></span> is highlighted because even if the props are off screen, they still need to be written as such. Notice to how <span id='courrier'>DOOR</span> is written in <span id='courrier'>ALL CAPS</span> even though it's introduction is off screen as well.
+                        1. The <span id='courrier'><span id='yellow'>(O.S.)</span></span> is highlighted because even if the props are off screen, they still need to be written as such. Notice also how "<span id='courrier'>DOOR</span>" is written in <span id='courrier'>ALL CAPS</span> even though it's introduction is off screen as well.
                 <br></br>
-                        2. <span id='courrier'><span id='yellow'>"JULES"</span></span> is a nickname for the character, but it's also her script name. And only a script name needs to be in <span id='courrier'>ALL CAPS</span>. Think of <span id='courrier'>Randall "PINK" Floyd</span> from <a href='https://en.wikipedia.org/wiki/Dazed_and_Confused_(film)'>Dazed and Confused</a>. The only difference with a nickname is that you should put <span id='courrier'>""</span> around it as we did with our lovely <span id='courrier'>"JULES"</span>.
                 <br></br>
-                    <div className='screengradeHeader' onClick={show}>CLICK HERE FOR SCREENGRADE VERSION</div>
+                        2. <span id='courrier'><span id='yellow'>"JULES"</span></span> is a nickname for the character, but it's also her script name. And only a script name needs to be in <span id='courrier'>ALL CAPS</span>. Think of '<span id='courrier'>Randall "PINK" Floyd</span>' from <a href='https://en.wikipedia.org/wiki/Dazed_and_Confused_(film)'>Dazed and Confused</a>. 
+                <br></br>
+                <br></br>
+                        The only difference with a nickname is that you should put <span id='courrier'>""</span> around it as we did with our lovely <span id='courrier'>"JULES"</span>.
+                <br></br>
+                <br></br>
+                {!handleShow
+                        ? <div className='screengradeHeader' onClick={show}>CLICK HERE FOR SCREENGRADE VERSION</div>
+                        : <div className='closeButton' onClick={close}>CLOSE</div>    
+                        } 
                     {handleShow &&
                         <div className='screengradeBlogText'>
-                            <div id='blogTextFirstLine'> 
-                                <div className='closeButton' id='courrier' onClick={close}>CLOSE</div>
+                            <div className='screengradePictureContainer'>
+                                <img className='picture' src={screegradeWithDialogueAndHighlights}  alt='with age' width={'250px'}  />
                             </div>
+                            3. Everytime you see a <span id='courrier'><span id='yellow'>--</span></span> in a script, it's implying a cutoff<sup>5</sup> and could be found in both description and dialogue. It can be used for a jumpscare or to break a silence with intention (more on this in suprise section -- literally, not like the section is a suprise). Here I would include it because <span id='courrier'>Jules</span> is going to be the love interest and the reader should know that her introduction will likely be an important shot.
                         <br></br>
-                            <img className='picture' src={screegradeWithDialogueAndHighlights}  alt='with age' width={'250px'}  />
                         <br></br>
-                            3. Everytime you see a <span id='courrier'><span id='yellow'>--</span></span> in a script it's implying a <a href='glossary/cutoff'>cutoff</a> and could be found in both description and dialogue. It could be used for a jumpscare or to break a silence with intention (more on this in <a href='suprise'>suprise</a> section -- literally, not like the section is a suprise). Here I would include it because <span id='courrier'>Jules</span> is going to be the love interest and the reader should know that her introduction will likely be an important shot.
+                            4. Having parallel capitilized letters<sup>6</sup> or parallel caps is not as visually grotesque as stacked caps, but it's still not worth the lower screengrade. We'll just squeeze the word "<span id='courrier'>back</span>" between <span id='red'><span id='courrier'>A</span></span> and <span id='red'><span id='courrier'>D</span></span>, and we're good to go.
                         <br></br>
-                            4. Having <a href='glossary/parallelcaps'>parallel capitilized letters</a> or parallel caps is not as visually grotesque as stacked caps, but it's still not worth the lower screengrade. We'll just squeeze the word "<span id='courrier'>back</span>" between <span id='red'><span id='courrier'>A</span></span> and <span id='red'><span id='courrier'>D</span></span>, and be good to go.
                         <br></br>
                             5. Using a <span id='courrier'><span id='yellow'>:</span></span> (i.e., a colon) is a way to show the dialogue that proceeds a description is directly relevant to the action before it. In our case, Jules throws open the back door then instantly calls Brady a loser. Using a colon is like including the action in the dialogue itself (we will see exactly this in a moment).
                         </div>
                     }
                     <br></br>
+                    <br></br>
                     <div className='blogSubHeader'>WRYLIES</div>
                         Suppose I asked you this question: How do you let your reader know the tone of a particular line or block of dialogue?
                     <br></br>
-                        Assuming our main Character has already been introduced,  here's the scene:
                     <br></br>
-                        <img className='picture' src={bareDialogue}  alt='with age' width={'250px'}  />
+                        Assuming our main <span id='courrier'>Character</span> has already been introduced,  here's the scene:
                     <br></br>
-                        See the issue? Is the scene supposed to be funny? Creepy? Awkward? More than that, even if your reader is aware of what genre your script is and, can deduce the tone you're going for, are they going to <span id='italic'>feel</span> it? No. They probably won't. And making them feel it is part of your job as the screenwriter.
                     <br></br>
-                        So, what's the fix? It's a combination of two things: description and the occasional <a href='glossary/wrylies'>wryly</a>. First, what's a wryly?
+                        <div className='pictureContainer'>
+                            <img className='picture' src={bareDialogue}  alt='with age' width={'250px'}  />
+                        </div>
                     <br></br>
-                         Wrylies (plural) are parentheticals found between the <span id='courrier'>CHARACTER</span> name and their dialogue used to give over tone:
+                        See the issue? Is the scene supposed to be funny? Creepy? Awkward? 
                     <br></br>
-                        <img className='picture' src={wrylyExample}  alt='with age' width={'250px'}  />
                     <br></br>
-                        The word that goes inside the parentheteses is what tone the dialogue should be read in. Wrylies can be useful, but be warned, you don't want to be the guy known for them. Using wrylys too often is seen as an amatuar move. Fun fact: It's called a "wryly" because screenwriters would consistantly use the word to describe wry dialogue: 
+                        More than that, even if your reader is aware of what genre your script is and, can deduce the tone you're going for, are they going to <span id='italic'>feel</span> it? No. They probably won't. And making them feel it is part of your job as the screenwriter.
                     <br></br>
-                        <img className='picture' src={apartmentExample}  alt='with age' width={'250px'}  />
                     <br></br>
-                        Note: regarding our example, some writers might have used the word <span id='courrier'>sarcastically</span> instead of <span id='courrier'>sarcastic</span>, but I prefer my wrylies a bit more wry (i.e., without the 'ly'). It looks nicer, plus, it gets the same point across anyway, so might as well save the plasma, you know?
+                        So, what's the fix? It's a combination of two things: description and the occasional wryly. First off, what's a wryly?
+                    <br></br>
+                    <br></br>
+                         Wrylies (plural) are parentheticals found between the <span id='courrier'>CHARACTER</span> name and their dialogue to help imply tone:
+                    <br></br>
+                    <br></br>
+                        <div className='pictureContainer'>
+                            <img className='picture' src={wrylyExample}  alt='with age' width={'250px'}  />
+                        </div>
+                    <br></br>
+                        The word that goes inside the parentheteses is what tone the dialogue should be read in. Wrylies can be useful, but be warned, you don't want to be the guy known for them. 
+                    <br></br>
+                    <br></br>
+                        Using wrylys too often is seen as an amatuar move. Fun fact: It's called a "wryly" because screenwriters would consistantly use the word to describe wry dialogue: 
+                    <br></br>
+                    <br></br>
+                        <div className='pictureContainer' id='black'>
+                    <br></br>
+                            <div className='pictureLabel' id='white'>The Apartment (1960)</div>
+                            <img className='picture' src={apartmentExample}  alt='with age' width={'250px'}  />
+                        </div>
+                    <br></br>
+                        Note: regarding our example, some writers might have used the word "<span id='courrier'>sarcastically</span>" instead of "<span id='courrier'>sarcastic</span>", but I prefer my wrylies a bit more wry (i.e., without the 'ly'). It looks nicer, plus, it gets the same point across anyway, so might as well save the plasma, you know?
+                    <br></br>
                     <br></br>
                         Our scene with some description and a wryly:
                     <br></br>
-                        <img className='picture' src={wrylyExampleWithHighlights}  alt='with age' width={'250px'}  />
                     <br></br>
-                    {/* screengrade version goes here. */}
-                    <div className='screengradeHeader' onClick={showSecond}>CLICK HERE FOR SCREENGRADE VERSION</div>
-                        {handleShowSecond &&
-                        <div className='screengradeBlogText'>
-                            <div id='blogTextFirstLine'> 
-                                <div className='closeButton' id='courrier' onClick={closeSecond}>CLOSE</div>
-                            </div>
-                        <br></br>
-                            <img className='picture' src={screengradeWrylyExample}  alt='with age' width={'250px'}  />
-                        <br></br>
-                            1. A cutoff has been added because Character (2)'s intro is a jump scare, and jump scares should be preceeded by a cutoff.
-                        <br></br>
-                            2. 
+                        <div className='pictureContainer'>
+                            <img className='picture' src={wrylyExampleWithHighlights}  alt='with age' width=
+                        {'250px'}  />
                         </div>
-                    }
                     <br></br>
                         Now you can really feel the tension. Don't worry, we'll get back to our guy, <span id='courrier'>Brady</span> in the next section.
                     <br></br>
-                        
+                    <br></br>
+                        {!handleShowSecond
+                        ? <div className='screengradeHeader' onClick={showSecond}>CLICK HERE FOR SCREENGRADE VERSION</div>
+                        : <div className='closeButton' onClick={closeSecond}>CLOSE</div>    
+                        } 
+                        {handleShowSecond &&
+                        <div className='screengradeBlogText'>
+                            <div className='screengradePictureContainer'>
+                                <img className='picture' src={screengradeWrylyExample}  alt='with age' width={'250px'}  />
+                            </div>
+                            1. A cutoff has been added because Character (2)'s intro is a jump scare, and jump scares should be preceeded by a cutoff.
+                        <br></br>
+                        <br></br>
+                            2. To give the scene more tension we've added a beat<sup>7</sup> in between two blocks of dialogue.
+                        </div>
+                    }
             </div>
             <div className='blogFooter'>
-                <a href="action" id='courrier'>BACK</a>
                 <a href="transitions" id='courrier'>NEXT</a>
+                <a href="action" id='courrier'>BACK</a>
             </div> 
+            <div className='localGlossary'>
+                <div className='localGlossaryHeader'>LOCAL GLOSS'</div>
+                <ol className='localGlossaryList'>
+                    <li><span id='bold'>Script Time</span></li>
+                    <div className='definition'>The relationship between the reading of the script and the viewing of it, with regards to time. Confusing at first, even for me.</div>
+                    <li><span id='bold'>Script Present Time</span></li>
+                    <div className='definition'>**SEE GLOSSARY**</div>
+                    <li><span id='bold'>Script Future Time</span></li>
+                    <div className='definition'>**TRUST ME LOL**</div>
+                    <li><span id='bold'>Optioned</span></li>
+                    <div className='definition'>A contract that gives the interested party exclusive rights to purchase the script. By getting a screenplay optioned, the screenwriter recieves a cash advance that is not-contingent to the actual selling of the script. That is, if the interested party decides not to buy, you still get to keep the cash, keep your script, and go back to shopping that baby around. Basically, every screenwriter's wet dream.</div>
+                    <li><span id='bold'>Cutoff</span></li>
+                    <div className='definition'>Double dashes (--), implying a quick jump to next scene, line of description, or line of dialogue.  </div>
+                    <li><span id='bold'>Beat</span></li>
+                    <div className='definition'>A moment of time, used between blocks in a script (or as a wryly) to suggest a distinct pause in a scene. Found in all genres of film.</div>
+                </ol>
+                <div className='localGlossaryFooter'><span>**full definitions found in glossary above**</span></div>
+            </div>
+
         </div>
     );
 }
