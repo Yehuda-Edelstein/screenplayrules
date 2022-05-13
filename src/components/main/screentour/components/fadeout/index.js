@@ -18,7 +18,7 @@ function FadeOut(props) {
         <div className='container'>
             <div className='blogHeader'>FADE OUT?</div>
             <div className='blogText'>
-            Alright. Here's where you deserve your real congratulations, as well as a place to reap the fruits of your labor. 
+            Alright. Here's where you deserve your real congratulations, as well as a place to reap the fruits of your labor.
         <br></br>
         <br></br>
             First off, feel free to continue writing about our story -- any ideas or finished scripts about what happens to <span id='courrier'>Brady</span> and <span id='courrier'>Jules</span>, please send to <a href='mailto:screenplayrules@gmail.com'>screenplayrules@gmail.com</a>. I'd love to see them.
@@ -33,13 +33,15 @@ function FadeOut(props) {
             Good luck and get writing!
         <br></br>
         <br></br>
-            <div className='pictureContainer'>
+        <div className='finalPictureLabel'>NO RULES</div>
+        <div className='finalPictureLabel'>SCREENPLAY RULES</div>
+
+
+            <div className='finalPictureContainer'>
                 <br></br>
-                <div className='pictureLabel'>NO RULES</div>
-                <img className='picture' src={sceneNoRules}  alt='without rules' width={'250px'}  />
+                <img className='finalPicture' src={sceneNoRules}  alt='without rules'/>
                 <br></br>
-                <div className='pictureLabel'>SCREENPLAY RULES</div>
-                <img className='picture' src={sceneWithRules}  alt='with rules' width={'250px'}  />
+                <img className='finalPicture' src={sceneWithRules}  alt='with rules' />
             </div>
         </div>
         <br></br>

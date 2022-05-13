@@ -21,7 +21,7 @@ import OverBlack from './screentour/components/extras/overBlack'
 
 function Main(props) {
     return (
-        <div> 
+        <div className='main'> 
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='screentour' element={<Screentour />} />

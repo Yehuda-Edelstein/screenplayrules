@@ -2,3 +2,15 @@
     font-family: 'Courier Final Draft', Courier, monospace;
     font-size: 25pt;
 }
+
+.finalPictureContainer {
+    display: flex;
+    justify-content: space-evenly;  
+    background-color: #f1f1f1;
+}
+
+.finalPicture {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 20px;  
+}

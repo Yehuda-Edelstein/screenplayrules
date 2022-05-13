@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap');
 
-.container {
-    max-width: 680px;
+/* maybe change container dimensions */
+.main {
+    padding-top: 50px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.container { 
+    background-color: white;   
+    max-width: 850px;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-right: auto;

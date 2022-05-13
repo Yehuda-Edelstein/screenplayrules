@@ -1,20 +1,102 @@
+.midScreenHeader {
+    display: none;
+
+    background: #fff;
+    border-bottom: 1px solid black;
+    padding-left: 6%;
+    padding-right: 6%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 18px;
+     /* disables highlighting */
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
+}
+
+.smallScreenHeader {
+    display: none;
+
+    background: #fff;
+    border-bottom: 1px solid black;
+    padding-left: 6%;
+    padding-right: 6%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 18px;
+     /* disables highlighting */
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
+}
+
+.bigScreenHeader {
+    background: #fff;
+    border-bottom: 1px solid black;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 18px;
+     /* disables highlighting */
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
+}
 
 .title {
-    font-family: 'Courier New', Courier, monospace;
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 5px;
-    font-size: 15pt;
+    font-family: 'Courier Prime', Courier, monospace;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    white-space: nowrap;
+     /* disables highlighting */
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
+}
+
+.screenplayTitle {
+    color: rgb(231, 150, 0);
+}
+
+.smallScreenplay {
+    font-family: 'Courier Prime', Courier, monospace;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    white-space: nowrap;
+     /* disables highlighting */
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
 }
 
 .navBar {
-    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    font-family: 'Courier Prime', Courier, monospace;
     display: flex;
-    justify-content: space-around;
-    border-bottom: 1px solid black;
-    font-size: 15pt;
-    /* padding: 5px; */
+    justify-content: flex-end;
+    align-items: center;
     /* disables highlighting */
 -webkit-touch-callout: none;
 -webkit-user-select: none; 
@@ -24,18 +106,32 @@
         user-select: none; 
 }
 
+.dropDownMenu {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 18px;
+    padding: 10px 15px;
+    /* display: none; */
+}
+
+.aboutLink {
+    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.smallScreenTitle {
+    font-family: 'Courier Prime', Courier, monospace;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    white-space: nowrap;
+    display: none;
+}
+
 .headerLink {
-     padding: 5px;
+    font-weight: 300;
+    padding: 10px 15px;
 }
-
-.title:hover {
-    color: #f1f1f1;
-}
-
-.headerLink:hover {background-color: #f1f1f1}
-
-#dropDownBox #extrasLink:hover {background-color: #3d3d3d}
-
 
 .categories:hover #dropDownBox {
 display: block;
@@ -44,4 +140,60 @@ display: block;
 .style:hover #dropDownBox {
 display: block;
 }
+
+.dropDownBox {
+display: none;
+position: absolute;
+right: 0;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropDownBox a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropDownMenu:hover .dropDownBox {
+    display: block;
+}
+
+
     
+@media screen and (max-width: 600px) {
+    .bigScreenHeader {
+        display: none;
+    }
+
+    .midScreenHeader {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .midScreenHeader {
+        display: none;
+    }
+
+    .smallScreenHeader {
+        display: flex;
+    }
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .dropDownBox a:hover {background-color: #f1f1f1}
+
+    .title:hover {
+        background-color: #f1f1f1;
+    }
+    
+    .headerLink:hover {
+        background-color: #f1f1f1;
+    }
+    
+    #dropDownBox #extrasLink:hover {background-color: #3d3d3d}
+}
