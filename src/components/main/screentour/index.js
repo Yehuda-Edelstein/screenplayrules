@@ -6,12 +6,17 @@ import './style.index.css'
 function Screentour(props) {
 
     return (
-        <div>
-                {/* COMPONENT NEEDS TO BE FIXED href switched to Links with correct path */}
-                Screentour intro page
-                <br></br>
-                <br></br>
-                <div><Link to='fadeIn' style={{color: 'inherit', textDecoration: 'inherit'}}><span className='mainLink'>START HERE</span></Link></div>
+        <div className='container'>
+            {/* COMPONENT NEEDS TO BE FIXED href switched to Links with correct path */}
+                <div className='screentourHeader'>HOW TO WRITE A SCREENPLAY -- THE SCREETOUR</div>
+                <div className='blogText'>
+            <br></br>    
+                    <div className='blogSubHeader'>WHAT TO EXPECT</div>
+                
+                </div>
+            <br></br>
+            <br></br>
+            <div className='screentourFooter'><Link to='fadeIn' style={{color: 'inherit', textDecoration: 'inherit'}}>START HERE</Link></div>
             
         </div>
     );

@@ -7,24 +7,28 @@ import FadeIn from './screentour/components/fadeIn';
 import Slugs from './screentour/components/slugs';
 import Action from './screentour/components/action';
 import Transitions from './screentour/components/transitions';
-import FadeOut from './screentour/components/fadeIn';
-import TextDec from './screentour/components/textDec';
-import Montages from './screentour/components/montages';
-import Flashbacks from './screentour/components/flashbacks';
-import MusicCues from './screentour/components/musicCues';
-import Beats from './screentour/components/beats';
+import FadeOut from './screentour/components/fadeout';
+import TextDec from './screentour/components/extras/textDec';
+import Montages from './screentour/components/extras/montages';
+import Flashbacks from './screentour/components/extras/flashbacks';
+import MusicCues from './screentour/components/extras/musicCues';
+import Beats from './screentour/components/extras/beats';
 import Dialogue from './screentour/components/dialogue';
+import Slang from './screentour/components/extras/slang'
+import Superimpose from './screentour/components/extras/superimpose'
+import OverBlack from './screentour/components/extras/overBlack'
+
 
 function Main(props) {
     return (
-        <div> 
+        <div className='main'> 
             <Routes>
                 <Route path='/' element={<Home />} />
                 <Route path='screentour' element={<Screentour />} />
-                {/* <Route path='screentour/:id' element={<ScreentourNavBar />} /> */}
                     {/* SCREENTOUR ROUTES */}
                     <Route path='screentour/fadein' element={<FadeIn />} />
                     <Route path='screentour/slugs' element={<Slugs />} />
+                    {/* add an establishing bonus here, or in extras section */}
                     <Route path='screentour/action' element={<Action />} />
                     <Route path='screentour/transitions' element={<Transitions />} />
                     <Route path='screentour/fadeout' element={<FadeOut />} />
@@ -35,9 +39,9 @@ function Main(props) {
                         <Route path='screentour/musiccues' element={<MusicCues />} />
                         <Route path='screentour/beats' element={<Beats />} />
                         <Route path='screentour/dialogue' element={<Dialogue />} />
-                        {/* <Route path='screentour/slang' element={<Slang />} />*/}
-                        {/* <Route path='screentour/superimpose' element={<Superimpose />} />*/}
-                        {/* <Route path='screentour/overblack' element={<Overblack />} />*/}
+                        <Route path='screentour/slang' element={<Slang />} />
+                        <Route path='screentour/superimpose' element={<Superimpose />} />
+                        <Route path='screentour/overblack' element={<OverBlack />} />
                 <Route
                 path="*"
                 element={
