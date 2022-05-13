@@ -35,3 +35,15 @@
 .listItems {
     margin-top: 10px;
 }
+
+@media  screen and (max-width: 595px) {
+    .sluglineExample {
+        font-size: 6vw;
+    }
+}
+
+@media  screen and (max-width: 300px) {
+    .sluglineExample {
+    font-size: 13pt;
+}
+}
