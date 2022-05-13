@@ -1,13 +1,32 @@
-.midScreenHeader {
-    display: none;
-
+.header {
     background: #fff;
     border-bottom: 1px solid black;
-    padding-left: 6%;
-    padding-right: 6%;
+}
+
+.bigScreenHeader {
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
+    font-size: 18px;
+     /* disables highlighting */
+-webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
+}
+
+.midScreenHeader {
+    display: none;
+    /* padding-left: 6%;
+    padding-right: 6%; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 15px; */
     font-size: 18px;
      /* disables highlighting */
 -webkit-touch-callout: none;
@@ -20,14 +39,11 @@
 
 .smallScreenHeader {
     display: none;
-
-    background: #fff;
-    border-bottom: 1px solid black;
-    padding-left: 6%;
-    padding-right: 6%;
+    /* padding-left: 6%;
+    padding-right: 6%; */
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    /* padding: 10px 15px; */
     font-size: 18px;
      /* disables highlighting */
 -webkit-touch-callout: none;
@@ -38,24 +54,7 @@
         user-select: none; 
 }
 
-.bigScreenHeader {
-    background: #fff;
-    border-bottom: 1px solid black;
-    padding-left: 6%;
-    padding-right: 6%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 15px;
-    font-size: 18px;
-     /* disables highlighting */
--webkit-touch-callout: none;
--webkit-user-select: none; 
- -khtml-user-select: none; 
-   -moz-user-select: none; 
-    -ms-user-select: none; 
-        user-select: none; 
-}
+
 
 .title {
     font-family: 'Courier Prime', Courier, monospace;
