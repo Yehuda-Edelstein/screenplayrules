@@ -24,7 +24,7 @@ function FadeOut(props) {
             First off, feel free to continue writing about our story -- any ideas or finished scripts about what happens to <span id='courrier'>Brady</span> and <span id='courrier'>Jules</span>, please send to <a href='mailto:screenplayrules@gmail.com'>screenplayrules@gmail.com</a>. I'd love to see them.
         <br></br>
         <br></br>
-            Second, below you will find a side by side comparison of the same scene, one without rules and one with. You decide which one you prefer.
+            Second, below you will find a top-on-top comparison of the same scene, one without rules and one with. You decide which one you prefer.
         <br></br>
         <br></br>
             Lastly, for anybody wondering whether or not you should end your script with <span id='courrier'>FADE OUT</span> I advise you to see the question mark and/or refer to the section on <a href='fadein'><span id='courrier'>FADE IN</span></a>.
@@ -33,15 +33,18 @@ function FadeOut(props) {
             Good luck and get writing!
         <br></br>
         <br></br>
-        <div className='finalPictureLabel'>NO RULES</div>
-        <div className='finalPictureLabel'>SCREENPLAY RULES</div>
-
-
-            <div className='finalPictureContainer'>
-                <br></br>
-                <img className='finalPicture' src={sceneNoRules}  alt='without rules'/>
-                <br></br>
-                <img className='finalPicture' src={sceneWithRules}  alt='with rules' />
+        
+            <div className='finalContainer'>
+                <div className='finalLabelContainer'>
+                </div>
+                <div className='finalPictureContainer'>
+                    <div className='finalPictureLabel'>NO RULES</div>
+                    <img className='finalPicture' src={sceneNoRules}  alt='without rules'/>
+                    <br></br>
+                    <div className='finalPictureLabel'>SCREENPLAY RULES</div>
+                    <img className='finalPicture' src={sceneWithRules}  alt='with rules' />
+                </div>
+                
             </div>
         </div>
         <br></br>
