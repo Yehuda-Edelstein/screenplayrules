@@ -202,3 +202,9 @@ sup {
         font-size: 17px;
     }
 }
+
+@media screen and (max-width: 315px) {
+    .pictureContainer {
+        background-color: white;
+    }
+}
