@@ -85,8 +85,8 @@ function Slugs(props) {
             <br></br>
             <br></br>
                 <div className='pictureContainer'>
-                    <img className='picture' src={withoutBold} alt='without bold' width={'250px'}/>
-                    <img className='picture' src={withBold} alt='with bold' width={'250px'}/>
+                    <img className='picture' src={withoutBold} alt='without bold' />
+                    <img className='picture' src={withBold} alt='with bold' />
                 </div>
             <br></br>
                 Many professionals are already moving away from bare slugs, {/* maybe add a href to bare sluglines */} so don't get left behind in the days of old. It's time to accept the days of...
@@ -105,7 +105,7 @@ function Slugs(props) {
                         There's a page-turner and then there's this:
                     <br></br>
                         <div className='screengradePictureContainer'>
-                            <img className='picture' src={scroll} alt='scroll to see' width={'250px'}/>
+                            <img className='picture' src={scroll} alt='scroll to see' />
                         </div>
                         Disgusting.
                     <br></br>

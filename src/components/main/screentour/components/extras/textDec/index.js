@@ -30,8 +30,8 @@ function TextDec(props) {
             <br></br>
             <br></br>
                 <div className='pictureContainer'>
-                    <img className='picture' src={italicExample} alt='italic example' width={'250px'}/>
-                    <img className='picture' src={underlineExample} alt='underline example' width={'250px'}/>
+                    <img className='picture' src={italicExample} alt='italic example' />
+                    <img className='picture' src={underlineExample} alt='underline example' />
                 </div>
             <br></br>
                 You can decide which one you like better, but just remember to stick to the <span id='italic'>same</span> style choices within the <span id='underline'>same</span> script, unlike what I'm doing now.
