@@ -17,6 +17,7 @@ import Dialogue from './screentour/components/dialogue';
 import Slang from './screentour/components/extras/slang'
 import Superimpose from './screentour/components/extras/superimpose'
 import OverBlack from './screentour/components/extras/overBlack'
+import Rulebook from './rulebook';
 
 
 function Main(props) {
@@ -24,6 +25,9 @@ function Main(props) {
         <div className='main'> 
             <Routes>
                 <Route path='/' element={<Home />} />
+                    {/* NAV ROUTES */}
+                <Route path='rulebook' element={<Rulebook />} />    
+
                 <Route path='screentour' element={<Screentour />} />
                     {/* SCREENTOUR ROUTES */}
                     <Route path='screentour/fadein' element={<FadeIn />} />
