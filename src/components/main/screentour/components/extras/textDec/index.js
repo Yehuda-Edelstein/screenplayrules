@@ -60,8 +60,6 @@ function TextDec(props) {
                 <div className='localGlossaryHeader'>LOCAL GLOSS'</div>
             <br></br>
                 <span className='localGlossaryFooter'>* I'm not sure the actual differences between the types of Courrier font (i.e., New, Prime, or just plain Courrier) but I believe either is fine. The important aspect of Courrier is that it is monospaced, meaning all letters are spaced equally.</span>
-                    <div className='definition'></div>
-                <div className='localGlossaryFooter'><span>**full definitions found in glossary above**</span></div>
             </div>
         </div>
     );
