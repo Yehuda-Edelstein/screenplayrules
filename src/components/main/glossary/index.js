@@ -5,6 +5,9 @@ import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
 
 function Glossary(props) {  
     const [termList, setTermList] = useState([])
+    const [searched, setSearched] = useState('')
+
+    const filtered = termList.filter(term => Object.values(term).some(val => typeof val === "string" && term.name.includes(searched)))
 
     useEffect(() => {
         fetch('http://localhost:8000/api/glossary/')
@@ -16,12 +19,17 @@ function Glossary(props) {
         <div>
             <div className='termSearch'>      
                 <FontAwesomeIcon className='icon' icon={faMagnifyingGlass} />                
-                <input placeholder='Search...'></input>
+                <input 
+                    type='text'
+                    placeholder='Search...'
+                    value={searched}
+                    onChange={ev => setSearched(ev.target.value)}
+                /> 
             </div>
             <div className='termList'> 
-                {termList.map(term => 
+                {filtered.map(term => 
                     (
-                    <div className='termContainer'>
+                    <div key={term.name} className='termContainer'>
                         <div className='termName'>{term.name}</div>
                         <div className='termDefinition'>{term.definition}</div>
                         <div className='termExample'>{term.example}</div>
@@ -31,6 +39,7 @@ function Glossary(props) {
                         </div> */}
                     </div>
                 ))}
+                {filtered.length === 0 && <div>Sorry, no such term yet. Check the spelling or just keep scrolling. You'll find it.</div>}
         </div>
             {/* <div className='nextPageFooter'>
                 <div>Next...</div>
