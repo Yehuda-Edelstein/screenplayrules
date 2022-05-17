@@ -1,8 +1,12 @@
+$white: #f6f7f9;
+$blue: #d6daec;
+$gray: #f1f1f1;
+
 body {
   margin: 0;
   font-family: 'Inconsolata', monospace;
-  background-color: #f6f7f9;;
-    line-height: 125%;
+  background-color: $white;
+  line-height: 125%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   

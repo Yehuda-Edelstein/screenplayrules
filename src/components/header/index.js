@@ -11,7 +11,6 @@ function Header(props) {
                     <div className='navBar'>
                     <Link to='rulebook' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>RULEBOOK</div></Link>
                     <Link to='glossary' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>GLOSSARY</div></Link>
-                    <Link to='faqs' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>FAQs</div></Link>
                     <Link to='about' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='aboutLink'>ABOUT</div></Link>
                 </div>
             </div>
@@ -22,7 +21,6 @@ function Header(props) {
                     <div className='dropDownBox'>
                         <a href="rulebook">RULEBOOK</a>
                         <a href="glossary">GLOSSARY</a>
-                        <a href="faqs">FAQs</a>
                         {/* maybe make these two one section */}
                         <a href="about">ABOUT</a>
                     </div>
@@ -35,7 +33,6 @@ function Header(props) {
                     <div className='dropDownBox'>
                         <a href="rulebook">RULEBOOK</a>
                         <a href="glossary">GLOSSARY</a>
-                        <a href="faqs">FAQs</a>
                         {/* maybe make these two one section */}
                         <a href="about">ABOUT</a>
                     </div>
