@@ -53,9 +53,9 @@ function Dialogue(props) {
                 <div className='pictureContainer'>
             <br></br>
                     <div className='pictureLabel'>1.</div>
-                    <img className='picture' src={continuedSamePage}  alt='continued example, same page' width={'250px'}/>
+                    <img className='picture' src={continuedSamePage}  alt='continued example, same page' />
                     <div className='pictureLabel'>2.</div>
-                    <img className='picture' src={continuedNewPage}  alt='continued example, new page' width={'250px'}/>
+                    <img className='picture' src={continuedNewPage}  alt='continued example, new page' />
                 </div>
             <br></br>
                 As far as other charies go, here's a list of acceptable ones to use:
@@ -74,7 +74,7 @@ function Dialogue(props) {
                 <br></br>
                 <br></br>
                     <div className='pictureContainer'>
-                        <img className='picture' src={prelapExample}  alt='pre lap example' width={'250px'}/>
+                        <img className='picture' src={prelapExample}  alt='pre lap example' />
                     </div>
                 <br></br>
                     If you're confused, let me break it down: 
@@ -93,7 +93,7 @@ function Dialogue(props) {
                 <br></br>
                 <br></br>
                     <div className='pictureContainer'>
-                        <img className='picture' src={offscreenExample}  alt='off screen example' width={'250px'}/>
+                        <img className='picture' src={offscreenExample}  alt='off screen example' />
                     </div>
                 <br></br>
                     Starting to get it? 
@@ -144,8 +144,7 @@ function Dialogue(props) {
                 <br></br>    
                 <br></br>
                     <div className='pictureContainer'>
-                        <img className='picture' src={withDialogueAndHighlights}  alt='dialogue with highlights' width={'250px'}
-                    />
+                        <img className='picture' src={withDialogueAndHighlights}  alt='dialogue with highlights' />
                     </div>
                 <br></br>
                 <br></br>
@@ -165,7 +164,7 @@ function Dialogue(props) {
                     {handleShow &&
                         <div className='screengradeBlogText'>
                             <div className='screengradePictureContainer'>
-                                <img className='picture' src={screegradeWithDialogueAndHighlights}  alt='dialogie with screengrade highlights' width={'250px'}  />
+                                <img className='picture' src={screegradeWithDialogueAndHighlights}  alt='dialogie with screengrade highlights'  />
                             </div>
                             3. Every time you see a <span id='courrier'><span id='yellow'>--</span></span> in a script, it's implying a cutoff<sup>5</sup> and could be found in both description and dialogue. It can be used for a jump scare or to break a silence with intention (more on this in surprise section -- literally, not like the section is a surprise). Here I would include it because <span id='courrier'>Jules</span> is going to be the love interest and the reader should know that her introduction will likely be an important shot.
                         <br></br>
@@ -186,7 +185,7 @@ function Dialogue(props) {
                     <br></br>
                     <br></br>
                         <div className='pictureContainer'>
-                            <img className='picture' src={bareDialogue}  alt='bare dialogue' width={'250px'}  />
+                            <img className='picture' src={bareDialogue}  alt='bare dialogue' />
                         </div>
                     <br></br>
                         See the issue? Is the scene supposed to be funny? Creepy? Awkward? 
@@ -202,7 +201,7 @@ function Dialogue(props) {
                     <br></br>
                     <br></br>
                         <div className='pictureContainer'>
-                            <img className='picture' src={wrylyExample}  alt='wryly example' width={'250px'}  />
+                            <img className='picture' src={wrylyExample}  alt='wryly example' />
                         </div>
                     <br></br>
                         The word that goes inside the parenthesis is what tone the dialogue should be read in. Wrylies can be useful, but be warned, you don't want to be the guy known for them. 
@@ -214,7 +213,7 @@ function Dialogue(props) {
                         <div className='pictureContainer' id='black'>
                     <br></br>
                             <div className='pictureLabel' id='white'>The Apartment (1960)</div>
-                            <img className='picture' src={apartmentExample}  alt='dialogue from The Apartment (1960)' width={'250px'}  />
+                            <img className='picture' src={apartmentExample}  alt='dialogue from The Apartment (1960)' />
                         </div>
                     <br></br>
                         Note: regarding our example, some writers might have used the word "<span id='courrier'>sarcastically</span>" instead of "<span id='courrier'>sarcastic</span>", but I prefer my wrylies a bit more wry (i.e., without the 'ly'). It looks nicer, plus, it gets the same point across anyway, so might as well save the plasma, you know?
@@ -224,8 +223,7 @@ function Dialogue(props) {
                     <br></br>
                     <br></br>
                         <div className='pictureContainer'>
-                            <img className='picture' src={wrylyExampleWithHighlights}  alt='wryly example with highlights' width=
-                        {'250px'}  />
+                            <img className='picture' src={wrylyExampleWithHighlights}  alt='wryly example with highlights' />
                         </div>
                     <br></br>
                         Now you can really feel the tension. Don't worry, we'll get back to our guy, <span id='courrier'>Brady</span> in the coming sections.
@@ -238,7 +236,7 @@ function Dialogue(props) {
                         {handleShowSecond &&
                         <div className='screengradeBlogText'>
                             <div className='screengradePictureContainer'>
-                                <img className='picture' src={screengradeWrylyExample}  alt='wryly example with screegrade rules' width={'250px'}  />
+                                <img className='picture' src={screengradeWrylyExample}  alt='wryly example with screegrade rules' />
                             </div>
                             1. A cutoff has been added because Character (2)'s intro is a jump scare, and jump scares should be preceded by a cutoff.
                         <br></br>

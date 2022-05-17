@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router';
-import './style.index.css'
+import './style.index.scss';
 import Screentour from './screentour';
 import Home from './home';
 import FadeIn from './screentour/components/fadeIn';
@@ -18,6 +18,7 @@ import Slang from './screentour/components/extras/slang'
 import Superimpose from './screentour/components/extras/superimpose'
 import OverBlack from './screentour/components/extras/overBlack'
 import Rulebook from './rulebook';
+import Glossary from './glossary';
 
 
 function Main(props) {
@@ -26,7 +27,8 @@ function Main(props) {
             <Routes>
                 <Route path='/' element={<Home />} />
                     {/* NAV ROUTES */}
-                <Route path='rulebook' element={<Rulebook />} />    
+                <Route path='rulebook' element={<Rulebook />} />
+                <Route path='glossary' element={<Glossary />} />    
 
                 <Route path='screentour' element={<Screentour />} />
                     {/* SCREENTOUR ROUTES */}

@@ -56,7 +56,7 @@ function FadeOut(props) {
             {handleShow &&
                 <div className='screengradeBlogText'>
                     <div className='screengradePictureContainer'>
-                        <img className='picture' src={sceneWithScreengradeRules}  alt='with screengrade rules' width={'250px'}  />
+                        <img className='picture' src={sceneWithScreengradeRules}  alt='with screengrade rules' />
                     </div>
                     Now, that's just darn pretty.
                 </div>

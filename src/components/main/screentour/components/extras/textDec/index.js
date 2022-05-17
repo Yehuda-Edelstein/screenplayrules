@@ -30,8 +30,8 @@ function TextDec(props) {
             <br></br>
             <br></br>
                 <div className='pictureContainer'>
-                    <img className='picture' src={italicExample} alt='italic example' width={'250px'}/>
-                    <img className='picture' src={underlineExample} alt='underline example' width={'250px'}/>
+                    <img className='picture' src={italicExample} alt='italic example' />
+                    <img className='picture' src={underlineExample} alt='underline example' />
                 </div>
             <br></br>
                 You can decide which one you like better, but just remember to stick to the <span id='italic'>same</span> style choices within the <span id='underline'>same</span> script, unlike what I'm doing now.
@@ -60,8 +60,6 @@ function TextDec(props) {
                 <div className='localGlossaryHeader'>LOCAL GLOSS'</div>
             <br></br>
                 <span className='localGlossaryFooter'>* I'm not sure the actual differences between the types of Courrier font (i.e., New, Prime, or just plain Courrier) but I believe either is fine. The important aspect of Courrier is that it is monospaced, meaning all letters are spaced equally.</span>
-                    <div className='definition'></div>
-                <div className='localGlossaryFooter'><span>**full definitions found in glossary above**</span></div>
             </div>
         </div>
     );

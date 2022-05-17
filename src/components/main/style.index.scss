@@ -1,23 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap');
-
+@use 'index';
 /* maybe change container dimensions */
 .main {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 25px;
 }
 
 .container { 
     background-color: white;   
     max-width: 750px;
     min-width: 200px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 20px;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 20px;
-    padding-right: 20px;
     border-radius: 8px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -71,12 +65,22 @@
     font-family: 'Inconsolata', monospace;
     font-size: 15pt;
     line-height: 125%;
-}
 
-sup {
-    font-size: 8pt;
-}
+    #bold {font-weight: bold;}
+    #italic {font-style: italic;}
+    #underline {text-decoration: underline;}
+    #courrier {
+        font-family: 'Courier Final Draft', Courier, monospace;
+        font-size: 15pt;
+      }
+    #yellow {background-color: #ffec98;}
+    #red {background-color: #ffc9c9;}
+    #black {background-color: black;}
+    #white {color: white;}
 
+    sup {font-size: 8pt;}
+    
+}
 
 .screengradeBlogText {
     font-family: 'Inconsolata', monospace;
@@ -120,6 +124,7 @@ sup {
 }
 
 .blogFooter {
+    font-family: 'Courier Final Draft', Courier, monospace;
     border-top: 1px solid black;
     padding: 20px 10px 0 20px;
     margin-top: 20px;
