@@ -7,6 +7,9 @@ function Home(props) {
     return (
         <div className="homeContainer" id="first"> 
                 Home component
+                <br></br>
+                <br></br>
+                Have blogs, terms, and random stuff on page like reddit.
             <div className="homeContainer" id="second">
                 <br></br>
                 <br></br>

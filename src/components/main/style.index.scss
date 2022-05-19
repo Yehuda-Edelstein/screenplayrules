@@ -3,6 +3,8 @@
 /* maybe change container dimensions */
 .main {
     padding: 25px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .container { 
@@ -186,7 +188,10 @@
 }
 
 
-.blogFooter a:hover, .blogText .a:hover {background-color: #f1f1f1}
+.blogFooter a:hover, .blogText .a:hover {
+    color: rgb(231, 150, 0);
+    text-decoration: underline;
+}
 
 
 @media screen and (max-width: 600px) {

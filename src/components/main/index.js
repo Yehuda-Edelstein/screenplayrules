@@ -19,6 +19,10 @@ import Superimpose from './screentour/components/extras/superimpose'
 import OverBlack from './screentour/components/extras/overBlack'
 import Rulebook from './rulebook';
 import Glossary from './glossary';
+import LogIn from './logIn';
+import BlogList from './blog/blogList';
+import BlogDetail from './blog/blogDetail';
+import NewBlog from './blog/newBlog';
 
 
 function Main(props) {
@@ -26,9 +30,14 @@ function Main(props) {
         <div className='main'> 
             <Routes>
                 <Route path='/' element={<Home />} />
+                    {/* USER ROUTES */}
+                <Route path='login' element={<LogIn />} />
                     {/* NAV ROUTES */}
                 <Route path='rulebook' element={<Rulebook />} />
-                <Route path='glossary' element={<Glossary />} />    
+                <Route path='glossary' element={<Glossary />} />  
+                <Route path='blog' element={<BlogList />} /> 
+                <Route path='blog/:id' element={<BlogDetail />} />
+                <Route path='blog/new' element={<NewBlog />} />    
 
                 <Route path='screentour' element={<Screentour />} />
                     {/* SCREENTOUR ROUTES */}
