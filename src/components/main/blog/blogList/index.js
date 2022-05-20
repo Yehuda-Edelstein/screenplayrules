@@ -9,16 +9,15 @@ function BlogList(props) {
         fetch('http://localhost:8000/api/blogs/')
         .then(res => res.json())
         .then(res => setBlogList(res))
-        console.log(blogList)
     }, [])
 
     return (
         <div>
             <Link to='new'>New Blog</Link>
             <div className='blogList'> 
-                {blogList.map(blog => 
+                {blogList.reverse().map(blog => 
                     (
-                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to={`/blog/${blog.id}`}><div key={blog.id} className='blogContainer'>
+                    <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to={`/blog/${blog.uuid}`} key={blog.uuid}><div className='blogContainer'>
                         <div className='blogHeader'>
                             <div>{blog.title}</div>
                             <div>by {blog.author_name}</div>
@@ -33,7 +32,6 @@ function BlogList(props) {
                         </div> */}
                     </div>
                 </Link>
-
                 ))}        
             </div>
         </div>

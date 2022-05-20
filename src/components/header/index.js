@@ -12,9 +12,9 @@ function Header(props) {
                     <div className='navBar'>
                         <Link to='blog' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>BLOG</div></Link>
                         <Link to='questions' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>QUESTIONS</div></Link>
-                        <Link to='rulebook' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>RULEBOOK</div></Link>
+                        {/* <Link to='rulebook' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>RULEBOOK</div></Link> */}
                         <Link to='glossary' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>GLOSSARY</div></Link>
-                        <Link to='slanglist' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>SLANGLIST</div></Link>
+                        {/* <Link to='slanglist' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>SLANGLIST</div></Link> */}
                         <Link to='about' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>ABOUT</div></Link>
                     </div>
 

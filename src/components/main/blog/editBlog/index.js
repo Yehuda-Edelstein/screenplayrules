@@ -1,13 +1,23 @@
-import React, {useState} from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
-function NewBlog(props) {
+function EditBlog(props) {
+    const { id } = useParams()
     const [title, setTitle] = useState('')
     const [body, setBody] = useState('')
     const navigate = useNavigate()
+
+    useEffect(() => {
+        fetch('http://localhost:8000/api/blogs/' + id)
+        .then(res => res.json())
+        .then(res =>{
+            setTitle(res.title)
+            setBody(res.body)
+        })
+    }, [])
     
     function postBlog() {
-        fetch('http://localhost:8000/api/blogs/', {
+        fetch('http://localhost:8000/api/blogs/' + id, {
             "headers": {
                 "content-type": "application/json",
             },
@@ -16,8 +26,9 @@ function NewBlog(props) {
                 // will have to make author, user
                 "author": 1,
                 "body": body
+                // add a time updated
             }),
-            "method":"POST",
+            "method":"PUT",
         })
         // change location to new posted blog after submit.        
         // .then(response => response.json())
@@ -26,7 +37,8 @@ function NewBlog(props) {
         // })
 
         // for now
-        .then(navigate('/blog'))       
+        .then(navigate(`/blog/${id}`))
+        
     }
 
     return (
@@ -43,4 +55,4 @@ function NewBlog(props) {
     );
 }
 
-export default NewBlog;
+export default EditBlog;

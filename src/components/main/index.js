@@ -23,6 +23,7 @@ import LogIn from './logIn';
 import BlogList from './blog/blogList';
 import BlogDetail from './blog/blogDetail';
 import NewBlog from './blog/newBlog';
+import EditBlog from './blog/editBlog';
 
 
 function Main(props) {
@@ -34,9 +35,11 @@ function Main(props) {
                 <Route path='login' element={<LogIn />} />
                     {/* NAV ROUTES */}
                 <Route path='rulebook' element={<Rulebook />} />
-                <Route path='glossary' element={<Glossary />} />  
+                <Route path='glossary' element={<Glossary />} />
+                      {/* BLOG ROUTES */}
                 <Route path='blog' element={<BlogList />} /> 
                 <Route path='blog/:id' element={<BlogDetail />} />
+                <Route path='blog/:id/edit' element={<EditBlog />} />
                 <Route path='blog/new' element={<NewBlog />} />    
 
                 <Route path='screentour' element={<Screentour />} />
