@@ -2,7 +2,7 @@
     background: #fff;
     padding-left: 10%;
     padding-right: 10%;
-    border-bottom: 1px solid #92a1e8;
+    align-items: center;
     /* disables highlighting */
     -webkit-touch-callout: none;
 -webkit-user-select: none; 
@@ -18,57 +18,57 @@
     justify-content: space-between;
     align-items: center;
     font-size: 16px;
-    padding: 20px 0;
-}
-
-.midScreenHeader {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 18px;
-    padding: 20px 0;
+    padding: 7.5px 0;
 }
 
 .smallScreenHeader {
     display: none;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    // align-items: center;
+    font-size: 16px;
+    padding: 7.5px 0;
+}
+
+.headerIcon {
+    border: 1px solid black;
+    background-color: rgb(252, 156, 108);
+    border-radius: 9999px;
+    padding: 6px 6px;
     font-size: 18px;
-    padding: 20px 0;
+}
+
+.menuIcon {
+    border: 1px solid black;
+    color: rgb(252, 156, 108);;
+    background-color: black;
+    border-radius: 9999px;
+    padding: 6px 7px;
+    font-size: 18px;
 }
 
 .title {
     font-family: 'Courier Prime', Courier, monospace;
-    display: flex;
-    align-items: center;
     white-space: nowrap;
+    display: flex;
+    font-style: italic;
+    font-size: 30px;
 
     .screenplayTitle {
-        color: rgb(252, 156, 108);
-        border: 1px solid black;
-        background-color: rgb(0, 0, 0);
         border-bottom-left-radius: 8px;
         border-top-left-radius: 8px;
         border-right: none;
-        padding: 05px 1px 5px 5px;
+        padding: 5px 1px 5px 5px;
+        margin-left: 5px;
     }
 
     .rules {
-        border: 1px solid rgb(252, 156, 108);
-        background-color: rgb(252, 156, 108);
+        color: rgb(252, 156, 108);
         border-bottom-right-radius: 8px;
         border-top-right-radius: 8px;
         border-left: none;
         padding: 5px 5px 5px 1px;
     }
-}
-
-.smallScreenplay {
-    font-family: 'Courier Prime', Courier, monospace;
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    white-space: nowrap;
 }
 
 .userAuth {
@@ -106,28 +106,24 @@
 }
 
 .navBar {
-    align-items: center;
+    font-size: 18px;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+
+    .headerLink {
+        margin-left: 30px;
+    }
 }
 
 .dropDownMenu {
-    font-family: 'Courier Prime', Courier, monospace;
-    font-size: 18px;
-    padding: 10px 15px;
-    /* display: none; */
-}
-
-.smallScreenTitle {
-    font-family: 'Courier Prime', Courier, monospace;
+    font-size: 16px;
+    height: 100%;
+    flex-grow: 1;
     display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    white-space: nowrap;
-    display: none;
-}
+    justify-content: flex-end;
 
-.headerLink {
-    // font-weight: 300;
-    // padding: 5px;
 }
 
 .categories:hover #dropDownBox {
@@ -148,9 +144,9 @@ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 z-index: 1;
 }
 
-.dropDownBox a {
+.navBar a {
 color: black;
-padding: 12px 16px;
+// padding: 12px 16px;
 text-decoration: none;
 display: block;
 }
@@ -161,29 +157,19 @@ display: block;
 
 .mainLink:hover, a:hover {color: #92a1e8;}
 
-
 @media screen and (max-width: 600px) {
-    .bigScreenHeader {
+
+    .screenplayTitle, .rules {
         display: none;
     }
 
-    .midScreenHeader {
-        display: flex;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .midScreenHeader {
-        display: none;
-    }
-
-    .smallScreenHeader {
-        display: flex;
-    }
 }
 
 @media(hover: hover) and (pointer: fine) {
-    .dropDownBox a:hover {background-color: #f1f1f1}
+    .navBar a:hover {
+        color: #92a1e8;
+        text-decoration: underline;
+    }
 
     .headerLink:hover {
         color: #92a1e8;
