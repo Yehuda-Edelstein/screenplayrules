@@ -35,13 +35,10 @@ function FadeIn(props) {
             <br></br>
             <br></br>
                 Here's a comparison:
-            <br></br>
-            <br></br>
                 <div className='pictureContainer'>
                     <img className='picture' src={withFadeIn} alt='with fade in' />
                     <img className='picture' src={withoutFadeIn} alt='without fade in' />
                 </div>
-            <br></br>
                 It doesn't seem like much, but I think it helps give the script
                 a cleaner start. Trim the fat, you know?
             <br></br>

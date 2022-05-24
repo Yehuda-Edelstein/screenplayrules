@@ -17,7 +17,7 @@
     margin-left: auto;
     border: 1px solid $dark-gray;
     border-top: none;
-    
+
     #bold {font-weight: bold;}
     #italic {font-style: italic;}
     #underline {text-decoration: underline;}
@@ -178,7 +178,7 @@
 }
 
 .localGlossaryHeader {
-    padding: 20px 10px 0 20px;
+    padding: 20px 20px 0 20px;
     font-family: 'Courier Final Draft', Courier, monospace;
     font-size: 18px;
     text-align: center;
@@ -187,6 +187,8 @@
 .localGlossaryList {
     font-family: 'Inconsolata', monospace;
     line-height: 125%;
+    font-size: 15px;
+    padding-right: 20px;
 }
 
 .localGlossaryList li {
@@ -199,7 +201,7 @@
 
 .localGlossaryFooter {
     font-family: 'Inconsolata', monospace;
-    font-size: 10pt;
+    font-size: 12px;
     text-align: center;
     margin-top: 20px;
 }
