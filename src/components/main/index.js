@@ -19,17 +19,31 @@ import Superimpose from './screentour/components/extras/superimpose'
 import OverBlack from './screentour/components/extras/overBlack'
 import Rulebook from './rulebook';
 import Glossary from './glossary';
+import LogIn from './logIn';
+import BlogList from './blog/blogList';
+import BlogDetail from './blog/blogDetail';
+import NewBlog from './blog/newBlog';
+import EditBlog from './blog/editBlog';
+import SignUp from './signUp';
 
 
 function Main(props) {
+
     return (
         <div className='main'> 
             <Routes>
                 <Route path='/' element={<Home />} />
+                    {/* USER ROUTES */}
+                {/* <Route path='login' element={<LogIn />} />
+                <Route path='signup' element={<SignUp />} /> */}
                     {/* NAV ROUTES */}
                 <Route path='rulebook' element={<Rulebook />} />
-                <Route path='glossary' element={<Glossary />} />    
-
+                <Route path='glossary' element={<Glossary />} />
+                      {/* BLOG ROUTES */}
+                {/* <Route path='blog' element={<BlogList />} /> 
+                <Route path='blog/:id' element={<BlogDetail />} />
+                <Route path='blog/:id/edit' element={<EditBlog />} />
+                <Route path='blog/new' element={<NewBlog />} />     */}
                 <Route path='screentour' element={<Screentour />} />
                     {/* SCREENTOUR ROUTES */}
                     <Route path='screentour/fadein' element={<FadeIn />} />
@@ -56,7 +70,6 @@ function Main(props) {
                 </div>
                 }/>
             </Routes>
-                
         </div>
     );
 }

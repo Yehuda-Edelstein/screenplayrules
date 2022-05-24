@@ -1,12 +1,18 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import './style.index.scss'
 
 
 function Home(props) {
+    useEffect(() => {
+        document.title = 'Screenplay Rules'
+     }, []);
     return (
         <div className="homeContainer" id="first"> 
                 Home component
+                <br></br>
+                <br></br>
+                Have blogs, terms, and random stuff on page like reddit.
             <div className="homeContainer" id="second">
                 <br></br>
                 <br></br>

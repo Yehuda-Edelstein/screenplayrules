@@ -1,0 +1,21 @@
+.logInContainer {
+
+    form {
+        display: flex;
+    }
+}
+
+.submitButton {
+        cursor: pointer;
+        font-weight: bolder;
+        padding-right: 1em;
+        background-color: #92a1e8;
+        color: #fff;
+        border: 1px solid #92a1e8;
+        border-radius: 8px;
+        padding: 5px 15px;
+        width: 60px;
+        text-align: center;
+
+        &:hover {background-color: #92a0e8e0;}
+}

@@ -1,0 +1,173 @@
+@import '../../index.scss';
+
+.header {
+    background: #fff;
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
+    // padding-left: 10%;
+    padding-left: 50px;
+    // padding-right: 10%;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    // border-bottom: 1px solid #dadce6;
+    /* disables highlighting */
+    -webkit-touch-callout: none;
+-webkit-user-select: none; 
+ -khtml-user-select: none; 
+   -moz-user-select: none; 
+    -ms-user-select: none; 
+        user-select: none; 
+}
+
+.bigScreenHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    padding: 7.5px 0;
+}
+
+.headerIcon {
+    border: 1px solid black;
+    background-color: rgb(252, 156, 108);
+    border-radius: 9999px;
+    padding: 6px 6px;
+    font-size: 18px;
+}
+
+.title {
+    font-family: 'Courier Prime', Courier, monospace;
+    white-space: nowrap;
+    display: flex;
+    font-style: italic;
+    font-size: 30px;
+
+    .screenplayTitle {
+        border-bottom-left-radius: 8px;
+        border-top-left-radius: 8px;
+        border-right: none;
+        padding: 5px 1px 5px 5px;
+        margin-left: 5px;
+    }
+
+    .rules {
+        color: rgb(252, 156, 108);
+        border-bottom-right-radius: 8px;
+        border-top-right-radius: 8px;
+        border-left: none;
+        padding: 5px 5px 5px 1px;
+    }
+}
+
+.userAuth {
+    display: flex;
+    font-weight: bolder;
+    // font-family: 'Courier Prime', Courier, monospace;
+
+    .logInLink {
+        cursor: pointer;
+        padding-right: 1em;
+        color: #92a1e8;
+        border: 1px solid #92a1e8;
+        border-radius: 8px;
+        padding: 5px 15px;
+        margin-right: 1em;
+        width: 60px;
+        text-align: center;
+
+        &:hover {background-color: #92a0e81a;}
+    }
+
+    .signUpLink {
+        cursor: pointer;
+        padding-right: 1em;
+        background-color: #92a1e8;
+        color: #fff;
+        border: 1px solid #92a1e8;
+        border-radius: 8px;
+        padding: 5px 15px;
+        width: 60px;
+        text-align: center;
+
+        &:hover {background-color: #92a0e8e0;}
+    }
+}
+
+.navBar {
+    font-size: 18px;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+
+    .headerLink {
+        margin-left: 30px;
+    }
+}
+
+.navBar a {
+color: black;
+// padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.mainLink:hover, a:hover {color: #92a1e8;}
+
+@media screen and (max-width: 600px) {
+
+    .screenplayTitle, .rules {
+        display: none;
+    }
+
+}
+
+@media(hover: hover) and (pointer: fine) {
+    .navBar a:hover {
+        color: #92a1e8;
+        text-decoration: underline;
+    }
+
+    .headerLink:hover {
+        color: #92a1e8;
+        text-decoration: underline;
+    }
+}
+
+/* 
+
+DROPDOWN CSS
+
+.dropDownMenu {
+    font-size: 16px;
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.categories:hover #dropDownBox {
+display: block;
+}
+
+.style:hover #dropDownBox {
+display: block;
+}
+
+.dropDownBox {
+display: none;
+position: absolute;
+right: 0;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropDownMenu:hover .dropDownBox {
+    display: block;
+}
+
+*/

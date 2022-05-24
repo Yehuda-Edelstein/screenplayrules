@@ -7,7 +7,7 @@ function Glossary(props) {
     const [termList, setTermList] = useState([])
     const [searched, setSearched] = useState('')
 
-    const filtered = termList.filter(term => Object.values(term).some(val => typeof val === "string" && term.name.includes(searched)))
+    const filtered = termList.filter(term => Object.values(term).some(val => typeof val === "string" && term.term_name.includes(searched)))
 
     useEffect(() => {
         fetch('http://localhost:8000/api/glossary/')
@@ -29,8 +29,8 @@ function Glossary(props) {
             <div className='termList'> 
                 {filtered.map(term => 
                     (
-                    <div key={term.name} className='termContainer'>
-                        <div className='termName'>{term.name}</div>
+                    <div key={term.term_name} className='termContainer'>
+                        <div className='termName'>{term.term_name}</div>
                         <div className='termDefinition'>{term.definition}</div>
                         <div className='termExample'>{term.example}</div>
                         {/* <div className='termFooter'>

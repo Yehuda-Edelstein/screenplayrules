@@ -1,15 +1,22 @@
-import React, {useState, useRef} from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import withFadeIn from '../../../../../images/fadeIn/withFadeIn.png'
 import withoutFadeIn from '../../../../../images/fadeIn/withoutFadeIn.png'
 
 function FadeIn(props) {
     
+    useEffect(() => {
+        document.title = 'How To Write A Screenplay - Fade In?'
+     }, []);
+
     return (
         <div>
             {/* Screentour Header maybe have outline/extras along it */}
         <div className='container'>
-            <div className='blogHeader'>FADE IN?</div>
+        <div className='containerHeader'><span id='wideScreen'>SCREENTOUR</span> <span className='divider'>|</span> FADE IN? <Link to='/screentour/slugs'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'><FontAwesomeIcon icon={faArrowRight}/></span></Link></div> 
+        <div className='blog'>
             <div className='blogText'>
                 The words "<span id='courrier'>FADE IN</span>" are used to introduce the shift from black screen (before the movie starts) to the first scene we, the audience, will see. Simply put, every line of script that goes beneath them will be acted, spoken, filmed, and produced, up until the last words "<span id='courrier'>FADE OUT</span>" which we'll get to later.
             <br></br>
@@ -24,24 +31,19 @@ function FadeIn(props) {
                 It's a staple of the craft, so keeping it won't bring down your screengrade<sup>1</sup> too much, but it's ridiculous. It didn't even make sense when cameras could <span id='italic'>only</span> fade in -- obviously the first line on page 1 is where the script starts, and the last line on 110<sup>2</sup> is where it ends. 
             <br></br>
             <br></br>
-                Plus, I think slugs<sup>3</sup> look best as the first words on a page regardless, but more on that in the next section. Either way, I think it's time we let the "<span id='courrier'>FADEs</span>" become a thing of the past.
+                Plus, I think slugs<sup>3</sup> look best as the first words on a page regardless, but more on that in the next section. Either way, I think it's time we let the fades become a thing of the past.
             <br></br>
             <br></br>
                 Here's a comparison:
-            <br></br>
-            <br></br>
                 <div className='pictureContainer'>
                     <img className='picture' src={withFadeIn} alt='with fade in' />
                     <img className='picture' src={withoutFadeIn} alt='without fade in' />
                 </div>
-            <br></br>
                 It doesn't seem like much, but I think it helps give the script
                 a cleaner start. Trim the fat, you know?
             <br></br>
             </div>
-            <div className='blogFooter'>
-                <a href="slugs" id='courrier'>NEXT</a>
-            </div> 
+        </div>
             <div className='localGlossary'>
                 <div className='localGlossaryHeader'>LOCAL GLOSS'</div>
                 <ol className='localGlossaryList'>

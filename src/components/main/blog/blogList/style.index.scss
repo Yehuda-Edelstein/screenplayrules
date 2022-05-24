@@ -1,0 +1,42 @@
+.blogContainer {
+    background-color: white;
+    max-width: 600px;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-bottom: 10px;
+    border: 1px solid #92a1e8;
+
+
+    &:hover {
+        background-color: #92a0e81a;
+    }
+
+    .blogName {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .blogDefinition {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    .blogExample {
+        font-size: 20px;
+        font-style: italic;    
+    }
+
+    .blogFooter {
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .blogContainer {
+        max-width: none;
+    }
+}
