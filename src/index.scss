@@ -4,12 +4,21 @@ $dark-blue: #92a1e8;
 $darker-blue: #4e68ea;
 $gray: #f1f1f1;
 $dark-gray: #dadce6;
+$darker-gray: #636469;
+$orange: rgb(252, 156, 108);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
 
 body {
   margin: 0;
   font-family: 'Inconsolata', monospace;
   background-color: $dark-gray;
+  height: 100%;
   line-height: 125%;
+  overflow: auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   

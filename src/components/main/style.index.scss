@@ -1,30 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap');
-@use 'index';
+@import '../../index.scss';
+
 /* maybe change container dimensions */
 .main {
-    padding: 25px;
+    // padding: 25px;
     padding-left: 10%;
     padding-right: 10%;
+    // background-color: rgba(0, 0, 0, 0.75);
 }
 
 .container {
-    margin: 25px 0; 
-    background-color: white;   
-    // border: 1px solid #92a1e8;
-    max-width: 750px;
+    // margin: 25px 0; 
+    max-width: 800px;
     min-width: 200px;
-    padding: 30px 20px;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 8px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border-bottom: 1px solid #dadce6;
+    border: 1px solid $dark-gray;
+    border-top: none;
+    // border-radius: 8px;
+    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    
+    .containerHeader {
+        max-width: 800px;
+        font-size: 18px;
+        position: sticky;
+        top: 47px;
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        font-family: 'Courier Final Draft', Courier, monospace;
+        white-space: nowrap;
+        overflow: hidden;
+
+        .divider {
+            color: $darker-gray;
+        }
+
+        .startLink {
+            float: right;
+
+            &:hover {
+                color: $dark-gray;
+            }
+        }
+        
+    }
+    
+    .blog {
+        background-color: white;
+        padding: 20px;
+    }
 }
 
 .blogHeader {
-    font-family: 'Courier Final Draft', Courier, monospace;
-    text-align: center;
-    font-size: 20pt;
     margin-bottom: 20px;
     padding-bottom: 20px;
     border-bottom: 1px solid black;
@@ -84,6 +112,10 @@
     #white {color: white;}
 
     sup {font-size: 8pt;}
+
+    a {
+    
+    }
     
 }
 
@@ -198,9 +230,16 @@
 
 
 @media screen and (max-width: 600px) {
-    .blogText {
+    .blogText, .blogSubHeader {
         font-size: 3.25vw;
     }
+
+    .container {
+        .containerHeader {
+            font-size: 3vw;
+        }
+    }
+
     #courrier {
         font-size: 3.25vw;
     }

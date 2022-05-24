@@ -1,10 +1,13 @@
-import React, {useState, useRef} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useEffect} from 'react';
 import withFadeIn from '../../../../../images/fadeIn/withFadeIn.png'
 import withoutFadeIn from '../../../../../images/fadeIn/withoutFadeIn.png'
 
 function FadeIn(props) {
     
+    useEffect(() => {
+        document.title = 'How To Write A Screenplay - Fade In?'
+     }, []);
+
     return (
         <div>
             {/* Screentour Header maybe have outline/extras along it */}

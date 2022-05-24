@@ -43,8 +43,7 @@ function Main(props) {
                 <Route path='blog/:id' element={<BlogDetail />} />
                 <Route path='blog/:id/edit' element={<EditBlog />} />
                 <Route path='blog/new' element={<NewBlog />} />     */}
-
-                <Route path='screentour' element={<Screentour />} />
+                <Route path='screentour' element={<Screentour />}/>
                     {/* SCREENTOUR ROUTES */}
                     <Route path='screentour/fadein' element={<FadeIn />} />
                     <Route path='screentour/slugs' element={<Slugs />} />
@@ -70,7 +69,6 @@ function Main(props) {
                 </div>
                 }/>
             </Routes>
-                
         </div>
     );
 }

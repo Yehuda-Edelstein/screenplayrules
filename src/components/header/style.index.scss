@@ -1,12 +1,15 @@
+@import '../../index.scss';
+
 .header {
     background: #fff;
     // box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
-    padding-left: 10%;
-    padding-right: 10%;
+    // padding-left: 10%;
+    padding-left: 50px;
+    // padding-right: 10%;
     align-items: center;
     position: sticky;
     top: 0;
-    border-bottom: 1px solid #dadce6;
+    // border-bottom: 1px solid #dadce6;
     /* disables highlighting */
     -webkit-touch-callout: none;
 -webkit-user-select: none; 
