@@ -14,7 +14,7 @@ function Screentour(props) {
     return (
         <div>
         <div className='container'>
-        <div className='containerHeader'>SCREENTOUR <span className='divider'>|</span> INTRODUCTION <Link to='fadeIn'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'><FontAwesomeIcon icon={faArrowRight}/></span></Link></div> 
+        <div className='containerHeader'>SCREENTOUR <span span='divider'>|</span> INTRODUCTION <Link to='fadeIn'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'><FontAwesomeIcon icon={faArrowRight}/></span></Link></div> 
         <div className='blog'>
             {/* COMPONENT NEEDS TO BE FIXED href switched to Links with correct path */}
                 <div className='blogText'>

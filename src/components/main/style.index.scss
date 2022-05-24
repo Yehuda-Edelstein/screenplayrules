@@ -17,6 +17,20 @@
     margin-left: auto;
     border: 1px solid $dark-gray;
     border-top: none;
+    
+    #bold {font-weight: bold;}
+    #italic {font-style: italic;}
+    #underline {text-decoration: underline;}
+    #courrier {
+        font-family: 'Courier Final Draft', Courier, monospace;
+        font-size: 15pt;
+      }
+    #yellow {background-color: #ffec98;}
+    #red {background-color: #ffc9c9;}
+    #black {background-color: black;}
+    #white {color: white;}
+
+    sup {font-size: 8pt;}
     // border-radius: 8px;
     // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     
@@ -98,25 +112,6 @@
     font-family: 'Inconsolata', monospace;
     font-size: 15pt;
     line-height: 125%;
-
-    #bold {font-weight: bold;}
-    #italic {font-style: italic;}
-    #underline {text-decoration: underline;}
-    #courrier {
-        font-family: 'Courier Final Draft', Courier, monospace;
-        font-size: 15pt;
-      }
-    #yellow {background-color: #ffec98;}
-    #red {background-color: #ffc9c9;}
-    #black {background-color: black;}
-    #white {color: white;}
-
-    sup {font-size: 8pt;}
-
-    a {
-    
-    }
-    
 }
 
 .screengradeBlogText {
@@ -128,9 +123,10 @@
 }
 
 .pictureContainer {
+    padding: 10px 0;
     display: grid;
     justify-content: center;
-    background-color: #f1f1f1;
+    // background-color: $dark-gray;
     width: 100%;
 }
 
@@ -140,8 +136,8 @@
 }
 
 .picture {
-    border: 1px solid gray;
-    width: 95%;
+    border: 1px solid $dark-gray;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     min-width: 200px;
@@ -177,14 +173,14 @@
 }
 
 .localGlossary {
-    margin-top: 20px;
-    border-top: 1px solid black;
+    background-color: black;
+    color: white;
 }
 
 .localGlossaryHeader {
     padding: 20px 10px 0 20px;
     font-family: 'Courier Final Draft', Courier, monospace;
-    font-size: 15pt;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -228,7 +224,6 @@
     text-decoration: underline;
 }
 
-
 @media screen and (max-width: 600px) {
     .blogText, .blogSubHeader {
         font-size: 3.25vw;
@@ -245,9 +240,19 @@
     }
 }
 
+@media screen and (max-width: 400px) {
+
+}
+
 @media screen and (max-width: 500px) {
     .blogText {
         font-size: 16px;
+    }
+
+    .container {
+        .containerHeader {
+            font-size: 15px;
+        }
     }
 
     #courrier {
@@ -256,7 +261,20 @@
 }
 
 @media screen and (max-width: 315px) {
-    .pictureContainer {
-        background-color: white;
+
+    .containerHeader {
+        #divider {
+            display: none;
+        }
+
+        #wideScreen {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 295px) {
+    .picture {
+        width: 100px;
     }
 }
