@@ -14,7 +14,7 @@ function Screentour(props) {
     return (
         <div>
         <div className='container'>
-        <div className='containerHeader'>SCREENTOUR <span span='divider'>|</span> INTRODUCTION <Link to='fadeIn'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'><FontAwesomeIcon icon={faArrowRight}/></span></Link></div> 
+        <div className='containerHeader'><span id="wideScreen">SCREENTOUR</span> <span id='divider'>|</span> INTRODUCTION <Link to='fadeIn'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'><FontAwesomeIcon icon={faArrowRight}/></span></Link></div> 
         <div className='blog'>
             {/* COMPONENT NEEDS TO BE FIXED href switched to Links with correct path */}
                 <div className='blogText'>
@@ -32,7 +32,7 @@ function Screentour(props) {
                 <br></br>
                 <br></br>
                 <div className='blogSubHeader'>WHO AM I</div>
-                My name's Yehuda. I'm a spec screenwriter/software engineer and I made this website both as a project, but also as a way to give back to the screenwriting community. The layout is loosly based on Reddit and Urban Dictionary.
+                My name's Yehuda. I'm a spec screenwriter/software engineer and I made this website both as a project, but also as a way to give back to the screenwriting community. The layout is loosly based on Reddit, Stack Overflow, and Urban Dictionary.
                 <br></br>
                 <br></br>
                 To give a little background, I started writing screenplays a while back and found it difficult to learn the tricks of the trade by myself. How do I write music cues? <span id='italic'>Should</span> I write music cues? What are music cues? Lots of questions and not a lot of cohesive answers.
