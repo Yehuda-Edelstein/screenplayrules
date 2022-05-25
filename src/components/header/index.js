@@ -20,6 +20,8 @@ function Header(props) {
                         <Link to='about' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>ABOUT</div></Link>
                 </div>
 
+                <div className='smallScreenMenu'><FontAwesomeIcon icon={faEllipsis}/></div>
+
                     {/* <div className='userAuth'>
                         <Link to='login' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='logInLink'>LOG IN</div></Link>
                         <Link to='signup' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='signUpLink'>SIGN UP</div></Link>

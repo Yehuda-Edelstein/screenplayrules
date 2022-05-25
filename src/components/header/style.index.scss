@@ -94,6 +94,20 @@
     }
 }
 
+.smallScreenMenu {
+    display: none;
+    border: 1px solid black;
+    background-color: black;
+    color: rgb(252, 156, 108);
+    border-radius: 9999px;
+    // padding: 6px 6px;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+}
+
 .navBar {
     font-size: 18px;
     height: 100%;
@@ -115,13 +129,35 @@ display: block;
 
 .mainLink:hover, a:hover {color: #92a1e8;}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 0 5px;
+    }
+}
+
+
+@media screen and (max-width: 620px) {
 
     .screenplayTitle, .rules {
         display: none;
     }
+}
+
+@media screen and (max-width: 290px) {
+    .navBar {
+        .headerLink {
+            margin-left: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 255px) {
+    .navBar {
+        font-size: 15px;
+    }
 
 }
+    
 
 @media(hover: hover) and (pointer: fine) {
     .navBar a:hover {
