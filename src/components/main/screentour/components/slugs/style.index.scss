@@ -1,0 +1,57 @@
+@import '../../../../../index.scss';
+
+.sluglineExamplePart {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.sluglineExampleNumber {
+    margin-bottom: 40px;
+    font-size: 15pt;
+}
+
+.sluglineExample {
+    font-family: 'Courier Final Draft', Courier, monospace;
+    font-size: 30pt;
+    text-align: center;
+}
+
+.timeListContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timeList {
+    list-style: disc;
+}
+
+.timeList label {
+    border-bottom: 1px solid black;
+    font-size: larger;
+}
+
+.listItems {
+    margin-top: 10px;
+    font-family: 'Courier Final Draft', Courier, monospace;
+}
+
+@media  screen and (max-width: 595px) {
+    .sluglineExample {
+        font-size: 6vw;
+    }
+}
+
+@media  screen and (max-width: 360px) {
+    .listItems {
+        font-size: 13px;
+    }
+}
+
+@media  screen and (max-width: 300px) {
+    .sluglineExample {
+    font-size: 13pt;
+    }
+}
