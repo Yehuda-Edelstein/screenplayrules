@@ -10,10 +10,9 @@
     // background-color: rgba(0, 0, 0, 0.75);
 }
 
-.container {
-    // margin: 25px 0; 
+.container { 
     max-width: 600px;
-    // min-width: 200px;
+    min-width: 240px;
     margin-right: auto;
     margin-left: auto;
     border: 1px solid $dark-gray;
@@ -36,21 +35,19 @@
     // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     
     .containerHeader {
+        display: flex;
+        justify-content: space-between;
         max-width: 600px;
+        min-width: 110px;
         font-size: 14px;
         position: sticky;
         top: 47px;
+        z-index: 9999;
         background-color: black;
         color: white;
         padding: 10px 20px;
         font-family: 'Courier Final Draft', Courier, monospace;
-        white-space: nowrap;
-        overflow: hidden;
-
-        .divider {
-            color: $darker-gray;
-        }
-
+       
         .startLink {
             float: right;
 
@@ -71,11 +68,19 @@
             border: 1px solid $dark-gray;
             margin: 20px 0;
             width: 100%;
+            min-width: 350px;
+            overflow: hidden;
 
             .picture {
                 max-width: 550px;
                 margin-left: auto;
                 margin-right: auto;
+            }
+
+            @media screen and (max-width: 693px) {
+                .picture {
+                    transform: translateX(-110px) scale(.80);
+                }
             }
             
             .pictureLabel {
@@ -89,7 +94,36 @@
                 margin-right: auto;
             }
         }
-        
+    }
+}
+
+.screengradePictureContainer {
+    margin: 20px 0;
+    width: 100%;
+    min-width: 350px;
+    overflow: hidden;
+
+    .picture {
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (max-width: 693px) {
+        .picture {
+            transform: translateX(-110px) scale(.80);
+        }
+    }
+    
+    .pictureLabel {
+        font-family: 'Courier Final Draft', Courier, monospace;
+        font-size: 13pt;
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid black;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -117,22 +151,40 @@
 }
 
 .screengradeHeader {
-    font-family: 'Courier Final Draft', Courier, monospace;
-    background-color: #d6daec;
-    font-size: 15pt;
+    padding: 10px 0;
+    font-size: 14px;
     line-height: 125%;
     width: 100%;
     text-align: center;
+    // background-color: $darker-blue;
+    background-color: $orange;
+    font-family: 'Courier Final Draft', Courier, monospace;
+
+    &:hover {
+        opacity: .75;
+        cursor: pointer;
+    }
 }
 
-.closeButton {
-    font-family: 'Courier Final Draft', Courier, monospace;
-    background-color: #d6daec;
-    font-size: 15pt;
+.closeHeader {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
     line-height: 125%;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid black;
+    background-color: $orange;
+    font-family: 'Courier Final Draft', Courier, monospace;
+
+    .closeButton {
+        font-size: 20px; 
+        padding: 10px 20px 10px 0;
+
+        &:hover {
+            opacity: .75;
+            cursor: pointer;
+        }
+    } 
 }
 
 .blogText {
@@ -143,34 +195,14 @@
 
 .screengradeBlogText {
     font-family: 'Inconsolata', monospace;
-    font-size: 13pt;
+    font-size: 14px;
     line-height: 125%;
-    background-color: #d6daec;
-    padding: 30px 20px 10px 20px;
+    background-color: $orange;
+    padding: 20px;
+    max-width: 600px;
+    overflow: hidden;
 }
-
-.screengradePictureContainer {
-    display: grid;
-    justify-content: center;
-}
-
-
-.blogFooter {
-    font-family: 'Courier Final Draft', Courier, monospace;
-    border-top: 1px solid black;
-    padding: 20px 10px 0 20px;
-    margin-top: 20px;
-    font-size: 13pt;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
-
-.blogFooter a, .blogText a {
-        color: black;
-        text-decoration: none;
-}
-
+    
 .localGlossary {
     background-color: black;
     color: white;
@@ -206,22 +238,6 @@
 
 .screengradeHeader, .closeButton {
     display: inline-block;
-}
-
-.screengradeHeader:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-}
-
-.closeButton:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-}
-
-
-.blogFooter a:hover, .blogText .a:hover {
-    color: rgb(231, 150, 0);
-    text-decoration: underline;
 }
 
 // @media screen and (max-width: 600px) {
@@ -278,20 +294,4 @@
     // .picture {
     //     width: 250px;
     // }
-}
-
-@media screen and (max-width: 280px) {
-    
-    .container {
-        .containerHeader {
-            #wideScreen {
-                display: none;
-            }
-    
-            #divider {
-                display: none;
-            }
-        }
-    }
-    
 }
