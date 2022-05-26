@@ -144,7 +144,7 @@ display: block;
     }
 }
 
-@media screen and (max-width: 290px) {
+@media screen and (max-width: 320px) {
     .navBar {
         .headerLink {
             margin-left: 20px;
@@ -152,7 +152,7 @@ display: block;
     }
 }
 
-@media screen and (max-width: 255px) {
+@media screen and (max-width: 285px) {
     .navBar {
         font-size: 15px;
     }
