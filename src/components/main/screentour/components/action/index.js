@@ -264,12 +264,10 @@ function Action(props) {
           <br></br>
           The first is with age, if needed. The second without:
           <div className="pictureContainer">
-            <br></br>
             <div className="pictureLabel">WITH</div>
             <img className="picture" src={withAge} alt="with age" />
           </div>
           <div className="pictureContainer">
-            <br></br>
             <div className="pictureLabel">WITHOUT</div>
             <img className="picture" src={withoutAge} alt="without age" />
           </div>

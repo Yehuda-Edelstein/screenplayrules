@@ -83,28 +83,25 @@
       border: 1px solid $dark-gray;
       margin: 20px 0;
       width: 100%;
-      min-width: 350px;
+      min-width: 320px;
       overflow: hidden;
 
       .picture {
-        max-width: 550px;
+        max-width: 560px;
         margin-left: auto;
         margin-right: auto;
       }
 
-      @media screen and (max-width: 693px) {
-        .picture {
-          transform: translateX(-110px) scale(0.8);
-        }
+      #stickToTop {
+        transform: translateY(-80px);
       }
 
       .pictureLabel {
+        background-color: $gray;
         font-family: "Courier Final Draft", Courier, monospace;
         font-size: 14px;
-        display: flex;
-        justify-content: center;
-        border-bottom: 1px solid black;
-        width: fit-content;
+        padding: 10px 0;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
       }
@@ -113,9 +110,11 @@
 }
 
 .screengradePictureContainer {
-  margin: 20px 0 10px 0;
+  border: 1px solid $gray;
+  background-color: white;
+  min-width: 320px;
+  margin: 10px 0 10px 0;
   width: 100%;
-  min-width: 350px;
   overflow: hidden;
 
   .picture {
@@ -124,18 +123,12 @@
     margin-right: auto;
   }
 
-  @media screen and (max-width: 693px) {
-    .picture {
-      transform: translateX(-110px) scale(0.8);
-    }
-  }
-
   .pictureLabel {
     font-family: "Courier Final Draft", Courier, monospace;
     font-size: 13px;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid black;
+    text-decoration: underline;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -163,6 +156,7 @@
 .screengradeContainer {
   display: flex;
   justify-content: center;
+  border-bottom: 1px solid black;
 }
 
 .screengradeHeader {
@@ -256,6 +250,119 @@
   display: inline-block;
 }
 
+//  MEDIA QUERYS
+
+@media screen and (max-width: 645px) {
+  // #stickToTop {
+  //   transform: translate(-110px, -50px) scale(0.8);
+  // }
+
+  .picture {
+    transform: translate(-50px, 0);
+  }
+
+  .pictureLabel {
+    width: 100%;
+    //   max-width: 385px;
+    overflow: hidden;
+    float: left;
+  }
+}
+
+// @media screen and (max-width: 693px) {
+//   .screengradePictureContainer {
+//     max-height: 400px;
+//   }
+// }
+
+@media screen and (max-width: 595px) {
+  .picture {
+    transform: translate(-85px) scale(0.95);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .picture {
+    transform: translate(-95px) scale(0.95);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .picture {
+    transform: translate(-95px) scale(0.9);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .picture {
+    transform: translate(-100px) scale(0.9);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .picture {
+    transform: translate(-110px) scale(0.85);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .picture {
+    transform: translate(-120px) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .picture {
+    transform: translate(-70px) scale(1);
+  }
+
+  .pictureLabel {
+    //   max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .picture {
+    transform: translate(-85px) scale(1);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .picture {
+    transform: translate(-85px) scale(0.95);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .picture {
+    transform: translate(-100px) scale(0.9);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .picture {
+    transform: translate(-100px) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .picture {
+    transform: translate(-120px) scale(0.8);
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .picture {
+    transform: translate(-120px) scale(0.75);
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .picture {
+    transform: translate(-130px) scale(0.75);
+  }
+}
+
 // @media screen and (max-width: 600px) {
 //     .blogText, .blogSubHeader {
 //         font-size: 3.25vw;
@@ -308,4 +415,10 @@
   // .picture {
   //     width: 250px;
   // }
+}
+
+// ID STYLES
+
+#height-200px {
+  height: 200px;
 }
