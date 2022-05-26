@@ -47,6 +47,12 @@ function Screentour(props) {
                 <br></br>
                 <br></br>
                 Also, some of the terms found in the glossary, or in a section's local gloss', were invented by me. Not that the concepts didn't already exist, just that I have given names to those that were nameless. For posterity. And because it was fun. Anyways. Without further adieu. See header.
+                <br></br>
+                <br></br>
+                p.s.: the max-width for screenplay example pictures is about 350px (to fit content), so if the device you're using is smaller than that, I suggest you wait until you're by a larger screen for a better learning experience. 
+                <br></br>
+                <br></br>
+                p.p.s: feel free to contact me with any comments or questions. <span id='italic'>Where's the contact form</span> -- again, see header.
                 </div>
             </div>   
         </div>

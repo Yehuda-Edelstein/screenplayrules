@@ -29,7 +29,9 @@ function Slugs(props) {
                     <FontAwesomeIcon icon={faArrowRight}/></span>
                 </Link>
             </div>
+            
             <div className='blog'> 
+                
                 <div className='blogText'>
                     Okay. Here's where your screenplay actually starts. The where and when. 
                 <br></br>
@@ -100,12 +102,12 @@ function Slugs(props) {
                         <img className='picture' src={withBold} alt='with bold' />
                     </div>
                     Many professionals are already moving away from bare slugs, {/* maybe add a href to bare sluglines */} so don't get left behind in the days of old. It's time to accept the days of...
-                </div>
+            </div>
                 <br></br>
-                    </div>
+            </div>
                     {!handleShow
                             ? <div className='screengradeHeader' onClick={show}>CLICK HERE TO IMPROVE YOUR SCREENGRADE KNOWLEDGE</div>
-                            : <div className='closeHeader'><FontAwesomeIcon icon={faClose} onClick={close} className='closeButton' /></div>    
+                            : <div className='closeHeader'><FontAwesomeIcon icon={faClose} onClick={close} className='closeButton'/></div>    
                             } 
                         <div className='screengradeContainer'>
                                 {/* Figure out better name for screengradeHeader */}
@@ -114,15 +116,14 @@ function Slugs(props) {
                             <div className='screengradeBlogText'>
                                 As I hinted at earlier, it's a definite plus to land slugs at the tops of your pages, although, it's usually a best case scenario and not always possible. So, don't worry too much about it. That being said, don't ever have a slugline without at least one line of description below it on the <span id='italic'>same</span> page. It's insensitive to tease a reader with a juicy slug and then make them scroll or turn to the next page to see what's going on.
                                 There's a page-turner and then there's this: 
-                                <div className='screengradePictureContainer'>
-                                    <img className='picture' src={scroll} alt='scroll to see' />
-                                </div>
+                                    <div className='screengradePictureContainer'>
+                                        <img className='picture' src={scroll} alt='scroll to see' />
+                                    </div>
                                 Disgusting.
                             <br></br>
                             </div> 
                             }
-        
-                </div>
+                        </div>
             <div className='localGlossary'>
                 <div className='localGlossaryHeader'>LOCAL GLOSS'</div>
                 <ol className='localGlossaryList'>

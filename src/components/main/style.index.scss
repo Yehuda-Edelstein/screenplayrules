@@ -1,243 +1,259 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap');
-@import '../../index.scss';
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap");
+@import "../../index.scss";
 
 /* maybe change container dimensions */
 .main {
-    padding-left: 50px;
-    padding-right: 50px;
-    // padding-left: 10%;
-    // padding-right: 10%;
-    // background-color: rgba(0, 0, 0, 0.75);
+  padding-left: 50px;
+  padding-right: 50px;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  // background-color: rgba(0, 0, 0, 0.75);
 }
 
-.container { 
+.container {
+  max-width: 600px;
+  min-width: 255px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid $dark-gray;
+  border-top: none;
+
+  #bold {
+    font-weight: bold;
+  }
+  #italic {
+    font-style: italic;
+  }
+  #underline {
+    text-decoration: underline;
+  }
+  #courrier {
+    font-family: "Courier Final Draft", Courier, monospace;
+    font-size: 16px;
+  }
+  #yellow {
+    background-color: #ffec98;
+  }
+  #red {
+    background-color: #ffc9c9;
+  }
+  #black {
+    background-color: black;
+  }
+  #white {
+    color: white;
+  }
+
+  sup {
+    font-size: 8pt;
+  }
+  // border-radius: 8px;
+  // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  .containerHeader {
+    display: flex;
+    justify-content: space-between;
     max-width: 600px;
-    min-width: 240px;
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid $dark-gray;
-    border-top: none;
+    min-width: 110px;
+    font-size: 14px;
+    position: sticky;
+    top: 47px;
+    z-index: 9999;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-family: "Courier Final Draft", Courier, monospace;
 
-    #bold {font-weight: bold;}
-    #italic {font-style: italic;}
-    #underline {text-decoration: underline;}
-    #courrier {
-        font-family: 'Courier Final Draft', Courier, monospace;
-        font-size: 16px;
+    .startLink {
+      float: right;
+
+      &:hover {
+        color: $dark-gray;
       }
-    #yellow {background-color: #ffec98;}
-    #red {background-color: #ffc9c9;}
-    #black {background-color: black;}
-    #white {color: white;}
-
-    sup {font-size: 8pt;}
-    // border-radius: 8px;
-    // box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    
-    .containerHeader {
-        display: flex;
-        justify-content: space-between;
-        max-width: 600px;
-        min-width: 110px;
-        font-size: 14px;
-        position: sticky;
-        top: 47px;
-        z-index: 9999;
-        background-color: black;
-        color: white;
-        padding: 10px 20px;
-        font-family: 'Courier Final Draft', Courier, monospace;
-       
-        .startLink {
-            float: right;
-
-            &:hover {
-                color: $dark-gray;
-            }
-        }
-        
     }
-    
-    .blog {
-        background-color: white;
-        padding: 20px;
-        max-width: 600px;
-        overflow: hidden;
+  }
 
-        .pictureContainer {
-            border: 1px solid $dark-gray;
-            margin: 20px 0;
-            width: 100%;
-            min-width: 350px;
-            overflow: hidden;
-
-            .picture {
-                max-width: 550px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            @media screen and (max-width: 693px) {
-                .picture {
-                    transform: translateX(-110px) scale(.80);
-                }
-            }
-            
-            .pictureLabel {
-                font-family: 'Courier Final Draft', Courier, monospace;
-                font-size: 13pt;
-                display: flex;
-                justify-content: center;
-                border-bottom: 1px solid black;
-                width: fit-content;
-                margin-left: auto;
-                margin-right: auto;
-            }
-        }
-    }
-}
-
-.screengradePictureContainer {
-    margin: 20px 0;
-    width: 100%;
-    min-width: 350px;
+  .blog {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
     overflow: hidden;
 
-    .picture {
+    .pictureContainer {
+      border: 1px solid $dark-gray;
+      margin: 20px 0;
+      width: 100%;
+      min-width: 350px;
+      overflow: hidden;
+
+      .picture {
         max-width: 550px;
         margin-left: auto;
         margin-right: auto;
-    }
+      }
 
-    @media screen and (max-width: 693px) {
+      @media screen and (max-width: 693px) {
         .picture {
-            transform: translateX(-110px) scale(.80);
+          transform: translateX(-110px) scale(0.8);
         }
-    }
-    
-    .pictureLabel {
-        font-family: 'Courier Final Draft', Courier, monospace;
-        font-size: 13pt;
+      }
+
+      .pictureLabel {
+        font-family: "Courier Final Draft", Courier, monospace;
+        font-size: 14px;
         display: flex;
         justify-content: center;
         border-bottom: 1px solid black;
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
+      }
     }
+  }
 }
 
-.blogHeader {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid black;
-}
+.screengradePictureContainer {
+  margin: 20px 0 10px 0;
+  width: 100%;
+  min-width: 350px;
+  overflow: hidden;
 
-.blogSubHeader {
-    font-family: 'Courier Final Draft', Courier, monospace;
-    font-size: 18px;
-    margin-bottom: 20px;
+  .picture {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 693px) {
+    .picture {
+      transform: translateX(-110px) scale(0.8);
+    }
+  }
+
+  .pictureLabel {
+    font-family: "Courier Final Draft", Courier, monospace;
+    font-size: 13px;
     display: flex;
     justify-content: center;
     border-bottom: 1px solid black;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.blogHeader {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+
+.blogSubHeader {
+  font-family: "Courier Final Draft", Courier, monospace;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .screengradeContainer {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .screengradeHeader {
-    padding: 10px 0;
-    font-size: 14px;
-    line-height: 125%;
-    width: 100%;
-    text-align: center;
-    // background-color: $darker-blue;
-    background-color: $orange;
-    font-family: 'Courier Final Draft', Courier, monospace;
+  padding: 10px 0;
+  font-size: 14px;
+  line-height: 125%;
+  width: 100%;
+  text-align: center;
+  // background-color: $darker-blue;
+  background-color: $orange;
+  font-family: "Courier Final Draft", Courier, monospace;
 
-    &:hover {
-        opacity: .75;
-        cursor: pointer;
-    }
+  &:hover {
+    opacity: 0.75;
+    cursor: pointer;
+  }
 }
 
 .closeHeader {
-    border-bottom: 1px solid black;
-    display: flex;
-    justify-content: flex-end;
-    line-height: 125%;
-    width: 100%;
-    text-align: center;
-    background-color: $orange;
-    font-family: 'Courier Final Draft', Courier, monospace;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: flex-end;
+  line-height: 125%;
+  width: 100%;
+  text-align: center;
+  background-color: $orange;
+  font-family: "Courier Final Draft", Courier, monospace;
 
-    .closeButton {
-        font-size: 20px; 
-        padding: 10px 20px 10px 0;
+  .closeButton {
+    font-size: 20px;
+    padding: 10px 20px 10px 0;
 
-        &:hover {
-            opacity: .75;
-            cursor: pointer;
-        }
-    } 
+    &:hover {
+      opacity: 0.75;
+      cursor: pointer;
+    }
+  }
 }
 
 .blogText {
-    font-family: 'Inconsolata', monospace;
-    font-size: 16px;
-    line-height: 125%;
+  font-family: "Inconsolata", monospace;
+  font-size: 16px;
+  line-height: 125%;
 }
 
 .screengradeBlogText {
-    font-family: 'Inconsolata', monospace;
-    font-size: 14px;
-    line-height: 125%;
-    background-color: $orange;
-    padding: 20px;
-    max-width: 600px;
-    overflow: hidden;
+  font-family: "Inconsolata", monospace;
+  font-size: 14px;
+  line-height: 125%;
+  background-color: $light-orange;
+  padding: 20px;
+  max-width: 600px;
+  overflow: hidden;
 }
-    
+
 .localGlossary {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
 .localGlossaryHeader {
-    padding: 10px 20px 0 20px;
-    font-family: 'Courier Final Draft', Courier, monospace;
-    font-size: 14px;
-    text-align: center;
+  padding: 10px 20px 0 20px;
+  font-family: "Courier Final Draft", Courier, monospace;
+  font-size: 14px;
+  text-align: center;
 }
 
 .localGlossaryList {
-    font-family: 'Inconsolata', monospace;
-    line-height: 125%;
-    font-size: 12px;
-    padding-right: 20px;
+  font-family: "Inconsolata", monospace;
+  line-height: 125%;
+  font-size: 12px;
+  padding-right: 20px;
 }
 
 .localGlossaryList li {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .definition {
-    padding-top: 5px;
+  padding-top: 5px;
 }
 
 .localGlossaryFooter {
-    font-family: 'Inconsolata', monospace;
-    font-size: 10px;
-    text-align: center;
+  font-family: "Inconsolata", monospace;
+  font-size: 10px;
+  text-align: center;
 }
 
-.screengradeHeader, .closeButton {
-    display: inline-block;
+.screengradeHeader,
+.closeButton {
+  display: inline-block;
 }
 
 // @media screen and (max-width: 600px) {
@@ -273,25 +289,23 @@
 // }
 
 @media screen and (max-width: 480px) {
-    .main {
-        padding: 0;
-    }
-    // .picture {
-    //     width: 435px;
-    // }
+  .main {
+    padding: 0;
+  }
+  // .picture {
+  //     width: 435px;
+  // }
 
-    // .pictureContainer {
-    //     width: fit-content;
-    // }
+  // .pictureContainer {
+  //     width: fit-content;
+  // }
 }
 
 @media screen and (max-width: 350px) {
-
 }
 
-
 @media screen and (max-width: 295px) {
-    // .picture {
-    //     width: 250px;
-    // }
+  // .picture {
+  //     width: 250px;
+  // }
 }
