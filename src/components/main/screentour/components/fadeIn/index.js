@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import withFadeIn from '../../../../../images/fadeIn/withFadeIn.png'
 import withoutFadeIn from '../../../../../images/fadeIn/withoutFadeIn.png'
 
@@ -15,7 +15,15 @@ function FadeIn(props) {
         <div>
             {/* Screentour Header maybe have outline/extras along it */}
         <div className='container'>
-            <div className='containerHeader'><span id='wideScreen'>SCREENTOUR</span> <span id='divider'>|</span> FADE IN? <Link to='/screentour/slugs'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'><FontAwesomeIcon icon={faArrowRight}/></span></Link></div> 
+            <div className='containerHeader'>
+                <Link to='/screentour'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'>
+                    <FontAwesomeIcon icon={faArrowLeft}/></span>
+                </Link>
+                <span>FADE IN?</span> 
+                <Link to='/screentour/slugs'  style={{color: 'inherit', textDecoration: 'inherit'}}><span className='startLink'>
+                    <FontAwesomeIcon icon={faArrowRight}/></span>
+                </Link>
+            </div> 
             <div className='blog'>
                 <div className='blogText'>
                     When used, the words "<span id='courrier'>FADE IN</span>" are the first words found in a screenplay. Their point is to introduce the shift from black screen (before the movie starts) to the first scene we, the audience, will see. Simply put, every line of script that goes beneath them will be acted, spoken, filmed, and produced, up until the last words "<span id='courrier'>FADE OUT</span>" which we'll get to later.
