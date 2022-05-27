@@ -103,8 +103,8 @@ function Action(props) {
           Hopefully.
           <br></br>
           <br></br>
-          2. The words highlighted in <span id="yellow">yellow</span> are{" "}
-          <span id="courrier">PROPS</span> and should be in{" "}
+          2. The words highlighted in <span id="yellow">yellow</span> are "
+          <span id="courrier">PROPS</span>" and should be in{" "}
           <span id="courrier">ALL CAPS</span> at first mention. This lets the
           reader know these items need to be in the script, and are integral to
           the scene.
@@ -231,9 +231,9 @@ function Action(props) {
             <br></br>
             5. Finally, for the{" "}
             <span id="red">
-              <span id="courrier">Brady</span>
+              "<span id="courrier">Brady</span>"
             </span>
-            's in <span id="red">red</span>. Similar to stacking letters, you
+            s in <span id="red">red</span>. Similar to stacking letters, you
             should refrain from using the same pronoun or name twice in a row.
             Try and alternate between the two as seen in the corrected version
             here:
@@ -252,9 +252,9 @@ function Action(props) {
       <div className="blog">
         <div className="blogText">
           <div className="blogSubHeader">INTROS</div>
-          The number one rule for introducing a{" "}
-          <span id="courrier">CHARACTER</span> is that first time they're
-          mentioned, just like <span id="courrier">PROPS</span>, it must be in{" "}
+          The number one rule for introducing a "
+          <span id="courrier">CHARACTER</span>" is that first time they're
+          mentioned, just like "<span id="courrier">PROPS</span>", it must be in{" "}
           <span id="courrier">ALL CAPS</span>.<br></br>
           <br></br>
           Keeping that in mind, there are two acceptable ways to go about
