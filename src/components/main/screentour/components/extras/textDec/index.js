@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./style.index.scss";
 import italicExample from "../../../../../../images/extras/textDec/italicExample.png";
 import underlineExample from "../../../../../../images/extras/textDec/underlineExample.png";
@@ -7,6 +7,9 @@ import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 function TextDec(props) {
+  useEffect(() => {
+    document.title = "How To Write A Screenplay - Text Decoration";
+  }, []);
   return (
     <div className="container">
       <div className="containerHeader">
