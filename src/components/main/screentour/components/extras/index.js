@@ -32,6 +32,7 @@ function Extras(props) {
         <div className="blog">
           <div className="blogText">
             <div className="blogSubHeader">WHAT'S HAPPENING</div>
+            **write something**
           </div>
         </div>
       </div>
