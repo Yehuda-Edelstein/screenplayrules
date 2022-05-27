@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.index.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,6 +23,10 @@ import screengradeWrylyExample from "../../../../../images/dialogue/screengradeW
 function Dialogue(props) {
   const [handleShow, setHandleShow] = useState(false);
   const [handleShowSecond, setHandleShowSecond] = useState(false);
+
+  useEffect(() => {
+    document.title = "How To Write A Screenplay - Dialogue?";
+  }, []);
 
   function show() {
     setHandleShow(true);
@@ -76,9 +80,8 @@ function Dialogue(props) {
           <br></br>
           <div className="blogSubHeader">CHARIES</div>
           Character parentheses or charies (pronounced: 'carries') are
-          parentheses that go beside the "<span id="courrier">
-            CHARACTER
-          </span>" name, right above the dialogue.
+          parentheses that go beside the "<span id="courrier">CHARACTER</span>"
+          name, right above the dialogue.
           <br></br>
           <br></br>
           The most common chary is <span id="courrier">(CONT'D)</span> and
