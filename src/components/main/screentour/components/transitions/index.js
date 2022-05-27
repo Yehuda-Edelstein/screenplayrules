@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -15,6 +15,10 @@ import screengradeIntercutSlugs from "../../../../../images/transitions/screengr
 
 function Transitions(props) {
   const [handleShow, setHandleShow] = useState(false);
+
+  useEffect(() => {
+    document.title = "How To Write A Screenplay - Transitions";
+  }, []);
 
   function show() {
     setHandleShow(true);
