@@ -1,8 +1,8 @@
+import React, { useEffect } from "react";
+import "./style.index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./style.index.scss";
 
 function Screentour(props) {
   useEffect(() => {
