@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -21,6 +21,10 @@ import clean from "../../../../../images/action/clean.png";
 function Action(props) {
   const [handleShow, setHandleShow] = useState(false);
   const [handleShowSecond, setHandleShowSecond] = useState(false);
+
+  useEffect(() => {
+    document.title = "How To Write A Screenplay - Action";
+  }, []);
 
   function show() {
     setHandleShow(true);
