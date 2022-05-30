@@ -32,7 +32,17 @@ function Extras(props) {
         <div className="blog">
           <div className="blogText">
             <div className="blogSubHeader">WHAT'S HAPPENING</div>
-            **write something**
+            <span id="italic">I'm confused -- aren't we done here?</span> Yes
+            and no.
+            <br></br>
+            <br></br>
+            In truth, you could write an entire script just using the blocks I
+            previously described in the main screentour section, but your
+            screenwriting arsenal would be greatly hindered.
+            <br></br>
+            <br></br>
+            What if you want your protagonist to have a flashback? Or articulate
+            a montage? You could figure these things out for yourself or...
           </div>
         </div>
       </div>
