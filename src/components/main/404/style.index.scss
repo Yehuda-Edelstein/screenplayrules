@@ -25,7 +25,7 @@
   }
 }
 
-.container {
+.notFoundContainer {
   animation: colorChange 20s infinite;
   font-family: "Courier Final Draft", Courier, monospace;
   border: 1px solid $dark-gray;
@@ -42,20 +42,22 @@
   -ms-user-select: none;
   user-select: none;
 
-  .slugline {
+  .notFoundSlugline {
     margin: 0 60px;
     font-size: 13px;
     display: flex;
     font-weight: bold;
     max-width: 325px;
+    min-width: 350px;
   }
 
-  .description {
+  .notFoundDescription {
     margin: 0.25em 0;
     margin-left: 60px;
     margin-right: 40px;
     line-height: 100%;
     font-size: 13px;
+    min-width: 350px;
     float: left;
     text-align: left;
   }
