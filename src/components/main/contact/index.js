@@ -8,6 +8,7 @@ function Contact(props) {
     document.title = "Screenplay Rules - Contact";
   }, []);
 
+  const [email, setEmail] = useState("");
   const [location, setLocation] = useState("CONTACT FORM");
   const [time, setTime] = useState("DAY");
   const [name, setName] = useState("YOU");
@@ -17,6 +18,10 @@ function Contact(props) {
   const [type, setType] = useState("ask a question");
   const [topic, setTopic] = useState("the screentour.");
   const [message, setMessage] = useState("");
+
+  function handleSubmit() {
+    console.log(`${name}, ${email}, ${message}`);
+  }
 
   return (
     <div>
@@ -28,29 +33,38 @@ function Contact(props) {
               spellcheck="false"
               type="text"
               maxLength="33"
+              required
               onChange={(ev) => setName(ev.target.value)}
+            ></input>
+            <label>EMAIL</label>
+            <input
+              spellcheck="false"
+              type="text"
+              required
+              onChange={(ev) => setEmail(ev.target.value)}
             ></input>
             <div className="dropDownDivContainer">
               <div className="dropDownDiv">
                 <label>TYPE</label>
-                <select onChange={(ev) => setType(ev.target.value)}>
-                  <option value="ask a question.">Question</option>
-                  <option value="leave a comment.">Comment</option>
-                  <option value="voice a concern.">Concern</option>
-                  <option value="say something.">Other</option>
+                <select onChange={(ev) => setType(ev.target.value)} required>
+                  <option value="ask a question">Question</option>
+                  <option value="leave a comment">Comment</option>
+                  <option value="voice a concern">Concern</option>
+                  <option value="say something">Other</option>
                 </select>
               </div>
               <div className="dropDownDiv">
                 <label>TOPIC</label>
-                <select onChange={(ev) => setTopic(ev.target.value)}>
-                  <option value="the screentour">Screentour</option>
-                  <option value="the glossary section">Glossary</option>
-                  <option value="something">Other</option>
+                <select onChange={(ev) => setTopic(ev.target.value)} required>
+                  <option value="the screentour.">Screentour</option>
+                  <option value="the glossary section.">Glossary</option>
+                  <option value="something.">Other</option>
                 </select>
               </div>
             </div>
             <label>MESSAGE</label>
             <textarea
+              required
               type="text"
               rows="5"
               onChange={(ev) => setMessage(ev.target.value)}
@@ -101,7 +115,11 @@ function Contact(props) {
           </div>
           <div className="footer">
             Send your script...
-            <FontAwesomeIcon className="sendIcon" icon={faPaperPlane} />
+            <FontAwesomeIcon
+              className="sendIcon"
+              icon={faPaperPlane}
+              onClick={handleSubmit}
+            />
           </div>
         </div>
       </div>
