@@ -15,6 +15,7 @@ import MusicCues from "./screentour/components/extras/musicCues";
 import Beats from "./screentour/components/extras/beats";
 import Dialogue from "./screentour/components/dialogue";
 import Slang from "./screentour/components/extras/slang";
+import CameraShots from "./screentour/components/extras/camerashots";
 import Superimpose from "./screentour/components/extras/superimpose";
 import OverBlack from "./screentour/components/extras/overBlack";
 import Rulebook from "./rulebook";
@@ -62,6 +63,7 @@ function Main(props) {
         <Route path="screentour/beats" element={<Beats />} />
         <Route path="screentour/dialogue" element={<Dialogue />} />
         <Route path="screentour/slang" element={<Slang />} />
+        <Route path="screentour/camerashots" element={<CameraShots />} />
         <Route path="screentour/superimpose" element={<Superimpose />} />
         <Route path="screentour/overblack" element={<OverBlack />} />
         <Route path="*" element={<div>404 component here</div>} />
