@@ -58,13 +58,13 @@ function Slang(props) {
           Some things to note:
           <br></br>
           <br></br>
-          When you have to totally equal characters (usually extras or side
-          characters) they should be introduced with an occumponying number like
+          When you have two totally equal characters (usually extras or side
+          characters) they should be introduced with an accompanying number like
           so: <span id="courrier">(1)</span>, <span id="courrier">(2)</span>,
           etc.
           <br></br>
           <br></br>
-          Note within a note: it looks nicer to wrap the number in peranthasis
+          Note within a note: it looks nicer to wrap the number in parentheses
           in my opinion, but you don't have to. "
           <span id="courrier">CHARACTER (1)</span>" vs.{" "}
           <span id="courrier">CHARACTER #1</span>" vs. "
@@ -74,7 +74,7 @@ function Slang(props) {
           Your call as always.
           <br></br>
           <br></br>
-          Note cubed: if you think you noticed an inconsistancy with my
+          Note cubed: if you think you noticed an inconsistency with my
           numbering rule, you didn't (re: wrylies section). Only number both
           characters when they have equally important or unimportant roles.
           <div className="pictureContainer">
@@ -94,11 +94,11 @@ function Slang(props) {
             />
           </div>
           Earlier I wrote an example scene that had a non-numbered "
-          <span id="courrier">CHARACTER</span>" who was suprised by a numbered "
-          <span id="courrier">CHARACTER (2)</span>". The difference here is that
-          I used those character names for simplicty. Realistically, they'd both
-          have unique names since they both serve a a unique purpose in the
-          script.
+          <span id="courrier">CHARACTER</span>" who was surprised by a numbered
+          "<span id="courrier">CHARACTER (2)</span>". The difference here is
+          that I used those character names for simplicity. Realistically,
+          they'd both have unique names since they both serve a a unique purpose
+          in the script.
           <br></br>
           <br></br>
           p.s.: if I don't note something you're confused by, it'll probably be
