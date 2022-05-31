@@ -1,7 +1,7 @@
 @import "../../../index.scss";
 
 // ANIMATIONS
-@keyframes colorChange {
+/* @keyframes colorChange {
   0% {
     background-color: $dark-blue;
     color: $white;
@@ -24,12 +24,13 @@
     color: $white;
   }
 }
+*/
 
 .notFoundContainer {
   animation: colorChange 20s infinite;
   font-family: "Courier Final Draft", Courier, monospace;
   border: 1px solid $dark-gray;
-
+  // background-color: white;
   text-align: center;
   height: fit-content;
   height: 78vh;
@@ -43,7 +44,7 @@
   user-select: none;
 
   .notFoundSlugline {
-    margin: 0 60px;
+    // margin: 0 60px;
     font-size: 13px;
     display: flex;
     font-weight: bold;
@@ -53,7 +54,7 @@
 
   .notFoundDescription {
     margin: 0.25em 0;
-    margin-left: 60px;
+    // margin-left: 60px;
     margin-right: 40px;
     line-height: 100%;
     font-size: 13px;
