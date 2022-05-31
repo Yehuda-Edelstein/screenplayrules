@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./style.index.scss";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,6 +23,10 @@ import screengradeWrylyExample from "../../../../../images/dialogue/screengradeW
 function Dialogue(props) {
   const [handleShow, setHandleShow] = useState(false);
   const [handleShowSecond, setHandleShowSecond] = useState(false);
+
+  useEffect(() => {
+    document.title = "How To Write A Screenplay - Dialogue?";
+  }, []);
 
   function show() {
     setHandleShow(true);
@@ -76,9 +80,7 @@ function Dialogue(props) {
           <br></br>
           <div className="blogSubHeader">CHARIES</div>
           Character parentheses or charies (pronounced: 'carries') are
-          parentheses that go beside the <span id="courrier">
-            CHARACTER
-          </span>{" "}
+          parentheses that go beside the "<span id="courrier">CHARACTER</span>"
           name, right above the dialogue.
           <br></br>
           <br></br>
@@ -140,8 +142,8 @@ function Dialogue(props) {
           <br></br>
           <br></br>
           The first line of dialogue happens for the audience during the first
-          scene, but for the character, it happens in the second. Right?{" "}
-          <span id="courrier">CHARACTER</span> isn't saying "
+          scene, but for the character, it happens in the second. Right? "
+          <span id="courrier">CHARACTER</span>" isn't saying "
           <span id="courrier">Man, it's eerie here</span>" during the daytime
           scene. It only seems that way to the viewer, but he (or she -- relax,
           it's an amorphous, genderless entity) is actually saying this during
@@ -182,8 +184,8 @@ function Dialogue(props) {
           point in the script.
           <br></br>
           <br></br>
-          The exception to <span id="italic">this</span> exception is with a{" "}
-          <span id="courrier">NARRATOR</span> who remains off screen the entire
+          The exception to <span id="italic">this</span> exception is with a "
+          <span id="courrier">NARRATOR</span>" who remains off screen the entire
           film. Although, you'd need to use <span id="courrier">(V.O.)</span> in
           that case. Always. The reason for which you'll understand shortly.
           Hopefully. Anyways. Moving right along...
@@ -227,7 +229,8 @@ function Dialogue(props) {
           .<br></br>
           <br></br>
           Note: they use <span id="courrier">(Over)</span> in the script for
-          narration and it makes me gag. But, hey, whatever sells.
+          narration and it makes me gag. But, hey, whatever sells. Lol.{" "}
+          <span id="italic">Oscar. Winner.</span>
           <br></br>
           <br></br>
           Either way, it doesn't matter. The screenplay rule over here is
@@ -265,7 +268,7 @@ function Dialogue(props) {
           Or amorphous, genderless entity. Anyways...
           <br></br>
           <br></br>
-          Back to our guy, <span id="courrier">Brady</span>. He's doing okay.
+          Back to our guy, "<span id="courrier">Brady</span>". He's doing okay.
           But, he seems lonely. Let's give him a love interest and get that ball
           rolling:
           <div className="pictureContainer">
@@ -377,7 +380,7 @@ function Dialogue(props) {
           tone of a particular line or block of dialogue?
           <br></br>
           <br></br>
-          Assuming our main <span id="courrier">Character</span> has already
+          Assuming our main "<span id="courrier">Character</span>" has already
           been introduced, here's the scene:
           <div className="pictureContainer">
             <img className="picture" src={bareDialogue} alt="bare dialogue" />
@@ -395,8 +398,8 @@ function Dialogue(props) {
           the occasional wryly. First off, what's a wryly?
           <br></br>
           <br></br>
-          Wrylies (plural) are parentheticals found between the{" "}
-          <span id="courrier">CHARACTER</span> name and their dialogue to help
+          Wrylies (plural) are parentheticals found between the "
+          <span id="courrier">CHARACTER</span>" name and their dialogue to help
           imply tone:
           <div className="pictureContainer">
             <img className="picture" src={wrylyExample} alt="wryly example" />
@@ -433,7 +436,7 @@ function Dialogue(props) {
             />
           </div>
           Now you can really feel the tension. Don't worry, we'll get back to
-          our guy, <span id="courrier">Brady</span> in the coming sections.
+          our guy, "<span id="courrier">Brady</span>" in the coming sections.
         </div>
       </div>
       {!handleShowSecond ? (
@@ -444,7 +447,7 @@ function Dialogue(props) {
         <div className="closeHeader">
           <FontAwesomeIcon
             icon={faClose}
-            onClick={close}
+            onClick={closeSecond}
             className="closeButton"
           />
         </div>

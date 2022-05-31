@@ -1,8 +1,8 @@
+import React, { useEffect } from "react";
+import "./style.index.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./style.index.scss";
 
 function Screentour(props) {
   useEffect(() => {
@@ -77,10 +77,10 @@ function Screentour(props) {
             <br></br>
             <br></br>
             <div className="blogSubHeader">WHO AM I</div>
-            My name's Yehuda. I'm a spec screenwriter/software engineer and I
-            made this website both as a project, but also as a way to give back
-            to the screenwriting community. The layout is loosly based on
-            Reddit, Stack Overflow, and Urban Dictionary.
+            My name's Eddy. I'm a spec screenwriter/software engineer and I made
+            this website both as a project, but also as a way to give back to
+            the screenwriting community. The layout is loosly based on Reddit,
+            Stack Overflow, and Urban Dictionary.
             <br></br>
             <br></br>
             To give a little background, I started writing screenplays a while

@@ -1,0 +1,13 @@
+@import "../../index.scss";
+
+.footer {
+  //   background: repeating-linear-gradient(
+  //     45deg,
+  //     $gray,
+  //     $gray 30px,
+  //     white 30px,
+  //     #ffffff 60px
+  //   );
+  background-color: $dark-gray;
+  border-top: 1px solid black;
+}

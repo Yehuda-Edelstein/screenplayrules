@@ -1,1 +1,1 @@
-1. add a onClick to pictures to make it full screen of container.
+1. add a screentour search on intro page or something.

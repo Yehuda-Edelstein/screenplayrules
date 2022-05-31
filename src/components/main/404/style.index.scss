@@ -1,0 +1,65 @@
+@import "../../../index.scss";
+
+// ANIMATIONS
+/* @keyframes colorChange {
+  0% {
+    background-color: $dark-blue;
+    color: $white;
+  }
+  25% {
+    background-color: $light-orange;
+    color: $darker-blue;
+  }
+  50% {
+    background-color: $dark-blue;
+    color: $white;
+  }
+
+  75% {
+    background-color: $light-orange;
+    color: $darker-blue;
+  }
+  100% {
+    background-color: $dark-blue;
+    color: $white;
+  }
+}
+*/
+
+.notFoundContainer {
+  animation: colorChange 20s infinite;
+  font-family: "Courier Final Draft", Courier, monospace;
+  border: 1px solid $dark-gray;
+  // background-color: white;
+  text-align: center;
+  height: fit-content;
+  height: 78vh;
+  padding: 50px 0;
+  /* disables highlighting */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  .notFoundSlugline {
+    // margin: 0 60px;
+    font-size: 13px;
+    display: flex;
+    font-weight: bold;
+    max-width: 325px;
+    min-width: 350px;
+  }
+
+  .notFoundDescription {
+    margin: 0.25em 0;
+    // margin-left: 60px;
+    margin-right: 40px;
+    line-height: 100%;
+    font-size: 13px;
+    min-width: 350px;
+    float: left;
+    text-align: left;
+  }
+}
