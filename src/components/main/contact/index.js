@@ -30,7 +30,7 @@ function Contact(props) {
           <div className="main">
             <label>NAME</label>
             <input
-              spellcheck="false"
+              spellCheck="false"
               type="text"
               maxLength="33"
               required
@@ -38,7 +38,7 @@ function Contact(props) {
             ></input>
             <label>EMAIL</label>
             <input
-              spellcheck="false"
+              spellCheck="false"
               type="text"
               required
               onChange={(ev) => setEmail(ev.target.value)}
@@ -73,14 +73,14 @@ function Contact(props) {
           <div className="extra">
             <label>LOCATION</label>
             <input
-              spellcheck="false"
+              spellCheck="false"
               type="text"
               maxLength="33"
               onChange={(ev) => setLocation(ev.target.value)}
             ></input>
             <label>TIME</label>
             <input
-              spellcheck="false"
+              spellCheck="false"
               type="text"
               maxLength="10"
               onChange={(ev) => setTime(ev.target.value)}
