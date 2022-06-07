@@ -42,7 +42,7 @@ function CameraShots(props) {
           want. But again, if you're reading this you are probably a rookie.
           <br></br>
           <br></br>
-          Here's the two acceptable shots you can use when needed:
+          Here are two acceptable shots you can use when needed:
           <ul>
             <li>
               <span id="courrier">ANGLE ON</span>
