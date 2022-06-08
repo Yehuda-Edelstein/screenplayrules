@@ -14,7 +14,7 @@ function FadeIn(props) {
     <div>
       {/* Screentour Header maybe have outline/extras along it */}
       <div className="container">
-        <header className="containerHeader">
+        <div className="containerHeader">
           <Link
             to="/screentour"
             style={{ color: "inherit", textDecoration: "inherit" }}
@@ -32,9 +32,9 @@ function FadeIn(props) {
               <FontAwesomeIcon icon={faArrowRight} />
             </span>
           </Link>
-        </header>
-        <article className="blog">
-          <p className="blogText">
+        </div>
+        <div className="blog">
+          <div className="blogText">
             When used, the words "<span id="courrier">FADE IN</span>" are the
             first words found in a screenplay. Their point is to introduce the
             shift from black screen (before the movie starts) to the first scene
@@ -78,9 +78,9 @@ function FadeIn(props) {
             It doesn't seem like much, but I think it helps give the script a
             cleaner start. Trim the fat, you know?
             <br></br>
-          </p>
-        </article>
-        <footer className="localGlossary">
+          </div>
+        </div>
+        <div className="localGlossary">
           <div className="localGlossaryHeader">LOCAL GLOSS'</div>
           <ol className="localGlossaryList">
             <li>
@@ -111,7 +111,7 @@ function FadeIn(props) {
           <div className="localGlossaryFooter">
             <span>**full definitions found in glossary above**</span>
           </div>
-        </footer>
+        </div>
       </div>
     </div>
   );
