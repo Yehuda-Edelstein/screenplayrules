@@ -113,7 +113,7 @@ function Contact(props) {
               <div className="message">{message}</div>
             </div>
           </div>
-          <div className="footer">
+          <div className="messageFooter">
             Send your script...
             <FontAwesomeIcon
               className="sendIcon"

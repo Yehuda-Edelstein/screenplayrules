@@ -19,6 +19,16 @@
   border-top: none;
   border-bottom: none;
 
+  h1 {
+    font-weight: 100;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0;
+  }
+
   #bold {
     font-weight: bold;
   }
@@ -396,7 +406,7 @@
 //     }
 // }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 520px) {
   .main {
     padding: 0;
   }
