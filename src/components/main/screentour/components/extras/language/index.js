@@ -39,6 +39,7 @@ function Language(props) {
           That being said, it looks bad if you keep using profanity as a crutch.
           A lot of amatuar writers think all intense scenes require a barrage of
           explatives, but they don't. So, use them wisely. Fucker.
+          {/* jordan belfort scene from wolf of wallstreet */}
           <br></br>
           <br></br>
           Anyways, this section is actually talking about foriegn languages and
@@ -57,7 +58,7 @@ function Language(props) {
           <br></br>
           Note: if your character is speaking the language badly for comedic
           effect, you <span id="italic">can</span> write out the foriegn words
-          in Englihs. Just make sure to use a wryly here as well.
+          in English. Just make sure to use a wryly here as well.
         </div>
       </div>
     </div>
