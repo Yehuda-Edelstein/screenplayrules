@@ -44,7 +44,7 @@ function Action(props) {
 
   return (
     <div className="container">
-      <header className="containerHeader">
+      <div className="containerHeader">
         <Link
           to="/screentour/slugs"
           style={{ color: "inherit", textDecoration: "inherit" }}
@@ -62,15 +62,16 @@ function Action(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </Link>
-      </header>
-      <article className="blog">
-        <p className="blogText">
+      </div>
+
+      <div className="blog">
+        <div className="blogText">
           Alright, you got your slugline. It's nice and bold, secured at the top
           of page 1. Your where and when. Now the what -- it's time for some
           action.
           <br></br>
           <br></br>
-          <h1 className="blogSubHeader">DESCRIPTION</h1>
+          <div className="blogSubHeader">DESCRIPTION</div>
           Let's take our previous example of a "
           <span id="courrier">BURGER JOINT</span>", but, for simplicity, we'll
           change it to "<span id="courrier">RESTAURANT</span>" (p.s.: basic
@@ -154,109 +155,107 @@ function Action(props) {
             />
           </div>
           Not to shabby, huh. Okay. Now, let's fix that intro.
-        </p>
-      </article>
+        </div>
+      </div>
       {!handleShow ? (
-        <header className="screengradeHeader" onClick={show}>
+        <div className="screengradeHeader" onClick={show}>
           CLICK HERE TO IMPROVE THE SCREENGRADE
-        </header>
+        </div>
       ) : (
-        <header className="closeHeader">
+        <div className="closeHeader">
           <FontAwesomeIcon
             icon={faClose}
             onClick={close}
             className="closeButton"
           />
-        </header>
+        </div>
       )}
       {handleShow && (
         <div className="screengradeContainer">
-          <article>
-            <p className="screengradeBlogText">
-              For a cleaner look:
-              <div className="screengradePictureContainer">
-                <img
-                  className="picture"
-                  src={screengradeLongDescriptionWithEdits}
-                  alt="long description with 
+          <div className="screengradeBlogText">
+            For a cleaner look:
+            <div className="screengradePictureContainer">
+              <img
+                className="picture"
+                src={screengradeLongDescriptionWithEdits}
+                alt="long description with 
                                 extra stuff crossed out"
-                />
-              </div>
-              {/* fix the stacked caps for 'a' */}
-              3. Long paragraphs are bad, just like long sentences are. Better
-              to have three separate blocks<sup>2</sup> for a total of five
-              lines (seven, including white lines<sup>3</sup>) than having one
-              block for a total of five lines.
-              <br></br>
-              <br></br>
-              4. The "
-              <span id="yellow">
-                <span id="courrier">S</span>
-              </span>
-              " and "
-              <span id="yellow">
-                <span id="courrier">B</span>
-              </span>
-              " are highlighted because stacked capitalized letters<sup>4</sup>{" "}
-              (or stacked caps) are off-putting. Now, even though only the "
-              <span id="yellow">
-                <span id="courrier">B</span>
-              </span>
-              " is actually problematic, I highlighted both letters to
-              illuminate on the issue.
-              <br></br>
-              <br></br>
-              5. Similarly, the two "
-              <span id="red">
-                <span id="courrier">a</span>
-              </span>
-              "s are equally (if not more) problematic because they are the same
-              letter. Whether capitalized or not, stacked letters<sup>5</sup>{" "}
-              are never good for your screengrade.
-              <br></br>
-              <br></br>
-              Note: 4. and 5. apply whether they appear at the start of the
-              line, end of the line, or anywhere in between. You may think it's
-              nuts, but I've done my research and readers do respond better to
-              scripts that minimize stacked caps and stacked letters
-              <sup>**</sup>
-              <br></br>
-              <br></br>
-              Worse than stacking individual letters is doing it with full
-              words, which is just horrifying, and something only AI should be
-              able to get away with. Personally, I wouldn't even start
-              succeeding paragraphs with the same word or letter either. But,
-              hey, that's just me.
-              <br></br>
-              <br></br>
-              Anyways, the fix here is easy -- we just add the word{" "}
-              <span id="courrier">"large"</span> before "
-              <span id="courrier">DUMPSTER</span>" as you'll see shortly.
-              <br></br>
-              <br></br>
-              5. Finally, for the{" "}
-              <span id="red">
-                "<span id="courrier">Brady</span>"
-              </span>
-              s in <span id="red">red</span>. Similar to stacking letters, you
-              should refrain from using the same pronoun or name twice in a row.
-              Try and alternate between the two as seen in the corrected version
-              here:
-              <div className="screengradePictureContainer">
-                <img
-                  className="picture"
-                  src={descriptionFixed}
-                  alt="description 
+              />
+            </div>
+            {/* fix the stacked caps for 'a' */}
+            3. Long paragraphs are bad, just like long sentences are. Better to
+            have three separate blocks<sup>2</sup> for a total of five lines
+            (seven, including white lines<sup>3</sup>) than having one block for
+            a total of five lines.
+            <br></br>
+            <br></br>
+            4. The "
+            <span id="yellow">
+              <span id="courrier">S</span>
+            </span>
+            " and "
+            <span id="yellow">
+              <span id="courrier">B</span>
+            </span>
+            " are highlighted because stacked capitalized letters<sup>4</sup>{" "}
+            (or stacked caps) are off-putting. Now, even though only the "
+            <span id="yellow">
+              <span id="courrier">B</span>
+            </span>
+            " is actually problematic, I highlighted both letters to illuminate
+            on the issue.
+            <br></br>
+            <br></br>
+            5. Similarly, the two "
+            <span id="red">
+              <span id="courrier">a</span>
+            </span>
+            "s are equally (if not more) problematic because they are the same
+            letter. Whether capitalized or not, stacked letters<sup>5</sup> are
+            never good for your screengrade.
+            <br></br>
+            <br></br>
+            Note: 4. and 5. apply whether they appear at the start of the line,
+            end of the line, or anywhere in between. You may think it's nuts,
+            but I've done my research and readers do respond better to scripts
+            that minimize stacked caps and stacked letters<sup>**</sup>
+            <br></br>
+            <br></br>
+            Worse than stacking individual letters is doing it with full words,
+            which is just horrifying, and something only AI should be able to
+            get away with. Personally, I wouldn't even start succeeding
+            paragraphs with the same word or letter either. But, hey, that's
+            just me.
+            <br></br>
+            <br></br>
+            Anyways, the fix here is easy -- we just add the word{" "}
+            <span id="courrier">"large"</span> before "
+            <span id="courrier">DUMPSTER</span>" as you'll see shortly.
+            <br></br>
+            <br></br>
+            5. Finally, for the{" "}
+            <span id="red">
+              "<span id="courrier">Brady</span>"
+            </span>
+            s in <span id="red">red</span>. Similar to stacking letters, you
+            should refrain from using the same pronoun or name twice in a row.
+            Try and alternate between the two as seen in the corrected version
+            here:
+            <div className="screengradePictureContainer">
+              <img
+                className="picture"
+                src={descriptionFixed}
+                alt="description 
                                     fixed"
-                />
-              </div>
-            </p>
-          </article>
+              />
+            </div>
+          </div>
         </div>
       )}
-      <article className="blog">
-        <p className="blogText">
-          <h1 className="blogSubHeader">INTROS</h1>
+
+      <div className="blog">
+        <div className="blogText">
+          <div className="blogSubHeader">INTROS</div>
           The number one rule for introducing a "
           <span id="courrier">CHARACTER</span>" is that first time they're
           mentioned, just like "<span id="courrier">PROPS</span>", it must be in{" "}
@@ -322,69 +321,67 @@ function Action(props) {
           <div className="pictureContainer">
             <img className="picture" src={withAge} alt="with age" />
           </div>
-        </p>
-      </article>
+        </div>
+      </div>
       {!handleShowSecond ? (
-        <header className="screengradeHeader" onClick={showSecond}>
+        <div className="screengradeHeader" onClick={showSecond}>
           CLICK HERE FOR SCREENGRADE VERSION
-        </header>
+        </div>
       ) : (
-        <header className="closeHeader">
+        <div className="closeHeader">
           <FontAwesomeIcon
             icon={faClose}
             onClick={closeSecond}
             className="closeButton"
           />
-        </header>
+        </div>
       )}
       {handleShowSecond && (
         <div className="screengradeContainer">
-          <article>
-            <p className="screengradeBlogText">
-              It's always better for your screengrade to include the age:
-              <br></br>
-              <div className="screengradePictureContainer">
-                <img
-                  className="picture"
-                  src={screengradeCleanWithAge}
-                  alt="screengrade clean with age"
-                />
-              </div>
-              Uh oh --
-              <br></br>
-              <div className="screengradePictureContainer">
-                <img
-                  className="picture"
-                  src={screengradeCleanWithAgeAndHighlights}
-                  alt="screengrade with age and highlights"
-                />
-              </div>
-              The <span id="yellow">yellow</span> letters here are a less severe
-              version of stacked capitalization, as we saw earlier, where the
-              stacked letters are both in <span id="courrier">CAPS</span>, but
-              different.
-              <br></br>
-              <br></br>
-              Though less severe is still severe so let's just change the line
-              to "<span id="courrier">In his hand is a CIGARETTE</span>"
-              <br></br>
-              <div className="screengradePictureContainer">
-                <img className="picture" src={hh} alt="stacked letters" />
-              </div>
-              Another quick adjustment --
-              <br></br>
-              <div className="screengradePictureContainer">
-                <img className="picture" src={clean} alt="clean, no edits" />
-              </div>
-              There we go. Just switch out "<span id="courrier">hit</span>" with
-              "<span id="courrier">drag</span>" and we're golden. See? Not so
-              difficult. Screengrading on the go will become second nature to
-              you in no time.
-            </p>
-          </article>
+          <div className="screengradeBlogText">
+            It's always better for your screengrade to include the age:
+            <br></br>
+            <div className="screengradePictureContainer">
+              <img
+                className="picture"
+                src={screengradeCleanWithAge}
+                alt="screengrade clean with age"
+              />
+            </div>
+            Uh oh --
+            <br></br>
+            <div className="screengradePictureContainer">
+              <img
+                className="picture"
+                src={screengradeCleanWithAgeAndHighlights}
+                alt="screengrade with age and highlights"
+              />
+            </div>
+            The <span id="yellow">yellow</span> letters here are a less severe
+            version of stacked capitalization, as we saw earlier, where the
+            stacked letters are both in <span id="courrier">CAPS</span>, but
+            different.
+            <br></br>
+            <br></br>
+            Though less severe is still severe so let's just change the line to
+            "<span id="courrier">In his hand is a CIGARETTE</span>"<br></br>
+            <div className="screengradePictureContainer">
+              <img className="picture" src={hh} alt="stacked letters" />
+            </div>
+            Another quick adjustment --
+            <br></br>
+            <div className="screengradePictureContainer">
+              <img className="picture" src={clean} alt="clean, no edits" />
+            </div>
+            There we go. Just switch out "<span id="courrier">hit</span>" with "
+            <span id="courrier">drag</span>" and we're golden. See? Not so
+            difficult. Screengrading on the go will become second nature to you
+            in no time.
+          </div>
         </div>
       )}
-      <footer className="localGlossary">
+
+      <div className="localGlossary">
         <div className="localGlossaryHeader">LOCAL GLOSS'</div>
         <ol className="localGlossaryList">
           <li>
@@ -450,7 +447,7 @@ function Action(props) {
         <div className="localGlossaryFooter">
           <span>**full definitions found in glossary above**</span>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }

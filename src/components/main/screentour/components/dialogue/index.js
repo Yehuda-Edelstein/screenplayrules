@@ -46,7 +46,7 @@ function Dialogue(props) {
 
   return (
     <div className="container">
-      <header className="containerHeader">
+      <div className="containerHeader">
         <Link
           to="/screentour/action"
           style={{ color: "inherit", textDecoration: "inherit" }}
@@ -64,10 +64,10 @@ function Dialogue(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </Link>
-      </header>
+      </div>
 
-      <article className="blog">
-        <p className="blogText">
+      <div className="blog">
+        <div className="blogText">
           So, you've got your where, when, what, and who. But, what's your who
           saying?
           <br></br>
@@ -78,7 +78,7 @@ function Dialogue(props) {
           regarding dialogue as a block in general.
           <br></br>
           <br></br>
-          <h1 className="blogSubHeader">CHARIES</h1>
+          <div className="blogSubHeader">CHARIES</div>
           Character parentheses or charies (pronounced: 'carries') are
           parentheses that go beside the "<span id="courrier">CHARACTER</span>"
           name, right above the dialogue.
@@ -308,75 +308,74 @@ function Dialogue(props) {
           The only difference with a nickname is that you should put{" "}
           <span id="courrier">""</span> around it as we did with our lovely{" "}
           <span id="courrier">"JULES"</span>.<br></br>
-        </p>
-      </article>
+        </div>
+      </div>
+
       {!handleShow ? (
-        <header className="screengradeHeader" onClick={show}>
+        <div className="screengradeHeader" onClick={show}>
           CLICK HERE FOR SCREENGRADE VERSION
-        </header>
+        </div>
       ) : (
-        <header className="closeHeader">
+        <div className="closeHeader">
           <FontAwesomeIcon
             icon={faClose}
             onClick={close}
             className="closeButton"
           />
-        </header>
+        </div>
       )}
       {handleShow && (
         <div className="screengradeContainer">
-          <article>
-            <p className="screengradeBlogText">
-              <div className="screengradePictureContainer">
-                <img
-                  className="picture"
-                  src={screegradeWithDialogueAndHighlights}
-                  alt="dialogie with screengrade highlights"
-                />
-              </div>
-              3. Every time you see a{" "}
-              <span id="courrier">
-                <span id="yellow">--</span>
-              </span>{" "}
-              in a script, it's implying a cutoff<sup>5</sup> and could be found
-              in both description and dialogue. It can be used for a jump scare
-              or to break a silence with intention (more on this in surprise
-              section -- literally, not like the section is a surprise). Here I
-              would include it because <span id="courrier">Jules</span> is going
-              to be the love interest and the reader should know that her
-              introduction will likely be an important shot.
-              <br></br>
-              <br></br>
-              4. Having parallel capitalized letters<sup>6</sup> or parallel
-              caps is not as visually grotesque as stacked caps, but it's still
-              not worth the lower screengrade. We'll just squeeze the word "
-              <span id="courrier">back</span>" between{" "}
-              <span id="red">
-                <span id="courrier">A</span>
-              </span>{" "}
-              and{" "}
-              <span id="red">
-                <span id="courrier">D</span>
-              </span>
-              , and we're good to go.
-              <br></br>
-              <br></br>
-              5. Using a{" "}
-              <span id="courrier">
-                <span id="yellow">:</span>
-              </span>{" "}
-              (i.e., a colon) is a way to show the dialogue that proceeds a
-              description is directly relevant to the action before it. In our
-              case, Jules throws open the back door, then instantly calls Brady
-              a loser. Using a colon is like including the action in the
-              dialogue itself (we will see exactly this in a moment).
-            </p>
-          </article>
+          <div className="screengradeBlogText">
+            <div className="screengradePictureContainer">
+              <img
+                className="picture"
+                src={screegradeWithDialogueAndHighlights}
+                alt="dialogie with screengrade highlights"
+              />
+            </div>
+            3. Every time you see a{" "}
+            <span id="courrier">
+              <span id="yellow">--</span>
+            </span>{" "}
+            in a script, it's implying a cutoff<sup>5</sup> and could be found
+            in both description and dialogue. It can be used for a jump scare or
+            to break a silence with intention (more on this in surprise section
+            -- literally, not like the section is a surprise). Here I would
+            include it because <span id="courrier">Jules</span> is going to be
+            the love interest and the reader should know that her introduction
+            will likely be an important shot.
+            <br></br>
+            <br></br>
+            4. Having parallel capitalized letters<sup>6</sup> or parallel caps
+            is not as visually grotesque as stacked caps, but it's still not
+            worth the lower screengrade. We'll just squeeze the word "
+            <span id="courrier">back</span>" between{" "}
+            <span id="red">
+              <span id="courrier">A</span>
+            </span>{" "}
+            and{" "}
+            <span id="red">
+              <span id="courrier">D</span>
+            </span>
+            , and we're good to go.
+            <br></br>
+            <br></br>
+            5. Using a{" "}
+            <span id="courrier">
+              <span id="yellow">:</span>
+            </span>{" "}
+            (i.e., a colon) is a way to show the dialogue that proceeds a
+            description is directly relevant to the action before it. In our
+            case, Jules throws open the back door, then instantly calls Brady a
+            loser. Using a colon is like including the action in the dialogue
+            itself (we will see exactly this in a moment).
+          </div>
         </div>
       )}
-      <article className="blog">
-        <p className="blogText">
-          <h1 className="blogSubHeader">WRYLIES</h1>
+      <div className="blog">
+        <div className="blogText">
+          <div className="blogSubHeader">WRYLIES</div>
           Suppose I asked you this question: How do you let your reader know the
           tone of a particular line or block of dialogue?
           <br></br>
@@ -438,41 +437,39 @@ function Dialogue(props) {
           </div>
           Now you can really feel the tension. Don't worry, we'll get back to
           our guy, "<span id="courrier">Brady</span>" in the coming sections.
-        </p>
-      </article>
+        </div>
+      </div>
       {!handleShowSecond ? (
-        <header className="screengradeHeader" onClick={showSecond}>
+        <div className="screengradeHeader" onClick={showSecond}>
           CLICK HERE FOR SCREENGRADE VERSION
-        </header>
+        </div>
       ) : (
-        <header className="closeHeader">
+        <div className="closeHeader">
           <FontAwesomeIcon
             icon={faClose}
             onClick={closeSecond}
             className="closeButton"
           />
-        </header>
+        </div>
       )}
       {handleShowSecond && (
-        <article>
-          <p className="screengradeBlogText">
-            <div className="screengradePictureContainer">
-              <img
-                className="picture"
-                src={screengradeWrylyExample}
-                alt="wryly example with screegrade rules"
-              />
-            </div>
-            1. A cutoff has been added because Character (2)'s intro is a jump
-            scare, and jump scares should be preceded by a cutoff.
-            <br></br>
-            <br></br>
-            2. To give the scene more tension we've added a beat<sup>7</sup> in
-            between two blocks of dialogue.
-          </p>
-        </article>
+        <div className="screengradeBlogText">
+          <div className="screengradePictureContainer">
+            <img
+              className="picture"
+              src={screengradeWrylyExample}
+              alt="wryly example with screegrade rules"
+            />
+          </div>
+          1. A cutoff has been added because Character (2)'s intro is a jump
+          scare, and jump scares should be preceded by a cutoff.
+          <br></br>
+          <br></br>
+          2. To give the scene more tension we've added a beat<sup>7</sup> in
+          between two blocks of dialogue.
+        </div>
       )}
-      <footer className="localGlossary">
+      <div className="localGlossary">
         <div className="localGlossaryHeader">LOCAL GLOSS'</div>
         <ol className="localGlossaryList">
           <li>
@@ -520,7 +517,7 @@ function Dialogue(props) {
         <div className="localGlossaryFooter">
           <span>**full definitions found in glossary above**</span>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }

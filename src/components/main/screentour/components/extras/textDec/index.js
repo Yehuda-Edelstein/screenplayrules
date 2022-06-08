@@ -12,7 +12,7 @@ function TextDec(props) {
   }, []);
   return (
     <div className="container">
-      <header className="containerHeader">
+      <div className="containerHeader">
         <Link
           to="/screentour/extras"
           style={{ color: "inherit", textDecoration: "inherit" }}
@@ -30,9 +30,9 @@ function TextDec(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </Link>
-      </header>
-      <article className="blog">
-        <p className="blogText">
+      </div>
+      <div className="blog">
+        <div className="blogText">
           It's a known rule that every script needs to be written in some type
           of <span id="courrier">COURRIER</span>
           <sup>*</sup> font. Having your sceenplay be in any other, is a
@@ -59,9 +59,9 @@ function TextDec(props) {
           descriptions in any way, so don't do it.
           <br></br>
           <br></br>
-          <h1 className="boldSubHeader" id="bold">
+          <div className="boldSubHeader" id="bold">
             BOLD
-          </h1>
+          </div>
           Other than sluglines, the only time you should be using bold is with
           superimposition, which will be covered in a further section. Any other
           bold making it into your script is going to bring your screengrade
@@ -69,9 +69,9 @@ function TextDec(props) {
           of amateur writing.
           <br></br>
           <br></br>
-          <h1 className="italicsSubHeader" id="italic">
+          <div className="italicsSubHeader" id="italic">
             ITALICS
-          </h1>
+          </div>
           In standard bookwriting, using italics is a way of adding emphasis to
           a word. However, in screenwriting, I've seen the job done by
           underlining instead of italicizing. Personally, I use italics, but
@@ -91,9 +91,9 @@ function TextDec(props) {
           <span id="underline">same</span> script, unlike what I'm doing now.
           <br></br>
           <br></br>
-          <h1 className="underlineSubHeader" id="underline">
+          <div className="underlineSubHeader" id="underline">
             UNDERLINE
-          </h1>
+          </div>
           The only thing not covered in the previous subsection regarding what
           to underline is with superimposition. And the thing is, it's needed.
           Somewhat. Both underline and bold should be present with whatever is
@@ -110,14 +110,14 @@ function TextDec(props) {
           decide which you prefer. Personally, I go with bold. But, you do you.
           <br></br>
           <br></br>
-          <h1 className="underlineSubHeader">CAPS</h1>
+          <div className="underlineSubHeader">CAPS</div>
           Shortly put, if it isn't a slugline, prop, or character, you shouldn't
           be putting anything in <span id="courrier">ALL CAPS</span>. The worst
           you could do is use caps to emphasize a word in dialogue, instead of
           italicizing or underlining.
-        </p>
-      </article>
-      <footer className="localGlossary">
+        </div>
+      </div>
+      <div className="localGlossary">
         <div className="localGlossaryHeader">LOCAL GLOSS'</div>
         <ol className="localGlossaryList">
           <span className="localGlossaryFooter">
@@ -132,7 +132,7 @@ function TextDec(props) {
             <br></br>
           </span>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }

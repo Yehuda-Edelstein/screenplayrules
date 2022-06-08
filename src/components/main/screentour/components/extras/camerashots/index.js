@@ -11,7 +11,7 @@ function CameraShots(props) {
   }, []);
   return (
     <div className="container">
-      <header className="containerHeader">
+      <div className="containerHeader">
         <Link
           to="/screentour/slang"
           style={{ color: "inherit", textDecoration: "inherit" }}
@@ -29,9 +29,9 @@ function CameraShots(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </Link>
-      </header>
-      <article className="blog">
-        <p className="blogText">
+      </div>
+      <div className="blog">
+        <div className="blogText">
           As I've stated earlier in the tour, unless you're QT, it's not your
           job as a screenwriter to shoot the movie. Just to write it.
           <br></br>
@@ -42,7 +42,7 @@ function CameraShots(props) {
           want. But again, if you're reading this you are probably a rookie.
           <br></br>
           <br></br>
-          Here are two acceptable shots you can use when needed:
+          Here's the two acceptable shots you can use when needed:
           <ul>
             <li>
               <span id="courrier">ANGLE ON</span>
@@ -87,8 +87,8 @@ function CameraShots(props) {
           <span id="courrier">CHARACTER (1)</span>" displayed on the "
           <span id="courrier">SCREEN</span>". For comedic effect or whatever.
           Not as something happening in the background, but as an actual shot.
-        </p>
-      </article>
+        </div>
+      </div>
     </div>
   );
 }
