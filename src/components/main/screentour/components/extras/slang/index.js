@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import awfulDialogue from "../../../../../../images/extras/slang/awfulDialogue.png";
-import toyStoryExample from "../../../../../../images/extras/slang/toyStoryExample.png";
+import awfulDialogue from "../../../../../../images/slang/awfulDialogue.png";
+import toyStoryExample from "../../../../../../images/slang/toyStoryExample.png";
 
 function Slang(props) {
   useEffect(() => {
@@ -11,7 +11,7 @@ function Slang(props) {
   }, []);
   return (
     <div className="container">
-      <header className="containerHeader">
+      <div className="containerHeader">
         <Link
           to="/screentour/textdecoration"
           style={{ color: "inherit", textDecoration: "inherit" }}
@@ -29,9 +29,9 @@ function Slang(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </Link>
-      </header>
-      <article className="blog">
-        <p className="blogText">
+      </div>
+      <div className="blog">
+        <div className="blogText">
           When I use the word slang, I'm referring to the changing, shortening,
           or combining of ordinary words in order to garner more natural
           dialogue. I am <span id="italic">not</span> talking about actual
@@ -103,9 +103,9 @@ function Slang(props) {
           <br></br>
           p.s.: if I don't note something you're confused by, it'll probably be
           covered in a further section, so keep your britches on.
-        </p>
-      </article>
-      <footer className="localGlossary">
+        </div>
+      </div>
+      <div className="localGlossary">
         <div className="localGlossaryHeader">LOCAL GLOSS'</div>
         <ol>
           <span className="localGlossaryFooter">
@@ -117,7 +117,7 @@ function Slang(props) {
         <div className="localGlossaryFooter">
           <br></br>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
