@@ -65,7 +65,6 @@ function Main(props) {
           <Route path="screentour/camerashots" element={<CameraShots />} />
           <Route path="screentour/language" element={<Language />} />
           {/* reading */}
-
           <Route path="screentour/montages" element={<Montages />} />
           <Route path="screentour/flashbacks" element={<Flashbacks />} />
           <Route path="screentour/musiccues" element={<MusicCues />} />
