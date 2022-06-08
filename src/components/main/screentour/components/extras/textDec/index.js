@@ -78,8 +78,9 @@ function TextDec(props) {
           using an underline isn't awful:{" "}
           <div className="pictureContainer">
             <img className="picture" src={italicExample} alt="italic example" />
-          </div>
-          <div className="pictureContainer">
+            <div className="pictureLabel">
+              <span id="courrier">VS.</span>
+            </div>
             <img
               className="picture"
               src={underlineExample}
