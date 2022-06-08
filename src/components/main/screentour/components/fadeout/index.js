@@ -27,7 +27,7 @@ function FadeOut(props) {
   }
   return (
     <div className="container">
-      <div className="containerHeader">
+      <header className="containerHeader">
         <Link
           to="/screentour/transitions"
           style={{ color: "inherit", textDecoration: "inherit" }}
@@ -45,9 +45,9 @@ function FadeOut(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </Link>
-      </div>
-      <div className="blog">
-        <div className="blogText">
+      </header>
+      <article className="blog">
+        <p className="blogText">
           Alright. Here's where you deserve your real congratulations, as well
           as a place to reap the fruits of your labor.
           <br></br>
@@ -80,24 +80,24 @@ function FadeOut(props) {
             <div className="pictureLabel">SCREENPLAY RULES</div>
             <img className="picture" src={sceneWithRules} alt="with rules" />
           </div>
-        </div>
-      </div>
+        </p>
+      </article>
       {!handleShow ? (
-        <div className="screengradeHeader" onClick={show}>
+        <header className="screengradeHeader" onClick={show}>
           CLICK HERE FOR SCREENGRADE VERSION
-        </div>
+        </header>
       ) : (
-        <div className="closeHeader">
+        <header className="closeHeader">
           <FontAwesomeIcon
             icon={faClose}
             onClick={close}
             className="closeButton"
           />
-        </div>
+        </header>
       )}
       {handleShow && (
-        <div className="screengradeContainer">
-          <div className="screengradeBlogText">
+        <article className="screengradeContainer">
+          <p className="screengradeBlogText">
             <div className="screengradePictureContainer">
               <img
                 className="picture"
@@ -106,8 +106,8 @@ function FadeOut(props) {
               />
             </div>
             Now, that's just darn pretty.
-          </div>
-        </div>
+          </p>
+        </article>
       )}
     </div>
   );
