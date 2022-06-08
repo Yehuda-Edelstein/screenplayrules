@@ -1,40 +1,41 @@
 @import "../../../index.scss";
 
 // ANIMATIONS
-/* @keyframes colorChange {
+/*
+@keyframes colorChange {
   0% {
-    background-color: $dark-blue;
-    color: $white;
+    // background-color: $dark-blue;
+    color: black;
   }
   25% {
-    background-color: $light-orange;
-    color: $darker-blue;
+    // background-color: $light-orange;
+    color: $orange;
   }
   50% {
-    background-color: $dark-blue;
-    color: $white;
+    // background-color: $dark-blue;
+    color: black;
   }
 
   75% {
-    background-color: $light-orange;
+    // background-color: $light-orange;
     color: $darker-blue;
   }
   100% {
-    background-color: $dark-blue;
-    color: $white;
+    // background-color: $dark-blue;
+    color: black;
   }
 }
 */
 
 .notFoundContainer {
-  animation: colorChange 20s infinite;
+  animation: colorChange 10s infinite;
   font-family: "Courier Final Draft", Courier, monospace;
   border: 1px solid $dark-gray;
   // background-color: white;
   text-align: center;
   height: fit-content;
-  height: 78vh;
-  padding: 50px 0;
+  margin: 35px 0 0 0;
+  // padding: 50px 0;
   /* disables highlighting */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
