@@ -143,9 +143,9 @@ form {
   }
 }
 
-@media screen and (max-width: 1030px) {
+@media screen and (max-width: 980px) {
   .contactContainer {
     display: grid;
-    margin: 0 auto;
+    justify-content: center;
   }
 }
