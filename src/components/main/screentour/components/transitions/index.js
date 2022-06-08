@@ -30,7 +30,7 @@ function Transitions(props) {
 
   return (
     <div className="container">
-      <header className="containerHeader">
+      <div className="containerHeader">
         <Link
           to="/screentour/dialogue"
           style={{ color: "inherit", textDecoration: "inherit" }}
@@ -48,9 +48,9 @@ function Transitions(props) {
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </Link>
-      </header>
-      <article className="blog">
-        <p className="blogText">
+      </div>
+      <div className="blog">
+        <div className="blogText">
           Wow. That was a lot to take in. Trust me, it gets easier. At least
           this part does. Understanding the rules of it all. Just wait. Once you
           know how to write a screenplay, then you'll actually have to write
@@ -170,25 +170,25 @@ function Transitions(props) {
           <br></br>
           Note: only use intercut slugs when the scene is continuous. If time
           has passed, it's a totally new scene and will require a new slug.
-        </p>
-      </article>
+        </div>
+      </div>
       {/* </div> */}
       {!handleShow ? (
-        <header className="screengradeHeader" onClick={show}>
+        <div className="screengradeHeader" onClick={show}>
           CLICK HERE FOR SCREENGRADE VERSION
-        </header>
+        </div>
       ) : (
-        <header className="closeHeader">
+        <div className="closeHeader">
           <FontAwesomeIcon
             icon={faClose}
             onClick={close}
             className="closeButton"
           />
-        </header>
+        </div>
       )}
       {handleShow && (
-        <article className="screengradeContainer">
-          <p className="screengradeBlogText">
+        <div className="screengradeContainer">
+          <div className="screengradeBlogText">
             <div className="screengradePictureContainer">
               <img
                 className="picture"
@@ -198,10 +198,10 @@ function Transitions(props) {
             </div>
             Some simple corrections will do the trick. I think you can handle
             it.
-          </p>
-        </article>
+          </div>
+        </div>
       )}
-      <footer className="localGlossary">
+      <div className="localGlossary">
         <div className="localGlossaryHeader">LOCAL GLOSS'</div>
         <ol className="localGlossaryList">
           <li>
@@ -215,7 +215,7 @@ function Transitions(props) {
         <div className="localGlossaryFooter">
           <span>**full definitions found in glossary above**</span>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }
