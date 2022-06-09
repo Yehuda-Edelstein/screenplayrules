@@ -28,14 +28,18 @@
 */
 
 .notFoundContainer {
-  animation: colorChange 10s infinite;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+
   font-family: "Courier Final Draft", Courier, monospace;
-  border: 1px solid $dark-gray;
-  // background-color: white;
+  background-color: white;
   text-align: center;
-  height: fit-content;
-  margin: 35px 0 0 0;
-  // padding: 50px 0;
+  min-width: 420px;
+  max-width: 420px;
+  height: 510px;
+  border: 1px solid black;
+  padding: 50px 0;
   /* disables highlighting */
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -45,21 +49,19 @@
   user-select: none;
 
   .notFoundSlugline {
-    // margin: 0 60px;
-    font-size: 13px;
+    margin: 0 60px;
+    font-size: 10px;
     display: flex;
     font-weight: bold;
     max-width: 325px;
-    min-width: 350px;
   }
 
   .notFoundDescription {
     margin: 0.25em 0;
-    // margin-left: 60px;
+    margin-left: 60px;
     margin-right: 40px;
     line-height: 100%;
-    font-size: 13px;
-    min-width: 350px;
+    font-size: 10px;
     float: left;
     text-align: left;
   }
