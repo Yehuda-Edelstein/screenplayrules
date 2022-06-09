@@ -321,6 +321,7 @@ function Action(props) {
           <div className="pictureContainer">
             <img className="picture" src={withAge} alt="with age" />
           </div>
+          Me like.
         </div>
       </div>
       {!handleShowSecond ? (
@@ -409,16 +410,16 @@ function Action(props) {
           </li>
           <div className="definition">
             Or stacked caps. Capitalized letters found on top of each other,
-            within the same block or blocks. Ex: the "C" that starts the second
-            sentence of this definition and the "E" beneath it.
+            within the same block or blocks. Ex: the C's found below.
+            <br></br>C<br></br>C
           </div>
           <li>
             <span id="bold">Stacked Letters</span>
           </li>
           <div className="definition">
             Identical letters, whether capitalized or not, found on top of each
-            other within the same block or blocks. Ex: italized or not, found on
-            top...{" "}
+            other within the same block or blocks. Ex: ''
+            <br></br>a<br></br>a
           </div>
           <li>
             <span id="bold">Script Name</span>
