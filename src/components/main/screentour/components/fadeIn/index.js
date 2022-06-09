@@ -67,8 +67,9 @@ function FadeIn(props) {
             Here's a comparison:
             <div className="pictureContainer">
               <img className="picture" src={withFadeIn} alt="with fade in" />
-            </div>
-            <div className="pictureContainer">
+              <div className="pictureLabel">
+                <span id="courrier">VS.</span>
+              </div>
               <img
                 className="picture"
                 src={withoutFadeIn}
