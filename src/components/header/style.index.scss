@@ -149,7 +149,13 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 690px) {
+  .header {
+    padding: 0 5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .screenplayTitle,
   .rules {
     display: none;

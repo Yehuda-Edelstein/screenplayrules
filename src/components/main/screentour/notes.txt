@@ -1,1 +1,2 @@
 1. add a screentour search on intro page or something.
+2. add a animation dropdown transition when opening screengrade section.

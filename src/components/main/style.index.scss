@@ -176,7 +176,6 @@
   line-height: 125%;
   width: 100%;
   text-align: center;
-  // background-color: $darker-blue;
   background-color: $orange;
   font-family: "Courier Final Draft", Courier, monospace;
 
@@ -406,10 +405,24 @@
 //     }
 // }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 690px) {
   .main {
     padding: 0;
   }
+
+  .container {
+    margin: 0;
+    max-width: 690px;
+
+    .containerHeader {
+      max-width: 690px;
+    }
+
+    .blog {
+      max-width: 690px;
+    }
+  }
+
   // .picture {
   //     width: 435px;
   // }
