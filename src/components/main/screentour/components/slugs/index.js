@@ -151,15 +151,15 @@ function Slugs(props) {
           <span id="bold">bold</span>:
           <div className="pictureContainer">
             <img className="picture" src={withoutBold} alt="without bold" />
-          </div>
-          <div className="pictureContainer">
+            <div className="pictureLabel">
+              <span id="courrier">VS.</span>
+            </div>
             <img className="picture" src={withBold} alt="with bold" />
           </div>
           Many professionals are already moving away from bare slugs,{" "}
           {/* maybe add a href to bare sluglines */} so don't get left behind in
           the days of old. It's time to accept the days of...
         </div>
-        <br></br>
       </div>
       {!handleShow ? (
         <div className="screengradeHeader" onClick={show}>
