@@ -8,6 +8,7 @@ function Contact(props) {
     document.title = "Screenplay Rules - Contact";
   }, []);
 
+  // Maybe add a boolean for plural to change the (s)
   const [email, setEmail] = useState("");
   const [location, setLocation] = useState("CONTACT FORM");
   const [time, setTime] = useState("DAY");
@@ -15,12 +16,34 @@ function Contact(props) {
   const [description, setDescription] = useState(
     "big fan of the Screenplay Rules website"
   );
-  const [type, setType] = useState("ask a question");
-  const [topic, setTopic] = useState("the screentour.");
   const [message, setMessage] = useState("");
 
+  const [type, setType] = useState({
+    type: "QUESTION",
+    text: "ask a question",
+  });
+
+  const [topic, setTopic] = useState({
+    topic: "SCREENTOUR",
+    text: "the screentour.",
+  });
+
   function handleSubmit() {
-    console.log(`${name}, ${email}, ${message}`);
+    fetch("http://localhost:8000/api/messages/", {
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        type: type.type,
+        subject: topic.topic,
+        message: message,
+      }),
+      method: "POST",
+    });
+    // add a navigate to 'script has been sent component'
+    // .then(navigate("/blog"));
   }
 
   return (
@@ -28,16 +51,16 @@ function Contact(props) {
       <div className="contactContainer">
         <form>
           <div className="main">
-            <label>NAME</label>
             <input
+              placeholder="Name..."
               spellCheck="false"
               type="text"
               maxLength="33"
               required
               onChange={(ev) => setName(ev.target.value)}
             ></input>
-            <label>EMAIL</label>
             <input
+              placeholder="Email..."
               spellCheck="false"
               type="text"
               required
@@ -45,48 +68,103 @@ function Contact(props) {
             ></input>
             <div className="dropDownDivContainer">
               <div className="dropDownDiv">
-                <label>TYPE</label>
-                <select onChange={(ev) => setType(ev.target.value)} required>
-                  <option value="ask a question">Question</option>
-                  <option value="leave a comment">Comment</option>
-                  <option value="voice a concern">Concern</option>
-                  <option value="say something">Other</option>
+                <select
+                  onChange={(ev) => {
+                    setType({
+                      type: ev.target.value,
+                      text: ev.target.dataset.text,
+                    });
+                  }}
+                  required
+                >
+                  <option
+                    id="QUESTION"
+                    value="QUESTION"
+                    data-text="ask-a-question"
+                  >
+                    Question
+                  </option>
+                  <option
+                    id="COMMENT"
+                    value="COMMENT"
+                    data-text="leave a comment"
+                  >
+                    Comment
+                  </option>
+                  <option
+                    id="CONCERN"
+                    value="CONCERN"
+                    data-text="voice a concern"
+                  >
+                    Concern
+                  </option>
+                  <option id="OTHER" value="OTHER" data-text="say something">
+                    Other
+                  </option>
                 </select>
               </div>
               <div className="dropDownDiv">
-                <label>TOPIC</label>
-                <select onChange={(ev) => setTopic(ev.target.value)} required>
-                  <option value="the screentour.">Screentour</option>
-                  <option value="the glossary section.">Glossary</option>
-                  <option value="something.">Other</option>
+                <select
+                  onChange={(ev) => {
+                    setTopic({
+                      topic: ev.target.value,
+                      text: ev.target.dataset.text,
+                    });
+                  }}
+                  required
+                >
+                  <option
+                    id="SCREENTOUR"
+                    value="SCREENTOUR"
+                    data-text="the screentour."
+                  >
+                    Screentour
+                  </option>
+                  <option
+                    id="GLOSSARY"
+                    value="GLOSSARY"
+                    data-text="the glossary section."
+                  >
+                    Glossary
+                  </option>
+                  <option id="OTHER" value="OTHER" data-text="something.">
+                    Other
+                  </option>
                 </select>
               </div>
             </div>
-            <label>MESSAGE</label>
             <textarea
+              placeholder="Message..."
               required
               type="text"
               rows="5"
               onChange={(ev) => setMessage(ev.target.value)}
             ></textarea>
           </div>
+
           <div className="extra">
-            <label>LOCATION</label>
-            <input
-              spellCheck="false"
-              type="text"
-              maxLength="33"
-              onChange={(ev) => setLocation(ev.target.value)}
-            ></input>
-            <label>TIME</label>
-            <input
-              spellCheck="false"
-              type="text"
-              maxLength="10"
-              onChange={(ev) => setTime(ev.target.value)}
-            ></input>
-            <label>DESCRIPTION</label>
+            <div className="shortExtraContainer">
+              <div className="shortExtra">
+                <input
+                  placeholder="Location..."
+                  spellCheck="false"
+                  type="text"
+                  maxLength="33"
+                  onChange={(ev) => setLocation(ev.target.value)}
+                ></input>
+              </div>
+              <div className="shortExtra">
+                <input
+                  placeholder="Time..."
+                  spellCheck="false"
+                  type="text"
+                  maxLength="10"
+                  onChange={(ev) => setTime(ev.target.value)}
+                ></input>
+              </div>
+            </div>
             <textarea
+              placeholder="Description..."
               type="text"
               maxLength="100"
               rows="1"
@@ -105,8 +183,8 @@ function Contact(props) {
             </div>
             <div className="description">
               <span className="name">{name}</span>, a <span>{description}</span>
-              , enters the contact page to <span>{type}</span> about{" "}
-              <span>{topic}</span>
+              , enters the contact page to <span>{type.text}</span> about{" "}
+              <span>{topic.text}</span>
             </div>
             <div className="messageContainer">
               <div className="character">{name}</div>
