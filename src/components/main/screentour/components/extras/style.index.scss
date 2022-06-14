@@ -9,7 +9,7 @@
   position: sticky;
   top: 47px;
   z-index: 9999;
-  background: linear-gradient(black 80%, $orange 20%);
+  background: linear-gradient(black 50%, $darker-blue 50%);
   color: white;
   padding: 10px 20px;
   font-family: "Courier Final Draft", Courier, monospace;
@@ -19,6 +19,14 @@
 
     &:hover {
       color: $dark-gray;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+    .extrasContainerHeader {
+      max-width: 690px;
     }
   }
 }
