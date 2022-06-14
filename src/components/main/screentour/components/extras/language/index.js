@@ -12,7 +12,7 @@ function Language(props) {
   }, []);
   return (
     <div className="container">
-      <div className="containerHeader">
+      <div className="extrasContainerHeader">
         <Link
           to="/screentour/camerashots"
           style={{ color: "inherit", textDecoration: "inherit" }}

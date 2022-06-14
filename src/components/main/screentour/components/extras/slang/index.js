@@ -11,7 +11,7 @@ function Slang(props) {
   }, []);
   return (
     <div className="container">
-      <div className="containerHeader">
+      <div className="extrasContainerHeader">
         <Link
           to="/screentour/textdecoration"
           style={{ color: "inherit", textDecoration: "inherit" }}

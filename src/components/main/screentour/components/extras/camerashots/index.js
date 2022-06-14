@@ -11,7 +11,7 @@ function CameraShots(props) {
   }, []);
   return (
     <div className="container">
-      <div className="containerHeader">
+      <div className="extrasContainerHeader">
         <Link
           to="/screentour/slang"
           style={{ color: "inherit", textDecoration: "inherit" }}

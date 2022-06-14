@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
+import "./style.index.scss";
 
 function Extras(props) {
   useEffect(() => {
@@ -10,7 +11,7 @@ function Extras(props) {
   return (
     <div>
       <div className="container">
-        <div className="containerHeader">
+        <div className="extrasContainerHeader">
           <Link
             to="/screentour/fadeout"
             style={{ color: "inherit", textDecoration: "inherit" }}

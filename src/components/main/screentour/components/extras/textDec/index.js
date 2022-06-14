@@ -12,7 +12,7 @@ function TextDec(props) {
   }, []);
   return (
     <div className="container">
-      <div className="containerHeader">
+      <div className="extrasContainerHeader">
         <Link
           to="/screentour/extras"
           style={{ color: "inherit", textDecoration: "inherit" }}
