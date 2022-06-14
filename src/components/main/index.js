@@ -30,6 +30,7 @@ import EditBlog from "./blog/editBlog";
 import SignUp from "./signUp";
 import Language from "./screentour/components/extras/language";
 import PageNotFound from "./404";
+import Reading from "./screentour/components/extras/reading";
 
 function Main(props) {
   return (
@@ -63,13 +64,14 @@ function Main(props) {
         <Route path="screentour/slang" element={<Slang />} />
         <Route path="screentour/camerashots" element={<CameraShots />} />
         <Route path="screentour/language" element={<Language />} />
-        {/* reading */}
+        <Route path="screentour/reading" element={<Reading />} />
         <Route path="screentour/montages" element={<Montages />} />
         <Route path="screentour/flashbacks" element={<Flashbacks />} />
         <Route path="screentour/musiccues" element={<MusicCues />} />
         <Route path="screentour/beats" element={<Beats />} />
         <Route path="screentour/superimpose" element={<Superimpose />} />
         <Route path="screentour/overblack" element={<OverBlack />} />
+        {/* OTHER */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </div>
