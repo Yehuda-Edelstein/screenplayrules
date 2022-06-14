@@ -163,46 +163,46 @@ function Slugs(props) {
           Many professionals are already moving away from bare slugs,{" "}
           {/* maybe add a href to bare sluglines */} so don't get left behind in
           the days of old. It's time to accept the days of...
-        </div>
-        <br></br>
-        <div className="blogSubHeader">ESTABLISHING</div>
-        An "<span id="courrier">ESTABLISHING</span>" (short: "
-        <span id="courrier">ESTAB.</span>") shot is a shot that focuses on
-        establishing the geography or landscape of a scene. Think of the
-        helicopter shots from{" "}
-        <a
-          href="https://www.scriptslug.com/script/twilight-2008"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          Twilight
-        </a>
-        -- uh, I mean, from{" "}
-        <a
-          href="https://www.scriptslug.com/script/the-shining-1980"
-          rel="noreferrer noopener"
-          target="_blank"
-        >
-          The Shining
-        </a>
-        . That's what I meant.
-        <br></br>
-        <br></br>
-        The truth is, you don't really need establishing shots in your
-        screenplay, but, if you feel it's actually needed, here's the two ways
-        you can do it:
-        <div className="pictureContainer">
-          <img
-            className="picture"
-            src={estabExample1}
-            alt="regular establishing"
-          />
-          <div className="pictureLabel">
-            <span id="courrier">VS.</span>
+          <br></br>
+          <div className="blogSubHeader">ESTABLISHING</div>
+          An "<span id="courrier">ESTABLISHING</span>" (short: "
+          <span id="courrier">ESTAB.</span>") shot is a shot that focuses on
+          establishing the geography or landscape of a scene. Think of the
+          helicopter shots from{" "}
+          <a
+            href="https://www.scriptslug.com/script/twilight-2008"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Twilight
+          </a>
+          -- uh, I mean, from{" "}
+          <a
+            href="https://www.scriptslug.com/script/the-shining-1980"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            The Shining
+          </a>
+          . That's what I meant.
+          <br></br>
+          <br></br>
+          The truth is, you don't really need establishing shots in your
+          screenplay, but, if you feel it's actually needed, here's the two ways
+          you can do it:
+          <div className="pictureContainer">
+            <img
+              className="picture"
+              src={estabExample1}
+              alt="regular establishing"
+            />
+            <div className="pictureLabel">
+              <span id="courrier">VS.</span>
+            </div>
+            <img className="picture" src={estabExample2} alt="estab." />
           </div>
-          <img className="picture" src={estabExample2} alt="estab." />
+          Yeah. For real though, Twilight sucks.
         </div>
-        Yeah. For real though, Twilight sucks.
       </div>
       {!handleShow ? (
         <div className="screengradeHeader" onClick={show}>
