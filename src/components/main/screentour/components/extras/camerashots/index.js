@@ -87,6 +87,13 @@ function CameraShots(props) {
           <span id="courrier">CHARACTER (1)</span>" displayed on the "
           <span id="courrier">SCREEN</span>". For comedic effect or whatever.
           Not as something happening in the background, but as an actual shot.
+          <br></br>
+          <br></br>
+          Note: the difference between "<span id="courrier">ANGLE ON</span>" and
+          "<span id="courrier">CLOSE ON</span>" is distance, although most times
+          they are interchangeable. Personally, I use "
+          <span id="courrier">CLOSE ON</span>" only when it's a cut to a close
+          up of something that was in the previous shot.
         </div>
       </div>
     </div>
