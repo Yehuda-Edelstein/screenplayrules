@@ -510,7 +510,7 @@ function Dialogue(props) {
             <span id="bold">Beat</span>
           </li>
           <div className="definition">
-            A moment of time, used between blocks in a script (or as a wryly) to
+            A moment of time, used between blocks in a script, or as a wryly, to
             suggest a distinct pause in a scene. Found in all genres of film.
           </div>
         </ol>
