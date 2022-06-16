@@ -51,21 +51,25 @@ function Contact(props) {
       <div className="contactContainer">
         <form>
           <div className="main">
-            <input
-              placeholder="Name..."
-              spellCheck="false"
-              type="text"
-              maxLength="33"
-              required
-              onChange={(ev) => setName(ev.target.value)}
-            ></input>
-            <input
-              placeholder="Email..."
-              spellCheck="false"
-              type="text"
-              required
-              onChange={(ev) => setEmail(ev.target.value)}
-            ></input>
+            <div className="shortContainer">
+              <input
+                id="short"
+                placeholder="Name..."
+                spellCheck="false"
+                type="text"
+                maxLength="33"
+                required
+                onChange={(ev) => setName(ev.target.value)}
+              ></input>
+              <input
+                id="short"
+                placeholder="Email..."
+                spellCheck="false"
+                type="text"
+                required
+                onChange={(ev) => setEmail(ev.target.value)}
+              ></input>
+            </div>
             <div className="dropDownDivContainer">
               <div className="dropDownDiv">
                 <select

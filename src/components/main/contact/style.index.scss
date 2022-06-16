@@ -110,14 +110,22 @@ form {
     padding: 10px;
     display: grid;
 
+    .shortContainer {
+      display: flex;
+      justify-content: space-between;
+      #short {
+        display: grid;
+        min-width: 172.5px;
+      }
+    }
+
     .dropDownDivContainer {
       display: flex;
       justify-content: space-between;
-    }
-
-    .dropDownDiv {
-      display: grid;
-      min-width: 190px;
+      .dropDownDiv {
+        display: grid;
+        min-width: 190px;
+      }
     }
   }
 
