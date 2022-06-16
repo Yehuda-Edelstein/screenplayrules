@@ -38,8 +38,8 @@ function Main(props) {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* USER ROUTES */}
-        {/* <Route path='login' element={<LogIn />} />
-                <Route path='signup' element={<SignUp />} /> */}
+        {/* <Route path='login' element={<LogIn />} /> */}
+        {/* <Route path='signup' element={<SignUp />} />  */}
         {/* NAV ROUTES */}
         {/* <Route path="rulebook" element={<Rulebook />} /> */}
         <Route path="glossary" element={<Glossary />} />
@@ -53,7 +53,6 @@ function Main(props) {
         {/* SCREENTOUR ROUTES */}
         <Route path="screentour/fadein" element={<FadeIn />} />
         <Route path="screentour/slugs" element={<Slugs />} />
-        {/* add an establishing bonus here, or in extras section */}
         <Route path="screentour/action" element={<Action />} />
         <Route path="screentour/dialogue" element={<Dialogue />} />
         <Route path="screentour/transitions" element={<Transitions />} />
