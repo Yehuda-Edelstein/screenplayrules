@@ -7,7 +7,7 @@ import flashbackMontageEx from "../../../../../../images/extras/flashbacks/flash
 
 function Flashbacks(props) {
   useEffect(() => {
-    document.title = "How To Write A Screenplay - Montages";
+    document.title = "How To Write A Screenplay - Flashbacks";
   }, []);
   return (
     <div className="container">
