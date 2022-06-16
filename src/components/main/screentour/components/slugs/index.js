@@ -164,6 +164,7 @@ function Slugs(props) {
           {/* maybe add a href to bare sluglines */} so don't get left behind in
           the days of old. It's time to accept the days of...
           <br></br>
+          <br></br>
           <div className="blogSubHeader">ESTABLISHING</div>
           An "<span id="courrier">ESTABLISHING</span>" (short: "
           <span id="courrier">ESTAB.</span>") shot is a shot that focuses on
@@ -188,7 +189,7 @@ function Slugs(props) {
           <br></br>
           <br></br>
           The truth is, you don't really need establishing shots in your
-          screenplay, but, if you feel it's actually needed, here's the two ways
+          screenplay, but, if you feel it helps the story, here's the two ways
           you can do it:
           <div className="pictureContainer">
             <img
