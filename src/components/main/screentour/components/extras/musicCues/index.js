@@ -80,9 +80,9 @@ function MusicCues(props) {
               alt="music cue, flashback, montage all together example"
             />
           </div>
-          Noteception: the order in which you introduce music
-          cues/flashbacks/montages should be in the order in which the audience
-          will interact with them. Basically, use your head.
+          Noteception: the order in which you introduce music cues, flashbacks,
+          and montages should be in the order in which the audience will
+          interact with them. Basically, use your head.
           {/* GIF of Rex using his head from Toy Story 2 */}
         </div>
       </div>
