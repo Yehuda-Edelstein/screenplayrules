@@ -216,17 +216,17 @@ function Dialogue(props) {
           air-conditioned studio.
           <br></br>
           <br></br>
-          As for movies like Forrest Gump, where part of the narration is on
-          camera, but then switches to a voice-over, I'm not sure how it was
-          written, but you can see for yourself on{" "}
+          As for movies like{" "}
           <a
             href="https://www.scriptslug.com/script/forrest-gump-1994"
             rel="noreferrer noopener"
             target="_blank"
           >
-            Scriptslug
+            Forrest Gump
           </a>
-          .<br></br>
+          , where part of the narration is on camera, but then switches to a
+          voice-over, I'm not sure how it was written, but you can see for
+          yourself. .<br></br>
           <br></br>
           Note: they use <span id="courrier">(Over)</span> in the script for
           narration and it makes me gag. But, hey, whatever sells. Lol.{" "}
@@ -389,7 +389,7 @@ function Dialogue(props) {
           <br></br>
           <br></br>
           More than that, even if your reader is aware of what genre your script
-          is and, can deduce the tone you're going for, are they going to{" "}
+          is and can deduce the tone you're going for, are they going to{" "}
           <span id="italic">feel</span> it? No. They probably won't. And making
           them feel it is part of your job as the screenwriter.
           <br></br>

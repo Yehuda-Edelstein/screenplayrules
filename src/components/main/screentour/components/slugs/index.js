@@ -203,6 +203,7 @@ function Slugs(props) {
             <img className="picture" src={estabExample2} alt="estab." />
           </div>
           Yeah. For real though, Twilight sucks.
+          {/* GIF */}
         </div>
       </div>
       {!handleShow ? (
