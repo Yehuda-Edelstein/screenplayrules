@@ -29,8 +29,14 @@ function Screentour(props) {
             <div className="blogSubHeader">WHAT TO EXPECT</div>
             First things first, I think it's important to note that 99% of what
             you'll find in the screentour will not help improve your story's
-            plot whatsoever. It will merely teach you the best way to style and
-            present your screenplay. Not how to pen{" "}
+            plot whatsoever.
+            <br></br>
+            <br></br>
+            <span className="divider">Whatsoever</span>
+            <br></br>
+            <br></br>
+            It will merely teach you the best way to style and present your
+            screenplay. Not how to pen{" "}
             <a
               href="https://www.scriptslug.com/script/pulp-fiction-1994"
               rel="noreferrer noopener"
@@ -38,12 +44,24 @@ function Screentour(props) {
             >
               Pulp Fiction
             </a>
-            .<br></br>
-            <br></br>
+            .
+            <div className="gifContainer">
+              <img
+                className="gif"
+                src="https://media.giphy.com/media/6uGhT1O4sxpi8/giphy.gif"
+                alt="Gif of John Travolta"
+                width="500px"
+              />
+            </div>
+            <div id="border"></div>
             Furthermore, this tour will not be coverng formatting constants such
-            as margins or spacing. If you don't already have a screenwriting
-            software that does those things for you, I suggest you purchase one
-            before continuing. I use{" "}
+            as margins or spacing.
+            <br></br>
+            <br></br>
+            If you don't already have a screenwriting software that does those
+            things for you, I suggest you purchase one before continuing.
+            <br></br>
+            <br></br>I use{" "}
             <a
               href="https://www.arcstudiopro.com/"
               rel="noreferrer noopener"
@@ -51,66 +69,116 @@ function Screentour(props) {
             >
               Arc Studio Pro
             </a>
-            , but I hear{" "}
+            , but tons of people use{" "}
             <a
               href="https://www.finaldraft.com/"
               rel="noreferrer noopener"
               target="_blank"
             >
               Final Draft
-            </a>{" "}
-            is great as well.
+            </a>
+            .<br></br>
+            <br></br>
+            Note: if you're not looking to spend any money yet, there are some
+            free softwares (as well as free versions of{" "}
+            <span id="italic">paid</span> softwares) you can find with a quick
+            Google search.
             <br></br>
             <br></br>
-            There are some free softwares, as well as free versions of paid
-            softwares you can find with a quick Google search. My point here is
-            it's 2022. You should not be spacing your own screenplays unless you
-            enjoy a good torture session.
+            My point here is it's 2022. You should not be spacing your own
+            screenplays unless you enjoy a good torture session.
             <br></br>
             <br></br>
-            Lastly, you will see many "rules" on this tour. The quotes are there
-            because in truth art has no rules -- you can really do whatever you
-            want and it will sometimes work. However, that being said, no
-            professional will read your script if the margins are off or if you
-            use the wrong type of font. That's just a fact. So, it sometimes
-            pays to follow the "rules", you know?
+            <div id="border"></div>
+            Lastly, you will see many "rules" on this tour.
             <br></br>
             <br></br>
+            The quotes are there because in truth art doesn't really have any
+            rules. You can do whatever you want and it'll sometimes work.
+            <br></br>
+            <br></br>
+            <span className="divider">The key word is sometimes</span>
+            <br></br>
+            <br></br>
+            However, that being said, no professional will read your script if
+            the margins are off or if you use the wrong type of font. That's
+            just a fact.
+            <br></br>
+            <br></br>
+            So, it sometimes pays to follow the "rules", you know?
+            <div className="gifContainer">
+              <img
+                className="gif"
+                src="https://media.giphy.com/media/iB4PoTVka0Xnul7UaC/giphy.gif"
+                alt="Kramer"
+                width="500px"
+              />
+            </div>
             <div className="blogSubHeader">WHO AM I</div>
-            My name's Eddy. I'm a spec screenwriter/software engineer and I made
-            this website both as a project, but also as a way to give back to
-            the screenwriting community. The layout is loosly based on Reddit,
-            Stack Overflow, and Urban Dictionary.
+            My name's Eddy.
             <br></br>
             <br></br>
+            <span className="divider" id="italic">
+              Hi, Eddy
+            </span>
+            <br></br>
+            <br></br>
+            I'm a spec screenwriter/software engineer and I made this website
+            both as a project, but also as a way to give back to the
+            screenwriting community.
+            <br></br>
+            <br></br>
+            The layout is loosly based on Reddit, Stack Overflow, and Urban
+            Dictionary.
+            <br></br>
+            <br></br>
+            <div id="border"></div>
             To give a little background, I started writing screenplays a while
             back and found it difficult to learn the tricks of the trade by
-            myself. How do I write music cues? <span id="italic">Should</span> I
-            write music cues? What are music cues? Lots of questions and not a
-            lot of cohesive answers.
+            myself.
+            <br></br>
+            <br></br>
+            How do I write music cues? <span id="italic">Should</span> I write
+            music cues? What are music cues? Lots of questions and not a lot of
+            cohesive answers.
             <br></br>
             <br></br>
             Don't get me wrong, there's a plenty of good stuff out there in the
-            ether, but it was very unorganized. My goal is that this website
-            will help unite the screenwriting community. Connect pros with
-            rooks. A Qs, and so on.
+            ether, but it was very unorganized.
             <br></br>
             <br></br>
+            My goal is that this website will help unite the screenwriting
+            community. Connect pros with rooks. A Qs, and so on.
+            <br></br>
+            <br></br>
+            <div id="border"></div>
             Also, some of the terms found in the glossary, or in a section's
-            local gloss', were invented by me. Not that the concepts didn't
-            already exist, just that I have given names to those that were
-            nameless. For posterity. And because it was fun. Anyways. Without
-            further adieu. See: the arrow on the screentour header.
+            local gloss', were invented by me.
             <br></br>
             <br></br>
-            p.s.: the max-width for screenplay example pictures is about 350px
+            Not that the concepts didn't already exist, just that I have given
+            names to those that were nameless.
+            <br></br>
+            <br></br>
+            For posterity. And because it was fun. Anyways. Without further
+            adieu. Let's start the tour. See: arrow on the screentour header.
+            <div className="gifContainer">
+              <img
+                className="gif"
+                src="https://media.giphy.com/media/1132uJKzZQc4ow/giphy.gif"
+                alt="Willy Winka Tripping Balls"
+                width="500px"
+              />
+            </div>
+            <div id="border"></div>
+            p.s.: the min-width for screenplay example pictures is about 350px
             (to fit content), so if the device you're using is smaller than
             that, I suggest you wait until you're by a larger screen for a
             better learning experience. 690px and above is preferable
             <br></br>
             <br></br>
             p.p.s: feel free to contact me with any comments or questions.{" "}
-            <span id="italic">Where's the contact form</span> -- See: header.
+            <span id="italic">Where's the contact form</span> -- See: footer.
           </div>
         </div>
       </div>
