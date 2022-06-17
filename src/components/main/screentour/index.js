@@ -114,6 +114,7 @@ function Screentour(props) {
                 width="500px"
               />
             </div>
+            <div id="border"></div>
             <div className="blogSubHeader">WHO AM I</div>
             My name's Eddy.
             <br></br>
@@ -132,7 +133,6 @@ function Screentour(props) {
             Dictionary.
             <br></br>
             <br></br>
-            <div id="border"></div>
             To give a little background, I started writing screenplays a while
             back and found it difficult to learn the tricks of the trade by
             myself.
@@ -144,11 +144,9 @@ function Screentour(props) {
             <br></br>
             <br></br>
             Don't get me wrong, there's a plenty of good stuff out there in the
-            ether, but it was very unorganized.
-            <br></br>
-            <br></br>
-            My goal is that this website will help unite the screenwriting
-            community. Connect pros with rooks. A Qs, and so on.
+            ether, but it was very unorganized. My goal is that this website
+            will help unite the screenwriting community. Connect pros with
+            rooks. A Qs, and so on.
             <br></br>
             <br></br>
             <div id="border"></div>
@@ -157,11 +155,12 @@ function Screentour(props) {
             <br></br>
             <br></br>
             Not that the concepts didn't already exist, just that I have given
-            names to those that were nameless.
+            names to those that were nameless. For posterity. And because it was
+            fun.
             <br></br>
             <br></br>
-            For posterity. And because it was fun. Anyways. Without further
-            adieu. Let's start the tour. See: arrow on the screentour header.
+            Anyways. Without further adieu. Let's start the tour. See: arrow on
+            the screentour header.
             <div className="gifContainer">
               <img
                 className="gif"
