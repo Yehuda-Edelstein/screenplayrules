@@ -50,7 +50,6 @@ function Screentour(props) {
                 className="gif"
                 src="https://media.giphy.com/media/6uGhT1O4sxpi8/giphy.gif"
                 alt="Gif of John Travolta"
-                width="500px"
               />
             </div>
             <div id="border"></div>
@@ -111,7 +110,6 @@ function Screentour(props) {
                 className="gif"
                 src="https://media.giphy.com/media/iB4PoTVka0Xnul7UaC/giphy.gif"
                 alt="Kramer"
-                width="500px"
               />
             </div>
             <div id="border"></div>
@@ -166,7 +164,6 @@ function Screentour(props) {
                 className="gif"
                 src="https://media.giphy.com/media/1132uJKzZQc4ow/giphy.gif"
                 alt="Willy Winka Tripping Balls"
-                width="500px"
               />
             </div>
             <div id="border"></div>

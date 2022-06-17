@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router";
 import "./style.index.scss";
 import Screentour from "./screentour";
@@ -18,6 +18,7 @@ import Slang from "./screentour/components/extras/slang";
 import CameraShots from "./screentour/components/extras/camerashots";
 import Superimpose from "./screentour/components/extras/superimpose";
 import OverBlack from "./screentour/components/extras/overBlack";
+import Outro from "./screentour/components/extras/outro";
 import Rulebook from "./rulebook";
 import Glossary from "./glossary";
 import Contact from "./contact";
@@ -70,6 +71,7 @@ function Main(props) {
         <Route path="screentour/beats" element={<Beats />} />
         <Route path="screentour/superimpose" element={<Superimpose />} />
         <Route path="screentour/overblack" element={<OverBlack />} />
+        <Route path="screentour/outro" element={<Outro />} />
         {/* OTHER */}
         <Route path="*" element={<PageNotFound />} />
       </Routes>
