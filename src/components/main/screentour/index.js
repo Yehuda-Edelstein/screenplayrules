@@ -99,9 +99,8 @@ function Screentour(props) {
             <span className="divider">The key word is sometimes</span>
             <br></br>
             <br></br>
-            However, that being said, no professional will read your script if
-            the margins are off or if you use the wrong type of font. That's
-            just a fact.
+            The reality is no professional will read your script if the margins
+            are off or if you use the wrong type of font. That's just a fact.
             <br></br>
             <br></br>
             So, it sometimes pays to follow the "rules", you know?
