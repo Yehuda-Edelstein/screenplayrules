@@ -4,9 +4,17 @@ $dark-blue: #92a1e8;
 $darker-blue: #4e68ea;
 $gray: #f1f1f1;
 $dark-gray: #dadce6;
+$footer-gray: #bcbcbc;
 $darker-gray: #636469;
 $orange: rgb(252, 156, 108);
 $light-orange: rgb(251, 206, 183);
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 3rem;
+}
 
 html {
   height: 100vh;
@@ -17,7 +25,6 @@ body {
   margin: 0;
   font-family: "Inconsolata", monospace;
   background-color: $dark-gray;
-  height: 100%;
   line-height: 125%;
   overflow: auto;
   -webkit-font-smoothing: antialiased;
