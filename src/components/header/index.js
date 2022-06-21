@@ -28,18 +28,6 @@ function Header(props) {
             <div className="headerLink">GLOSSARY</div>
           </Link>
           {/* <Link to='slanglist' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>SLANGLIST</div></Link> */}
-          <Link
-            to="about"
-            style={{ color: "inherit", textDecoration: "inherit" }}
-          >
-            <div className="headerLink">ABOUT</div>
-          </Link>
-          <Link
-            to="contact"
-            style={{ color: "inherit", textDecoration: "inherit" }}
-          >
-            <div className="headerLink">CONTACT</div>
-          </Link>
         </div>
 
         <div className="smallScreenMenu">

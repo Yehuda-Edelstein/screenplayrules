@@ -10,12 +10,10 @@
     white 60px
   );
   box-shadow: rgba(99, 99, 99, 0.2) 0px 1px 8px 0px;
-  // padding-left: 10%;
   padding-left: 50px;
-  // padding-right: 10%;
+  position: fixed;
+  width: 100%;
   align-items: center;
-  position: sticky;
-  top: 0;
   z-index: 9999;
   /* disables highlighting */
   -webkit-touch-callout: none;
@@ -32,7 +30,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  padding: 7.5px 0;
+  padding: 9px 0;
 }
 
 .headerIcon {
@@ -155,14 +153,14 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 450px) {
   .screenplayTitle,
   .rules {
     display: none;
   }
 }
 
-@media screen and (max-width: 320px) {
+/* @media screen and (max-width: 320px) {
   .navBar {
     .headerLink {
       margin-left: 20px;
@@ -175,6 +173,7 @@ a:hover {
     font-size: 15px;
   }
 }
+*/
 
 @media (hover: hover) and (pointer: fine) {
   .navBar a:hover {
