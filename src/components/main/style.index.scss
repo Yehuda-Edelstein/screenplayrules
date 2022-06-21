@@ -17,14 +17,12 @@
   border-top: none;
   border-bottom: none;
 
-  h1 {
-    font-weight: 100;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
+  a {
+    color: $darker-blue;
 
-  p {
-    margin: 0;
+    &:hover {
+      color: $dark-blue;
+    }
   }
 
   #bold {
@@ -62,6 +60,8 @@
     width: 100%;
     height: 1px;
     margin-bottom: 30px;
+    // add a margin top to get rid of <br>'s. Will have to do this in all blogs tho.
+    // margin-top: 30px;
   }
 
   sup {
@@ -97,76 +97,86 @@
     max-width: 650px;
     overflow: hidden;
 
-    .gifContainer {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 45px;
-      margin-top: 45px;
+    .blogText {
+      font-family: "Inconsolata", monospace;
+      font-size: 17px;
+      line-height: 170%;
 
-      .gif {
-        width: 550px;
+      .divider {
+        font-weight: 400;
+        font-size: 22px;
+        font-weight: bold;
+        // font-family: "Courier Final Draft", Courier, monospace;
+      }
+
+      .pictureContainer {
+        margin: 45px 0;
+        min-width: 290px;
+        max-width: none;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
         box-shadow: 0px 0px 2px 1px;
-      }
-    }
 
-    @media screen and (max-width: 610px) {
-      .gifContainer {
-        .gif {
-          width: 450px;
-          width: 85vw;
+        .picture {
+          max-width: 550px;
+        }
+
+        .pictureLabel {
+          background-color: $gray;
+          font-family: "Courier Final Draft", Courier, monospace;
+          font-size: 14px;
+          padding: 5px 0;
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
-    }
 
-    @media screen and (max-width: 390px) {
       .gifContainer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 45px;
+        margin-top: 45px;
+
         .gif {
-          width: 330px;
+          max-width: 550px;
+          box-shadow: 0px 0px 2px 1px;
         }
       }
-    }
 
-    .pictureContainer {
-      margin: 45px 0;
-      // width: 100%;
-      min-width: 290px;
-      max-width: 550px;
-      overflow: hidden;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0px 0px 2px 1px;
-
-      .picture {
-        max-width: 550px;
-        margin-left: auto;
-        margin-right: auto;
+      @media screen and (max-width: 610px) {
+        .gifContainer {
+          .gif {
+            width: 450px;
+            width: 85vw;
+          }
+        }
       }
 
-      .pictureLabel {
-        background-color: $gray;
-        font-family: "Courier Final Draft", Courier, monospace;
-        font-size: 14px;
-        padding: 5px 0;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+      @media screen and (max-width: 390px) {
+        .gifContainer {
+          .gif {
+            width: 285px;
+          }
+        }
       }
     }
   }
 }
 
 .screengradePictureContainer {
+  margin: 45px 0;
   border: 1px solid $gray;
   background-color: white;
   // min-width: 320px;
-  margin: 10px 0 10px 0;
   width: 100%;
   overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 
   .picture {
     max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .pictureLabel {
@@ -235,10 +245,14 @@
   }
 }
 
-.blogText {
+.screengradeBlogText {
   font-family: "Inconsolata", monospace;
   font-size: 17px;
-  line-height: 170%;
+  line-height: 125%;
+  background-color: $light-orange;
+  padding: 20px;
+  max-width: 600px;
+  overflow: hidden;
 
   .divider {
     font-weight: 400;
@@ -246,16 +260,6 @@
     font-weight: bold;
     // font-family: "Courier Final Draft", Courier, monospace;
   }
-}
-
-.screengradeBlogText {
-  font-family: "Inconsolata", monospace;
-  font-size: 14px;
-  line-height: 125%;
-  background-color: $light-orange;
-  padding: 20px;
-  max-width: 600px;
-  overflow: hidden;
 }
 
 .localGlossary {
@@ -301,7 +305,6 @@
 @media screen and (max-width: 645px) {
   .pictureLabel {
     width: 100%;
-    //   max-width: 385px;
     overflow: hidden;
     float: left;
   }

@@ -16,6 +16,15 @@ body,
   height: 100%;
 }
 
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // display: grid;
+  // grid-template-rows: auto auto auto;
+}
+
 body {
   margin: 0;
   font-family: "Inconsolata", monospace;
