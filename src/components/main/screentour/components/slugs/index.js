@@ -60,6 +60,15 @@ function Slugs(props) {
           it's important to have them be as short and precise as possible.
           <br></br>
           <br></br>
+          <div className="divider">The longer the slug, the grosser it is</div>
+          <div className="gifContainer">
+            <img
+              className="gif"
+              src="https://media.giphy.com/media/5pUwbYWSX35GygAKTY/giphy.gif"
+              alt="Eat slugs, Weasel bitch"
+            />
+          </div>
+          <div id="border"></div>
           <div className="blogSubHeader">LAYOUT</div>A slugline is made up of
           three parts:
           <div className="sluglineExamplePart">

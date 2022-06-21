@@ -1,9 +1,13 @@
 import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faArrowLeft,
+  faHome,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-function OverBlack(props) {
+function Outro(props) {
   useEffect(() => {
     document.title = "How To Write A Screenplay - Over Black";
   }, []);
@@ -11,20 +15,17 @@ function OverBlack(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/superimpose"
+          to="/screentour/overblack"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
             <FontAwesomeIcon icon={faArrowLeft} />
           </span>
         </Link>
-        <span>OVER BLACK</span>
-        <Link
-          to="/screentour/outro"
-          style={{ color: "inherit", textDecoration: "inherit" }}
-        >
+        <span>OUTRO</span>
+        <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
           <span className="startLink">
-            <FontAwesomeIcon icon={faArrowRight} />
+            <FontAwesomeIcon icon={faHome} />
           </span>
         </Link>
       </div>
@@ -35,4 +36,4 @@ function OverBlack(props) {
   );
 }
 
-export default OverBlack;
+export default Outro;
