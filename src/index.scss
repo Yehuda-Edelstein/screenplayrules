@@ -9,16 +9,11 @@ $darker-gray: #636469;
 $orange: rgb(252, 156, 108);
 $light-orange: rgb(251, 206, 183);
 
-.app {
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  gap: 3rem;
-}
-
-html {
-  height: 100vh;
-  // overflow: hidden;
+html,
+body,
+.app,
+#root {
+  height: 100%;
 }
 
 body {
