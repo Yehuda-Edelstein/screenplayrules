@@ -74,9 +74,10 @@ function Contact(props) {
               <div className="dropDownDiv">
                 <select
                   onChange={(ev) => {
+                    let selected = ev.target[ev.target.selectedIndex];
                     setType({
                       type: ev.target.value,
-                      text: ev.target.dataset.text,
+                      text: selected.dataset.text,
                     });
                   }}
                   required
@@ -110,9 +111,10 @@ function Contact(props) {
               <div className="dropDownDiv">
                 <select
                   onChange={(ev) => {
+                    let selected = ev.target[ev.target.selectedIndex];
                     setTopic({
                       topic: ev.target.value,
-                      text: ev.target.dataset.text,
+                      text: selected.dataset.text,
                     });
                   }}
                   required

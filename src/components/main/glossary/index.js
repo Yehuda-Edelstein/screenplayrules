@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 function Glossary(props) {
+  useEffect(() => {
+    document.title = "Screenplay Rules - Glossary";
+  }, []);
+
   const [termList, setTermList] = useState([]);
   const [searched, setSearched] = useState("");
 
