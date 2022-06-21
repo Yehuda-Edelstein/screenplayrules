@@ -86,7 +86,7 @@ function FadeIn(props) {
             <div id="border"></div>
             Either way, I think it's time we let the fades become a thing of the
             past. Here's a comparison:
-            {/* <div className="pictureContainer">
+            <div className="pictureContainer">
               <img className="picture" src={withFadeIn} alt="with fade in" />
               <div className="pictureLabel">
                 <span id="courrier">VS.</span>
@@ -96,7 +96,7 @@ function FadeIn(props) {
                 src={withoutFadeIn}
                 alt="without fade in"
               />
-            </div> */}
+            </div>
             It doesn't seem like much, but I think it helps give the script a
             cleaner start. Trim the fat, you know?
             <br></br>
