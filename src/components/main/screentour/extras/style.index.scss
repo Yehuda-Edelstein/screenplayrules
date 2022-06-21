@@ -1,0 +1,32 @@
+@import "../../../../index.scss";
+
+.extrasContainerHeader {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  min-width: 110px;
+  font-size: 14px;
+  position: sticky;
+  top: 47px;
+  z-index: 9999;
+  background: linear-gradient(black 80%, $darker-blue 20%);
+  color: white;
+  padding: 10px 20px;
+  font-family: "Courier Final Draft", Courier, monospace;
+
+  .startLink {
+    float: right;
+
+    &:hover {
+      color: $dark-gray;
+    }
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+    .extrasContainerHeader {
+      max-width: 690px;
+    }
+  }
+}

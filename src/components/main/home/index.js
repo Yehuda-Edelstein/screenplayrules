@@ -18,7 +18,7 @@ function Home(props) {
         <div>
           New to screenwriting? Take the{" "}
           <Link
-            to="screentour"
+            to="screentour/intro"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="mainLink">SCREENTOUR</span>

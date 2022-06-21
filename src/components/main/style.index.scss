@@ -128,8 +128,8 @@
 
     .pictureContainer {
       margin: 45px 0;
-      width: 100%;
-      // min-width: 290px;
+      // width: 100%;
+      min-width: 290px;
       max-width: 550px;
       overflow: hidden;
       margin-left: auto;
@@ -140,10 +140,6 @@
         max-width: 550px;
         margin-left: auto;
         margin-right: auto;
-      }
-
-      #stickToTop {
-        transform: translateY(-80px);
       }
 
       .pictureLabel {
