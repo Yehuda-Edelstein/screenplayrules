@@ -1,7 +1,7 @@
 @import "../../../../index.scss";
 
 .sluglineExamplePart {
-  margin-top: 40px;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -9,8 +9,9 @@
 }
 
 .sluglineExampleNumber {
-  margin-bottom: 40px;
-  font-size: 15pt;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 24px;
 }
 
 .sluglineExample {

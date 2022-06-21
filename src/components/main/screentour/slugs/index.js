@@ -80,11 +80,13 @@ function Slugs(props) {
           <br></br>
           <br></br>
           This abbreviation tells us whether the scene will be happening inside
-          or outside, or both. Interior "<span id="courrier">INT.</span>" for
-          inside, exterior "<span id="courrier">EXT.</span>" for outside, and a
-          combination "<span id="courrier">INT.</span>/
-          <span id="courrier">EXT.</span>" for scenes that switch between the
-          two.
+          or outside, or both.
+          <br></br>
+          <br></br>
+          Interior "<span id="courrier">INT.</span>" for inside, exterior "
+          <span id="courrier">EXT.</span>" for outside, and a combination "
+          <span id="courrier">INT.</span>/<span id="courrier">EXT.</span>" for
+          scenes that switch between the two.
           <br></br>
           <br></br>
           Note: if you're new to screenwriting, which you probably are, refrain
@@ -100,7 +102,9 @@ function Slugs(props) {
           <br></br>
           <br></br>
           The middle part of the slugline tells us the actual location of the
-          scene. "<span id="courrier">EXAMPLE</span>" here could be, "
+          scene:
+          <br></br>
+          <br></br>"<span id="courrier">EXAMPLE</span>" here could be, "
           <span id="courrier">GRANDMA'S HOUSE</span>", "
           <span id="courrier">SIDE OF HIGHWAY</span>", or "
           <span id="courrier">INTERNATIONAL SPACE STATION</span>". Pretty much,
@@ -108,11 +112,16 @@ function Slugs(props) {
           <br></br>
           <br></br>
           That being said, it's a bit of an amateur move to have your locations
-          be overly descriptive. Personally, seeing a slugline that's longer
-          than the description beneath it is alarming. "
+          be overly descriptive.
+          <br></br>
+          <br></br>
+          Personally, seeing a slugline that's longer than the description
+          beneath it is alarming. "
           <span id="courrier">DUMPSTER BEHIND BURGER JOINT</span>" should just
-          be "<span id="courrier">BURGER JOINT</span>". Leave your details in
-          the description.
+          be "<span id="courrier">BURGER JOINT</span>".
+          <br></br>
+          <br></br>
+          <div className="divider">Details go in the description</div>
           <div className="sluglineExamplePart">
             <div className="sluglineExampleNumber">3.</div>
             <div className="sluglineExample">
@@ -122,8 +131,11 @@ function Slugs(props) {
           <br></br>
           <br></br>
           At last we have the when of your slugline -- the time your scene takes
-          place at. Although this seems simple enough, don't make the mistake of
-          having your times be too nuanced.
+          place at.
+          <br></br>
+          <br></br>
+          This might seem simple enough, but don't make the mistake of having
+          your times be too nuanced.
           <br></br>
           <br></br>
           Here's a list of acceptable times to live by:
@@ -156,12 +168,17 @@ function Slugs(props) {
           to superimpose<sup>3</sup> it.
           <br></br>
           <br></br>
+          <div id="border"></div>
           Now that you understand what a slugline is, and how to write one, the
-          next thing you'll want to do is <span id="bold">bold</span> them. This
-          will help alleviate the natural, page-to-page monotony screenplays
-          tend to attract. I mean, at the end of the day, it's just a bunch of
-          letters, right? Break those scenes up with a bit of{" "}
-          <span id="bold">bold</span>:
+          next thing you'll want to do is <span id="bold">bold</span> them.
+          <br></br>
+          <br></br>
+          This will help alleviate the natural, page-to-page monotony
+          screenplays tend to attract.
+          <br></br>
+          <br></br>I mean, at the end of the day, it's just a bunch of letters,
+          right? Break those scenes up with a bit of <span id="bold">bold</span>
+          :
           <div className="pictureContainer">
             <img className="picture" src={withoutBold} alt="without bold" />
             <div className="pictureLabel">
@@ -169,23 +186,28 @@ function Slugs(props) {
             </div>
             <img className="picture" src={withBold} alt="with bold" />
           </div>
-          Many professionals are already moving away from bare slugs,{" "}
-          {/* maybe add a href to bare sluglines */} so don't get left behind in
-          the days of old. It's time to accept the days of...
+          Many professionals are already moving away from bare slugs<sup>4</sup>
+          , so don't get left behind in the days of old.
           <br></br>
           <br></br>
+          It's time to accept the days of...
+          <br></br>
+          <br></br>
+          <div id="border"></div>
           <div className="blogSubHeader">ESTABLISHING</div>
           An "<span id="courrier">ESTABLISHING</span>" (short: "
           <span id="courrier">ESTAB.</span>") shot is a shot that focuses on
-          establishing the geography or landscape of a scene. Think of the
-          helicopter shots from{" "}
+          establishing the geography or landscape of a scene.
+          <br></br>
+          <br></br>
+          Think of the helicopter shots from{" "}
           <a
             href="https://www.scriptslug.com/script/twilight-2008"
             rel="noreferrer noopener"
             target="_blank"
           >
             Twilight
-          </a>
+          </a>{" "}
           -- uh, I mean, from{" "}
           <a
             href="https://www.scriptslug.com/script/the-shining-1980"
@@ -195,9 +217,17 @@ function Slugs(props) {
             The Shining
           </a>
           . That's what I meant.
+          <div className="gifContainer">
+            <img
+              className="gif"
+              src="https://media.giphy.com/media/5JZoLIN3Ey5Q4/giphy.gif"
+              alt="Jack Nic'"
+            />
+          </div>
+          <div className="divider">Seriously</div>
           <br></br>
           <br></br>
-          The truth is, you don't really need establishing shots in your
+          Anyways, the truth is you don't really need establishing shots in your
           screenplay, but, if you feel it helps the story, here's the two ways
           you can do it:
           <div className="pictureContainer">
@@ -211,8 +241,7 @@ function Slugs(props) {
             </div>
             <img className="picture" src={estabExample2} alt="estab." />
           </div>
-          Yeah. For real though, Twilight sucks.
-          {/* GIF */}
+          <div className="divider">Yeah. For real though, Twilight sucks.</div>
         </div>
       </div>
       {!handleShow ? (
@@ -235,16 +264,23 @@ function Slugs(props) {
           <div className="screengradeBlogText">
             As I hinted at earlier, it's a definite plus to land slugs at the
             tops of your pages, although, it's usually a best case scenario and
-            not always possible. So, don't worry too much about it. That being
-            said, don't ever have a slugline without at least one line of
-            description below it on the <span id="italic">same</span> page. It's
-            insensitive to tease a reader with a juicy slug and then make them
-            scroll or turn to the next page to see what's going on. There's a
-            page-turner and then there's this:
+            not always possible. So, don't worry too much about it.
+            <br></br>
+            <br></br>
+            That being said, don't ever have a slugline without at least one
+            line of description below it on the <span id="italic">
+              same
+            </span>{" "}
+            page.
+            <br></br>
+            <br></br>
+            It's insensitive to tease a reader with a juicy slug and then make
+            them scroll or turn to the next page to see what's going on. There's
+            a page-turner and then there's this:
             <div className="screengradePictureContainer">
               <img className="picture" src={scroll} alt="scroll to see" />
             </div>
-            Disgusting.
+            <div className="divider">Disgusting</div>
             <br></br>
           </div>
         )}
@@ -270,6 +306,13 @@ function Slugs(props) {
           <div className="definition">
             Letters, numbers, symbols, or images, displayed on screen. Overlaid
             so that both original picture and superimposed addition are visible.
+          </div>
+          <li>
+            <span id="bold">Bare Slugs</span>
+          </li>
+          <div className="definition">
+            Sluglines that are without any text decoration, namely, without
+            bold.
           </div>
         </ol>
         <div className="localGlossaryFooter">
