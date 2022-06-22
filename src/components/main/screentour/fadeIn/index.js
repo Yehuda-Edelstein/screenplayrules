@@ -39,9 +39,8 @@ function FadeIn(props) {
             first words found in a screenplay, written as such:
             <br></br>
             <br></br>
-            <div className="divider">
-              <span id="dividerCourrier">FADE IN:</span>
-            </div>
+            <span id="dividerCourrier">FADE IN:</span>
+            <br></br>
             <br></br>
             Their point is to introduce the shift from black screen (before the
             movie starts) to the first scene we, the audience, get to see.
@@ -55,7 +54,7 @@ function FadeIn(props) {
             Simply put, every line of script that goes beneath them will be
             acted, spoken, filmed, and produced, up until the last words "
             <span id="courrier">FADE OUT</span>" which we will get to later.
-            <br></br>
+            <br></br>``
             <br></br>
             <div id="border"></div>
             Now, how do I personally feel about starting my scripts this way?
@@ -65,9 +64,10 @@ function FadeIn(props) {
             Gumps out there, let me spell it out for you:
             <br></br>
             <br></br>
-            <div className="divider">
+            <span className="divider">
               It's unnecessary and totally antiquated.
-            </div>
+            </span>
+            <br></br>
             <br></br>
             It's a staple of the craft, so keeping it won't bring down your
             screengrade<sup>1</sup> too much, but it's ridiculous.

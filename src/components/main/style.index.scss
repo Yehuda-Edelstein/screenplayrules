@@ -40,6 +40,9 @@
   }
 
   #dividerCourrier {
+    font-weight: 400;
+    font-size: 22px;
+    font-weight: bold;
     font-family: "Courier Final Draft", Courier, monospace;
   }
   #yellow {
@@ -64,6 +67,14 @@
     // margin-top: 30px;
   }
 
+  #screengradeBorder {
+    background-color: $orange;
+    opacity: 0.75;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 30px;
+  }
+
   sup {
     font-size: 8pt;
   }
@@ -72,7 +83,6 @@
     display: flex;
     justify-content: space-between;
     max-width: 650px;
-    min-width: 350px;
     font-size: 14px;
     position: sticky;
     top: 50px;
@@ -96,6 +106,19 @@
     padding: 30px;
     max-width: 650px;
     overflow: hidden;
+
+    .blogSubHeader {
+      font-family: "Courier Final Draft", Courier, monospace;
+      font-size: 24px;
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: center;
+      border-bottom: 2px solid black;
+      font-weight: 700;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .blogText {
       font-family: "Inconsolata", monospace;
@@ -136,8 +159,7 @@
       .gifContainer {
         display: flex;
         justify-content: center;
-        margin-bottom: 45px;
-        margin-top: 45px;
+        margin: 45px 0;
 
         .gif {
           max-width: 550px;
@@ -192,19 +214,6 @@
   }
 }
 
-.blogSubHeader {
-  font-family: "Courier Final Draft", Courier, monospace;
-  font-size: 24px;
-  margin-bottom: 25px;
-  display: flex;
-  justify-content: center;
-  border-bottom: 2px solid black;
-  font-weight: 700;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .screengradeContainer {
   justify-content: center;
   border-bottom: 1px solid black;
@@ -252,7 +261,7 @@
   line-height: 125%;
   background-color: $light-orange;
   padding: 20px;
-  max-width: 600px;
+  max-width: 650px;
   overflow: hidden;
 
   .divider {

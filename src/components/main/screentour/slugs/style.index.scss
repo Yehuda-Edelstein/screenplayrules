@@ -1,11 +1,14 @@
 @import "../../../../index.scss";
 
 .sluglineExamplePart {
-  margin-top: 25px;
+  margin: 45px 0;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
+  background-color: $gray;
+  border: 1px solid $dark-gray;
+  padding-bottom: 25px;
 }
 
 .sluglineExampleNumber {
@@ -45,14 +48,14 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 450px) {
   .listItems {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 350px) {
   .sluglineExample {
-    font-size: 13pt;
+    font-size: 21px;
   }
 }

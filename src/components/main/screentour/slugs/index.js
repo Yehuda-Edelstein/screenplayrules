@@ -60,7 +60,9 @@ function Slugs(props) {
           it's important to have them be as short and precise as possible.
           <br></br>
           <br></br>
-          <div className="divider">The longer the slug, the grosser it is</div>
+          <span className="divider">
+            The longer the slug, the grosser it is
+          </span>
           <div className="gifContainer">
             <img
               className="gif"
@@ -77,8 +79,6 @@ function Slugs(props) {
               <span id="yellow">INT.</span> EXAMPLE - DAY
             </div>
           </div>
-          <br></br>
-          <br></br>
           This abbreviation tells us whether the scene will be happening inside
           or outside, or both.
           <br></br>
@@ -99,8 +99,6 @@ function Slugs(props) {
               INT. <span id="yellow">EXAMPLE</span> - DAY
             </div>
           </div>
-          <br></br>
-          <br></br>
           The middle part of the slugline tells us the actual location of the
           scene:
           <br></br>
@@ -121,15 +119,13 @@ function Slugs(props) {
           be "<span id="courrier">BURGER JOINT</span>".
           <br></br>
           <br></br>
-          <div className="divider">Details go in the description</div>
+          <span className="divider">Details go in the description</span>
           <div className="sluglineExamplePart">
             <div className="sluglineExampleNumber">3.</div>
             <div className="sluglineExample">
               INT. EXAMPLE <span id="yellow">- DAY</span>{" "}
             </div>
           </div>
-          <br></br>
-          <br></br>
           At last we have the when of your slugline -- the time your scene takes
           place at.
           <br></br>
@@ -224,7 +220,7 @@ function Slugs(props) {
               alt="Jack Nic'"
             />
           </div>
-          <div className="divider">Seriously</div>
+          <span className="divider">Seriously</span>
           <br></br>
           <br></br>
           Anyways, the truth is you don't really need establishing shots in your
@@ -241,7 +237,7 @@ function Slugs(props) {
             </div>
             <img className="picture" src={estabExample2} alt="estab." />
           </div>
-          <div className="divider">Yeah. For real though, Twilight sucks.</div>
+          Yeah. For real though, Twilight sucks.
         </div>
       </div>
       {!handleShow ? (
@@ -264,7 +260,10 @@ function Slugs(props) {
           <div className="screengradeBlogText">
             As I hinted at earlier, it's a definite plus to land slugs at the
             tops of your pages, although, it's usually a best case scenario and
-            not always possible. So, don't worry too much about it.
+            not always possible.
+            <br></br>
+            <br></br>
+            So, don't worry too much about it.
             <br></br>
             <br></br>
             That being said, don't ever have a slugline without at least one
@@ -280,7 +279,8 @@ function Slugs(props) {
             <div className="screengradePictureContainer">
               <img className="picture" src={scroll} alt="scroll to see" />
             </div>
-            <div className="divider">Disgusting</div>
+            <span className="divider">Disgusting</span>
+            <br></br>
             <br></br>
           </div>
         )}

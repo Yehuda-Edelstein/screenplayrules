@@ -70,14 +70,20 @@ function Dialogue(props) {
         <div className="blogText">
           So, you've got your where, when, what, and who. But, what's your who
           saying?
-          <br></br>
-          <br></br>
+          <div className="gifContainer">
+            <img
+              className="gif"
+              src="https://media.giphy.com/media/3ohze1Aup0F1S3Kfcs/giphy.gif"
+              alt="What???"
+            />
+          </div>
           Now, even though there aren't any screenplay rules specific to actual
           dialogue (since any dialogue written should follow the rules I
           described earlier in the action section) there are screenplay rules
           regarding dialogue as a block in general.
           <br></br>
           <br></br>
+          <div id="border"></div>
           <div className="blogSubHeader">CHARIES</div>
           Character parentheses or charies (pronounced: 'carries') are
           parentheses that go beside the "<span id="courrier">CHARACTER</span>"
@@ -119,6 +125,7 @@ function Dialogue(props) {
               {/* maybe reword this definition */}
             </div>
           </ul>
+          <div id="border"></div>
           <div className="blogSubHeader" id="smaller">
             (O.S.) vs (PRE-LAP)
           </div>
@@ -130,6 +137,8 @@ function Dialogue(props) {
           present time<sup>2</sup>, whereas <span id="courrier">(PRE-LAP)</span>{" "}
           refers to dialogue in script future time<sup>3</sup> that{" "}
           <span id="italic">looks</span> as if it starts in script present time.
+          <br></br>
+          <br></br>
           Here's an example of that:
           <div className="pictureContainer">
             <img
