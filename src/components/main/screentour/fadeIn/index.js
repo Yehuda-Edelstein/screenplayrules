@@ -54,7 +54,7 @@ function FadeIn(props) {
             Simply put, every line of script that goes beneath them will be
             acted, spoken, filmed, and produced, up until the last words "
             <span id="courrier">FADE OUT</span>" which we will get to later.
-            <br></br>``
+            <br></br>
             <br></br>
             <div id="border"></div>
             Now, how do I personally feel about starting my scripts this way?
