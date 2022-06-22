@@ -120,13 +120,8 @@ function Action(props) {
           Obviously, if you're writing a sci-fi piece set in 3022, some of your
           scenes will likely need extensive explanations, but if that's not the
           case, cut to the chase.
-          <div className="gifContainer">
-            <img
-              className="gif"
-              src="https://media.giphy.com/media/xThtaxTNiOA7KOo0ne/giphy.gif"
-              alt="Altered Carbon being awesome"
-            />
-          </div>
+          <br></br>
+          <br></br>
           One-word sentences are fine too. Good, even. They can add a subtle
           intensity to your description and keep the reader wanting more.
           <br></br>
@@ -341,8 +336,8 @@ function Action(props) {
           <div className="gifContainer">
             <img
               className="gif"
-              src="https://media.giphy.com/media/3ohze1Aup0F1S3Kfcs/giphy.gif"
-              alt="What?"
+              src="https://media.giphy.com/media/pBPbwr9feMbBpOMR4u/giphy.gif"
+              alt="I'm glad you asked"
             />
           </div>
           This is true, we don't really need it. But, there will be times when
@@ -350,8 +345,8 @@ function Action(props) {
           part of their character description.
           <br></br>
           <br></br>
-          In those cases you could write <span id="courrier">(20s)</span>,{" "}
-          <span id="courrier">(30s)</span>, etc.
+          In those cases you could write "<span id="courrier">(20s)</span>","
+          <span id="courrier">(30s)</span>", etc.
           <br></br>
           <br></br>
           Personally, I always introduce characters with a parenthetical age
