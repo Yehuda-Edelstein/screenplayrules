@@ -32,11 +32,16 @@ function Extras(props) {
         </div>
         <div className="blog">
           <div className="blogText">
-            <div className="blogSubHeader">WHAT'S HAPPENING</div>
             <span id="italic">I'm confused -- aren't we done here?</span> Yes
             and no.
-            <br></br>
-            <br></br>
+            <div className="gifContainer">
+              <img
+                src="https://media.giphy.com/media/118p3q768COZhu/giphy.gif"
+                alt="what's happening"
+                className="gif"
+              />
+            </div>
+            <div className="blogSubHeader">WHAT'S HAPPENING</div>
             In truth, you could write an entire script just using the blocks I
             previously described in the main screentour section, but your
             screenwriting arsenal would be greatly hindered.
