@@ -37,8 +37,13 @@ function TextDec(props) {
           of <span id="courrier">COURRIER</span>
           <sup>*</sup> font. Having your sceenplay be in any other, is a
           guaranteed way to have it end up in the trash.
-          <br></br>
-          <br></br>
+          <div className="gifContainer">
+            <img
+              src="https://media.giphy.com/media/lvrIj7cbnaOy3GWMxe/giphy.gif"
+              alt="straight trash, bro"
+              className="gif"
+            />
+          </div>
           Similarly, if you have a <span id="bold">sentence</span> in{" "}
           <span id="italic">your</span> script that's{" "}
           <span id="underline">decorated</span> like{" "}
@@ -49,6 +54,8 @@ function TextDec(props) {
           This is because the generally accepted rule is that text decoration
           should be kept to a minimum, if used at all. It distracts from the
           story, it messes with the flow, and at times it can be downright ugly.
+          <br></br>
+          <br></br>
           That being said, there are ways you can decorate your script which
           we'll get to shortly.
           <br></br>
@@ -59,23 +66,31 @@ function TextDec(props) {
           descriptions in any way, so don't do it.
           <br></br>
           <br></br>
+          <div id="border"></div>
           <div className="boldSubHeader" id="bold">
             BOLD
           </div>
           Other than sluglines, the only time you should be using bold is with
-          superimposition, which will be covered in a further section. Any other
-          bold making it into your script is going to bring your screengrade
-          down, and turn your readers off. Like overusing any text dec' it reeks
-          of amateur writing.
+          superimposition, which will be covered in a further section.
           <br></br>
           <br></br>
+          Any other bold making it into your script is going to bring your
+          screengrade down, and turn your readers off.
+          <br></br>
+          <br></br>
+          Like overusing any text dec' it reeks of amateur writing.
+          <br></br>
+          <br></br>
+          <div id="border"></div>
           <div className="italicsSubHeader" id="italic">
             ITALICS
           </div>
           In standard bookwriting, using italics is a way of adding emphasis to
           a word. However, in screenwriting, I've seen the job done by
-          underlining instead of italicizing. Personally, I use italics, but
-          using an underline isn't awful:{" "}
+          underlining instead of italicizing.
+          <br></br>
+          <br></br>
+          Personally, I use italics, but using an underline isn't awful:{" "}
           <div className="pictureContainer">
             <img className="picture" src={italicExample} alt="italic example" />
             <div className="pictureLabel">
@@ -92,30 +107,33 @@ function TextDec(props) {
           <span id="underline">same</span> script, unlike what I'm doing now.
           <br></br>
           <br></br>
+          <div id="border"></div>
           <div className="underlineSubHeader" id="underline">
             UNDERLINE
           </div>
           The only thing not covered in the previous subsection regarding what
           to underline is with superimposition. And the thing is, it's needed.
-          Somewhat. Both underline and bold should be present with whatever is
-          being superimposed. A later section will get into how and when you
-          should superimpose, but here's a quick visual:
+          Somewhat.
           <br></br>
           <br></br>
+          Both underline and bold should be present with whatever is being
+          superimposed. A later section will get into how and when you should
+          superimpose, but here's a quick visual:
           <div className="superimposeExamplePart">
             <div className="superimposeExample">SUPERIMPOSE: "EXAMPLE"</div>
           </div>
+          <span id="bold">Note:</span> I've seen superimposition that wasn't
+          bold, so, again, you can decide which you prefer. Personally, I go
+          with bold. But, you do you.
           <br></br>
           <br></br>
-          Note: I've seen superimposition that wasn't bold, so, again, you can
-          decide which you prefer. Personally, I go with bold. But, you do you.
-          <br></br>
-          <br></br>
+          <div id="border"></div>
           <div className="underlineSubHeader">CAPS</div>
           Shortly put, if it isn't a slugline, prop, or character, you shouldn't
-          be putting anything in <span id="courrier">ALL CAPS</span>. The worst
-          you could do is use caps to emphasize a word in dialogue, instead of
-          italicizing or underlining.
+          be putting anything in <span id="courrier">ALL CAPS</span>.<br></br>
+          <br></br>
+          The worst you could do is use caps to emphasize a word in dialogue,
+          instead of italicizing or underlining.
         </div>
       </div>
       <div className="localGlossary">
