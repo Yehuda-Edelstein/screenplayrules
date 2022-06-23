@@ -8,6 +8,7 @@ function Home(props) {
   }, []);
   return (
     <div className="homeContainer" id="first">
+      {/* ADD A TV PLAYING DIFFERENT GIFS FROM THE SCREENTOUR OR JUST OTHER GOOD MOVIES. TO FILL SPACE */}
       Home component
       <br></br>
       <br></br>
