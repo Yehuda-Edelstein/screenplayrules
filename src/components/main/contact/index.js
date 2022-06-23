@@ -17,19 +17,18 @@ function Contact(props) {
     "big fan of the Screenplay Rules website"
   );
   const [message, setMessage] = useState("");
-
   const [type, setType] = useState({
     type: "QUESTION",
     text: "ask a question",
   });
-
   const [topic, setTopic] = useState({
     topic: "SCREENTOUR",
     text: "the screentour.",
   });
+  const [error, setError] = useState({ is: false, message: null });
 
   function handleSubmit() {
-    fetch("http://localhost:8000/api/messages/", {
+    /* fetch("http://localhost:8000/api/messages/", {
       headers: {
         "content-type": "application/json",
       },
@@ -42,34 +41,37 @@ function Contact(props) {
       }),
       method: "POST",
     });
+    */
     // add a navigate to 'script has been sent component'
     // .then(navigate("/blog"));
+    if (name.length === 0 || "YOU") {
+      setError({ is: true, message: "name is required" });
+    }
+    console.log(error);
   }
 
   return (
-    <div>
+    <div className="contactPage">
       <div className="contactContainer">
         <form>
           <div className="main">
-            <div className="shortContainer">
-              <input
-                id="short"
-                placeholder="Name..."
-                spellCheck="false"
-                type="text"
-                maxLength="33"
-                required
-                onChange={(ev) => setName(ev.target.value)}
-              ></input>
-              <input
-                id="short"
-                placeholder="Email..."
-                spellCheck="false"
-                type="text"
-                required
-                onChange={(ev) => setEmail(ev.target.value)}
-              ></input>
-            </div>
+            <input
+              id="short"
+              placeholder="Name..."
+              spellCheck="false"
+              type="text"
+              maxLength="33"
+              required
+              onChange={(ev) => setName(ev.target.value)}
+            ></input>
+            <input
+              id="short"
+              placeholder="Email..."
+              spellCheck="false"
+              type="text"
+              required
+              onChange={(ev) => setEmail(ev.target.value)}
+            ></input>
             <div className="dropDownDivContainer">
               <div className="dropDownDiv">
                 <select
