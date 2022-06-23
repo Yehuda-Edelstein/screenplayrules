@@ -22,6 +22,7 @@ import Outro from "./screentour//extras/outro";
 import Rulebook from "./rulebook";
 import Glossary from "./glossary";
 import Contact from "./contact";
+import SimpleContact from "./simpleContact";
 import Extras from "./screentour//extras";
 import LogIn from "./logIn";
 import BlogList from "./blog/blogList";
@@ -44,7 +45,8 @@ function Main(props) {
         {/* NAV ROUTES */}
         {/* <Route path="rulebook" element={<Rulebook />} /> */}
         <Route path="glossary" element={<Glossary />} />
-        <Route path="contact" element={<Contact />} />
+        {/* <Route path="contact" element={<Contact />} /> */}
+        <Route path="contact" element={<SimpleContact />} />
         {/* BLOG ROUTES */}
         {/* <Route path='blog' element={<BlogList />} /> 
                 <Route path='blog/:id' element={<BlogDetail />} />
