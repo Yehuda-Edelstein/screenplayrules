@@ -51,13 +51,26 @@ function Transitions(props) {
       </div>
       <div className="blog">
         <div className="blogText">
-          Wow. That was a lot to take in. Trust me, it gets easier. At least
-          this part does. Understanding the rules of it all. Just wait. Once you
-          know how to write a screenplay, then you'll actually have to write
-          one. And that's the hard part.
+          <span className="divider">Wow</span>
           <br></br>
           <br></br>
-          But, congrats! You've made it through your first basic scene -- every
+          That was a lot to take in.
+          <div className="gifContainer">
+            <img
+              src="https://media.giphy.com/media/l1KVaj5UcbHwrBMqI/giphy.gif"
+              alt="phew"
+              className="gif"
+            />
+          </div>
+          Trust me, it gets easier. At least this part does. Understanding the
+          rules of it all.
+          <br></br>
+          <br></br>
+          Just wait. Once you know how to write a screenplay, then you'll
+          actually have to write one. And that's the hard part.
+          <br></br>
+          <br></br>
+          But, congrats! You've made it through your first basic scene. Every
           other scene you write after this will just be a variation made up from
           the previous sections (along with some extras that we'll be getting to
           shortly, if you've got the stomach for it).
@@ -66,18 +79,25 @@ function Transitions(props) {
           The only thing holding us back from jumping between scenes, getting to
           110, and writing (or maybe not writing) that satisfying "
           <span id="courrier">FADE OUT</span>" at the end are the transitions:
+          <br></br>
+          <br></br>
           How do we get from scene A to scene B?
           <br></br>
           <br></br>
+          <div id="border"></div>
+          <div className="blogSubHeader">BASIC TRANSITIONS</div>
           In days of old, we'd simply "<span id="courrier">CUT TO</span>" the
           next scene, however, it isn't done anymore. The reason being, similar
           to "<span id="courrier">FADE IN</span>" and "
-          <span id="courrier">FADE OUT</span>", it's pointless:
+          <span id="courrier">FADE OUT</span>".
+          <br></br>
+          <br></br>
+          <span className="divider">It's pointless</span>
           <div className="pictureContainer">
             <img className="picture" src={cutToExample} alt="cut to example" />
           </div>
           "<span id="courrier">CUT TO</span>" is the default, so it's
-          unnecessary -- it's accepted that when a new slugline appears, we will
+          unnecessary. It's accepted that when a new slugline appears, we will
           be cutting to that scene. I mean, how else are we supposed to get
           there?
           <br></br>
@@ -91,6 +111,7 @@ function Transitions(props) {
           to decide anyway. So, why write it?
           <br></br>
           <br></br>
+          <div id="border"></div>
           Now, if you really feel the scene needs some kind of a distinct
           transition, here's a list of acceptable ones to choose from:
           <div>
@@ -136,21 +157,24 @@ function Transitions(props) {
           <br></br>
           <br></br>
           This being said, it's up to you as the screenwriter to decide how you
-          want to use these transitions. "<span id="courrier">DISSOLVE TO</span>
-          " has been used comedically just as "
-          <span id="courrier">QUICK CUT TO</span>" has been used dramatically.
-          The important thing too remember is, like wrylys, to many transitions
-          is a rookie mistake.
+          want to use these transitions.
+          <br></br>
+          <br></br>"<span id="courrier">DISSOLVE TO</span>" has been used
+          comedically just as "<span id="courrier">QUICK CUT TO</span>" has been
+          used dramatically. The important thing too remember is, like wrylys,
+          to many transitions is a rookie mistake.
           <br></br>
           <br></br>
-          Note: I've also seen "<span id="courrier">QUICK CUT TO</span>" be "
-          <span id="courrier">JUMP CUT TO</span>" -- either is fine, just pick
-          one and stick to it:
+          <span id="bold">Note:</span> I've also seen "
+          <span id="courrier">QUICK CUT TO</span>" be "
+          <span id="courrier">JUMP CUT TO</span>". Either is fine, just pick one
+          and stick to it:
           <br></br>
           <br></br>
+          <div id="border"></div>
           <div className="blogSubHeader">INTERCUT</div>
           An "<span id="courrier">INTERCUT</span>" is used when jumping between
-          multiple scenes continuously -- instead of writing a regular slugline,
+          multiple scenes continuously. Instead of writing a regular slugline,
           we write an intercut slugline<sup>1</sup>.<br></br>
           <br></br>
           The reason for doing this is purely aesthetic, as too many sluglines
@@ -164,12 +188,13 @@ function Transitions(props) {
             <img className="picture" src={intercutSlugs} alt="intercut slugs" />
           </div>
           The rule of thumb for intercut slugs, is once both locations have been
-          established one after the other with their own slug, you can then use
+          established, one after the other with their own slug, you can then use
           intercut slugs to switch between them.
           <br></br>
           <br></br>
-          Note: only use intercut slugs when the scene is continuous. If time
-          has passed, it's a totally new scene and will require a new slug.
+          <span id="bold">Note:</span> only use intercut slugs when the scene is
+          continuous. If time has passed, it's a totally new scene and will
+          require a new slug.
         </div>
       </div>
       {/* </div> */}
