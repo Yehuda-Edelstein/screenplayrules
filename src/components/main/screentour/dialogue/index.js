@@ -70,13 +70,8 @@ function Dialogue(props) {
         <div className="blogText">
           So, you've got your where, when, what, and who. But, what's your who
           saying?
-          <div className="gifContainer">
-            <img
-              className="gif"
-              src="https://media.giphy.com/media/3ohze1Aup0F1S3Kfcs/giphy.gif"
-              alt="What???"
-            />
-          </div>
+          <br></br>
+          <br></br>
           Now, even though there aren't any screenplay rules specific to actual
           dialogue (since any dialogue written should follow the rules I
           described earlier in the action section) there are screenplay rules
@@ -147,14 +142,26 @@ function Dialogue(props) {
               alt="pre lap example"
             />
           </div>
-          If you're confused, let me break it down:
+          <span className="divider">Still confused?</span>
+          <br></br>
+          <br></br>
+          **YOU**
+          <div className="gifContainer">
+            <img
+              className="gif"
+              src="https://media.giphy.com/media/9Vkm7LGgrPTcA345Sb/giphy.gif"
+              alt="DMT Pt. 2"
+            />
+          </div>
+          Okay, let me break it down:
           <br></br>
           <br></br>
           The first line of dialogue happens for the audience during the first
-          scene, but for the character, it happens in the second. Right? "
-          <span id="courrier">CHARACTER</span>" isn't saying "
+          scene, but for the character, it happens in the second. Right?
+          <br></br>
+          <br></br>"<span id="courrier">CHARACTER</span>" isn't saying "
           <span id="courrier">Man, it's eerie here</span>" during the daytime
-          scene. It only seems that way to the viewer, but he (or she -- relax,
+          scene. It only seems that way to the viewer, but he (or she, relax,
           it's an amorphous, genderless entity) is actually saying this during
           the nighttime scene, and will be filmed as such.
           <br></br>
@@ -170,6 +177,7 @@ function Dialogue(props) {
           than for you to option the heck out of your spec.
           <br></br>
           <br></br>
+          <div id="border"></div>
           On the other side of the spectrum, <span id="courrier">
             (O.S.)
           </span>{" "}
@@ -186,6 +194,8 @@ function Dialogue(props) {
           <br></br>
           Notice, both cases require <span id="courrier">(CONT'D)</span> on the
           second block of dialogue because both blocks will be filmed together.
+          <br></br>
+          <br></br>
           Also, as I alluded to previously, these cases, along with{" "}
           <span id="courrier">(V.O.)</span>, are the only acceptable times to
           have an unintroduced character give dialogue -- when they are not in
@@ -195,11 +205,18 @@ function Dialogue(props) {
           <br></br>
           The exception to <span id="italic">this</span> exception is with a "
           <span id="courrier">NARRATOR</span>" who remains off screen the entire
-          film. Although, you'd need to use <span id="courrier">(V.O.)</span> in
-          that case. Always. The reason for which you'll understand shortly.
-          Hopefully. Anyways. Moving right along...
+          film.
           <br></br>
           <br></br>
+          Although, you'd need to use <span id="courrier">(V.O.)</span> in that
+          case. Always. The reason for which you'll understand shortly.
+          Hopefully. Anyways.
+          <br></br>
+          <br></br>
+          <span className="divider">Moving right along...</span>
+          <br></br>
+          <br></br>
+          <div id="border"></div>
           You may be asking yourself:{" "}
           <span id="italic">
             What's the difference between (v.o.) and (o.s.)?
@@ -210,19 +227,29 @@ function Dialogue(props) {
           Second, I'm getting to that, hotshot.
           <br></br>
           <br></br>
+          <div id="border"></div>
           <div className="blogSubHeader" id="smaller">
             (O.S.) vs (V.O.)
           </div>
-          The difference between these two charies is simple: If the character's
-          voice is recorded from a scene taken by the camera (presumably with
-          some type of boom mic) then it's <span id="courrier">(O.S.)</span>.
-          Any dialogue recorded in a studio, then added in, is{" "}
-          <span id="courrier">(V.O.)</span>.<br></br>
+          The difference between these two charies is simple:
+          <br></br>
+          <br></br>
+          If the character's voice is recorded from a scene taken by the camera
+          (presumably with some type of boom mic) then it's{" "}
+          <span id="courrier">(O.S.)</span>. Any dialogue recorded in a studio,
+          then added in, is <span id="courrier">(V.O.)</span>.<br></br>
           <br></br>
           Think of a narrator in a movie. Edward Norton didn't sit in a chair on
-          set and record all his narration for Fight Club on camera for a scene
-          that would never be in the movie. He obviously recorded it in an
-          air-conditioned studio.
+          set and record all his narration for{" "}
+          <a
+            href="https://www.scriptslug.com/script/fight-club-2000"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Fight Club
+          </a>{" "}
+          on camera for a scene that would never be in the movie. He obviously
+          recorded it in an air-conditioned studio.
           <br></br>
           <br></br>
           As for movies like{" "}
@@ -235,13 +262,17 @@ function Dialogue(props) {
           </a>
           , where part of the narration is on camera, but then switches to a
           voice-over, I'm not sure how it was written, but you can see for
-          yourself. .<br></br>
+          yourself. <br></br>
           <br></br>
           Note: they use <span id="courrier">(Over)</span> in the script for
-          narration and it makes me gag. But, hey, whatever sells. Lol.{" "}
-          <span id="italic">Oscar. Winner.</span>
-          <br></br>
-          <br></br>
+          narration and it makes me gag. But, hey, whatever sells lol.
+          <div className="gifContainer">
+            <img
+              className="gif"
+              src="https://media.giphy.com/media/keTwQbbQwlNM2RNJsW/giphy.gif"
+              alt="Tomest Humps"
+            />
+          </div>
           Either way, it doesn't matter. The screenplay rule over here is
           simple: If the dialogue is recorded after or before filming, it's{" "}
           <span id="courrier">(V.O.)</span>. Otherwise, it's{" "}
@@ -258,25 +289,33 @@ function Dialogue(props) {
           </div>
           The twist here is in the shape of a rule, and the rule is that{" "}
           <span id="courrier">(CONT'D)</span> needs to be present no matter if
-          another chary precedes it. Whether it's{" "}
-          <span id="courrier">(V.O.)</span> or <span id="courrier">(O.S.)</span>
-          , if it's continuous dialogue (recorded or filmed in one take) it
-          needs a <span id="courrier">(CONT'D)</span> after it.
+          another chary precedes it.
           <br></br>
           <br></br>
-          Note: I'm not sure how a <span id="courrier">(PRE-LAP)</span> could
-          ever be continuous dialogue from a previous block, but if you figure
-          out a way that it can, you'll need to go and slap a{" "}
-          <span id="courrier">(CONT'D)</span> after it as well.
+          Whether it's <span id="courrier">(V.O.)</span> or{" "}
+          <span id="courrier">(O.S.)</span>, if it's continuous dialogue
+          (recorded or filmed in one take) it needs a{" "}
+          <span id="courrier">(CONT'D)</span> after it.
           <br></br>
           <br></br>
-          Note #2: I've seen one other chary used for dialogue spoken off camera
-          rightly dubbed <span id="courrier">(O.C.)</span>, but don't ever use
-          it. It's the same as <span id="courrier">(O.S.)</span> which is more
+          <span id="bold">Note:</span> I'm not sure how a{" "}
+          <span id="courrier">(PRE-LAP)</span> could ever be continuous dialogue
+          from a previous block, but if you figure out a way that it can, you'll
+          need to go and slap a <span id="courrier">(CONT'D)</span> after it as
+          well.
+          <br></br>
+          <br></br>
+          <span id="bold">Note #2:</span> I've seen one other chary used for
+          dialogue spoken off camera rightly dubbed{" "}
+          <span id="courrier">(O.C.)</span>, but don't ever use it.
+          <br></br>
+          <br></br>
+          It's the same as <span id="courrier">(O.S.)</span> which is more
           common, so just stick with that. Don't be that guy, you know? Or girl.
-          Or amorphous, genderless entity. Anyways...
+          Or amorphous, genderless entity.
           <br></br>
           <br></br>
+          <div id="border"></div>
           Back to our guy, "<span id="courrier">Brady</span>". He's doing okay.
           But, he seems lonely. Let's give him a love interest and get that ball
           rolling:
@@ -287,18 +326,20 @@ function Dialogue(props) {
               alt="dialogue with highlights"
             />
           </div>
-          1. The{" "}
+          <span id="bold">1.</span> The{" "}
           <span id="courrier">
             <span id="yellow">(O.S.)</span>
           </span>{" "}
           is highlighted because even if the props are off screen, they still
-          need to be written as such. Notice also how "
-          <span id="courrier">DOOR</span>" is written in{" "}
+          need to be written as such.
+          <br></br>
+          <br></br>
+          Notice also how "<span id="courrier">DOOR</span>" is written in{" "}
           <span id="courrier">ALL CAPS</span> even though its introduction is
           off screen as well.
           <br></br>
           <br></br>
-          2.{" "}
+          <span id="bold">2.</span>{" "}
           <span id="courrier">
             <span id="yellow">"JULES"</span>
           </span>{" "}
@@ -343,23 +384,30 @@ function Dialogue(props) {
                 alt="dialogie with screengrade highlights"
               />
             </div>
-            3. Every time you see a{" "}
+            <span id="bold">3.</span> Every time you see a{" "}
             <span id="courrier">
               <span id="yellow">--</span>
             </span>{" "}
             in a script, it's implying a cutoff<sup>5</sup> and could be found
-            in both description and dialogue. It can be used for a jump scare or
-            to break a silence with intention (more on this in surprise section
-            -- literally, not like the section is a surprise). Here I would
-            include it because <span id="courrier">Jules</span> is going to be
-            the love interest and the reader should know that her introduction
-            will likely be an important shot.
+            in both description and dialogue.
             <br></br>
             <br></br>
-            4. Having parallel capitalized letters<sup>6</sup> or parallel caps
-            is not as visually grotesque as stacked caps, but it's still not
-            worth the lower screengrade. We'll just squeeze the word "
-            <span id="courrier">back</span>" between{" "}
+            It can be used for a jump scare or to break a silence with
+            intention.
+            <br></br>
+            <br></br>
+            Here I would include it because "<span id="courrier">Jules</span>"
+            is going to be the love interest and the reader should know that her
+            introduction will likely be an important shot.
+            <br></br>
+            <br></br>
+            <span id="bold">4.</span> Having parallel capitalized letters
+            <sup>6</sup> or parallel caps is not as visually grotesque as
+            stacked caps, but it's still not worth the lower screengrade.
+            <br></br>
+            <br></br>
+            We'll just squeeze the word "<span id="courrier">back</span>"
+            between{" "}
             <span id="red">
               <span id="courrier">A</span>
             </span>{" "}
@@ -370,23 +418,25 @@ function Dialogue(props) {
             , and we're good to go.
             <br></br>
             <br></br>
-            5. Using a{" "}
+            <span id="bold">5.</span> Using a{" "}
             <span id="courrier">
               <span id="yellow">:</span>
             </span>{" "}
             (i.e., a colon) is a way to show the dialogue that proceeds a
-            description is directly relevant to the action before it. In our
-            case, Jules throws open the back door, then instantly calls Brady a
-            loser. Using a colon is like including the action in the dialogue
-            itself (we will see exactly this in a moment).
+            description is directly relevant to the action before it.
+            <br></br>
+            <br></br>
+            In our case, Jules throws open the back door, then instantly calls
+            Brady a loser. Using a colon is like including the action in the
+            dialogue itself (we will see exactly this in a moment).
           </div>
         </div>
       )}
       <div className="blog">
         <div className="blogText">
-          <div className="blogSubHeader">WRYLIES</div>
-          Suppose I asked you this question: How do you let your reader know the
-          tone of a particular line or block of dialogue?
+          <div id="border"></div>
+          Question: how do you let your reader know the tone of a particular
+          line or block of dialogue?
           <br></br>
           <br></br>
           Assuming our main "<span id="courrier">Character</span>" has already
@@ -399,14 +449,21 @@ function Dialogue(props) {
           <br></br>
           More than that, even if your reader is aware of what genre your script
           is and can deduce the tone you're going for, are they going to{" "}
-          <span id="italic">feel</span> it? No. They probably won't. And making
-          them feel it is part of your job as the screenwriter.
+          <span id="italic">feel</span> it?
           <br></br>
           <br></br>
-          So, what's the fix? It's a combination of two things: description and
-          the occasional wryly. First off, what's a wryly?
+          No. They probably won't. And making them feel it is part of your job
+          as the screenwriter.
           <br></br>
           <br></br>
+          So, what's the fix? It's a combination of two things:
+          <br></br>
+          <br></br>
+          Description and the occasional wryly. First off, what's a wryly?
+          <br></br>
+          <br></br>
+          <div id="border"></div>
+          <div className="blogSubHeader">WRYLIES</div>
           Wrylies (plural) are parentheticals found between the "
           <span id="courrier">CHARACTER</span>" name and their dialogue to help
           imply tone:
@@ -429,13 +486,17 @@ function Dialogue(props) {
               alt="dialogue from The Apartment (1960)"
             />
           </div>
-          Note: regarding our example, some writers might have used the word "
-          <span id="courrier">sarcastically</span>" instead of "
-          <span id="courrier">sarcastic</span>", but I prefer my wrylies a bit
-          more wry (i.e., without the 'ly'). It looks nicer, plus, it gets the
-          same point across anyway, so might as well save the plasma, you know?
+          <span id="bold">Note: </span>regarding our example, some writers might
+          have used the word "<span id="courrier">sarcastically</span>" instead
+          of "<span id="courrier">sarcastic</span>", but I prefer my wrylies a
+          bit more wry (i.e., without the 'ly').
           <br></br>
           <br></br>
+          It looks nicer, plus, it gets the same point across anyway, so might
+          as well save the plasma, you know?
+          <br></br>
+          <br></br>
+          <div id="border"></div>
           Our scene with some description and a wryly:
           <div className="pictureContainer">
             <img
@@ -470,12 +531,13 @@ function Dialogue(props) {
               alt="wryly example with screegrade rules"
             />
           </div>
-          1. A cutoff has been added because Character (2)'s intro is a jump
-          scare, and jump scares should be preceded by a cutoff.
+          <span id="bold">1.</span> A cutoff has been added because Character
+          (2)'s intro is a jump scare, and jump scares should be preceded by a
+          cutoff.
           <br></br>
           <br></br>
-          2. To give the scene more tension we've added a beat<sup>7</sup> in
-          between two blocks of dialogue.
+          <span id="bold">2.</span> To give the scene more tension we've added a
+          beat<sup>7</sup> in between two blocks of dialogue.
         </div>
       )}
       <div className="localGlossary">
