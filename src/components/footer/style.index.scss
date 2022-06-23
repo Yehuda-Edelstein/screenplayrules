@@ -16,6 +16,7 @@
   height: fit-content;
   padding-left: 50px;
   align-items: center;
+  min-width: 350px;
 
   .copyright {
     font-size: 13px;
@@ -37,5 +38,15 @@
   .footer {
     padding: 5px 7.5px;
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    .copyright {
+      .websiteName {
+        display: none;
+      }
+    }
   }
 }

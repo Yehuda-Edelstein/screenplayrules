@@ -5,7 +5,9 @@ import "./style.index.scss";
 function Footer(props) {
   return (
     <div className="footer">
-      <div className="copyright">©️2022 Screenplay Rules</div>
+      <div className="copyright">
+        ©️2022 <span className="websiteName">Screenplay Rules</span>
+      </div>
       <Link to="about" style={{ color: "inherit", textDecoration: "inherit" }}>
         <div className="footerLink">ABOUT</div>
       </Link>
@@ -14,6 +16,12 @@ function Footer(props) {
         style={{ color: "inherit", textDecoration: "inherit" }}
       >
         <div className="footerLink">CONTACT</div>
+      </Link>
+      <Link
+        to="comingsoon"
+        style={{ color: "inherit", textDecoration: "inherit" }}
+      >
+        <div className="footerLink">COMING SOON</div>
       </Link>
     </div>
   );
