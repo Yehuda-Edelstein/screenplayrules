@@ -55,10 +55,12 @@ function Reading(props) {
           doesn't matter, just put it in quotes and you're golden.
           <br></br>
           <br></br>
-          Note: you don't actually have to use the word "
+          <span id="bold">Note:</span> you don't actually have to use the word "
           <span id="courrier">reading</span>" or{" "}
           <span id="courrier">reads</span>". You can write it however you like,
           just as long as whatever is being read is in quotes.
+          <br></br>
+          <br></br>
         </div>
       </div>
     </div>

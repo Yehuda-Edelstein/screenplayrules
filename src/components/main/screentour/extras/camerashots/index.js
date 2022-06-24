@@ -62,6 +62,7 @@ function CameraShots(props) {
           you really think it's important to the plot...
           <br></br>
           <br></br>
+          <div id="border"></div>
           <div className="blogSubHeader">HOW TO</div>
           Writing a camera shot is very simple. Left side,{" "}
           <span id="courrier">ALL CAPS</span>, and no punctuation. The only
@@ -75,9 +76,11 @@ function CameraShots(props) {
             <div className="pictureLabel">SAME LINE</div>
             <img className="picture" src={sameLine} alt="same line" />
           </div>
-          Note: sorry for the obvious labels, but it looks nicer.
+          <span id="bold">Note:</span> sorry for the obvious labels, but it
+          looks nicer.
           <br></br>
           <br></br>
+          <div id="border"></div>
           <div className="blogSubHeader">WHEN TO</div>
           Again, writing camera shots into your screenplay should be for the
           purpose of plot. Only.
@@ -89,11 +92,14 @@ function CameraShots(props) {
           Not as something happening in the background, but as an actual shot.
           <br></br>
           <br></br>
-          Note: the difference between "<span id="courrier">ANGLE ON</span>" and
-          "<span id="courrier">CLOSE ON</span>" is distance, although most times
+          <span id="bold">Note:</span> the difference between "
+          <span id="courrier">ANGLE ON</span>" and "
+          <span id="courrier">CLOSE ON</span>" is distance, although most times
           they are interchangeable. Personally, I use "
           <span id="courrier">CLOSE ON</span>" only when it's a cut to a close
           up of something that was in the previous shot.
+          <br></br>
+          <br></br>
         </div>
       </div>
     </div>

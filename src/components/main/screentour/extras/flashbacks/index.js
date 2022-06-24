@@ -33,8 +33,10 @@ function Flashbacks(props) {
       <div className="blog">
         <div className="blogText">
           You know the drill. Our protagonist sees an ex walk by them in slow
-          motion and has a flashback to when they were happily together. Gross,
-          but accurate:
+          motion and has a flashback to when they were happily together.
+          <br></br>
+          <br></br>
+          Gross, but accurate:
           <div className="pictureContainer">
             <img
               className="picture"
@@ -46,6 +48,7 @@ function Flashbacks(props) {
           and convoluted, but this should show you how it's done.
           <br></br>
           <br></br>
+          <div id="border"></div>
           An advanced move that's done a lot these days is a montage within a
           flashback:
           <div className="pictureContainer">
@@ -56,11 +59,23 @@ function Flashbacks(props) {
             />
           </div>
           And that's how that's done.
-          {/* GIF */}
+          <div className="gifContainer">
+            <img
+              src="https://media.giphy.com/media/15BuyagtKucHm/giphy.gif"
+              alt="mic drop"
+              className="gif"
+            />
+          </div>
+          <span id="bold">Note:</span> you can also have flashbacks within
+          flashbacks. Just remember to add a montage description to let the
+          reader know what the hell is going on.
           <br></br>
           <br></br>
-          p.s.: I think montages and flashbacks are a bit tacky and overused,
-          but they do have their place. Just be smart with them.
+          <span id="bold">p.s.:</span> I think montages and flashbacks are a bit
+          tacky and overused, but they do have their place. Just be smart with
+          them.
+          <br></br>
+          <br></br>
         </div>
       </div>
     </div>

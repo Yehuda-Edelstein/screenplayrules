@@ -30,7 +30,24 @@ function Outro(props) {
         </Link>
       </div>
       <div className="blog">
-        <div className="blogText"></div>
+        <div className="blogText">
+          Okay, now <span id="italic">I'm</span> tired. I mean, that was a lot,
+          right? For both of us.<br></br>
+          <br></br>Anyways, I hope you enjoyed. I hope you learned some stuff.
+          And, yeah, go check out the glossary (I'm always uploading new terms
+          when I hear of them). Shoot me a message. Check out what's coming
+          soon.
+          <br></br>
+          <br></br>
+          Or just get the hell off the site.
+          <div className="gifContainer">
+            <img
+              src="https://media.giphy.com/media/J2ilWC0ZU4IThg034P/giphy.gif"
+              alt="your choice"
+              className="gif"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

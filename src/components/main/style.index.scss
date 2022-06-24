@@ -25,6 +25,9 @@
     }
   }
 
+  br {
+  }
+
   #bold {
     font-weight: bold;
   }
@@ -39,10 +42,10 @@
     font-size: 16px;
   }
 
-  #dividerCourrier {
+  .dividerCourrier {
+    margin-left: 20px;
     font-weight: 400;
     font-size: 22px;
-    font-weight: bold;
     font-family: "Courier Final Draft", Courier, monospace;
   }
   #yellow {
@@ -104,6 +107,7 @@
   .blog {
     background-color: white;
     padding: 30px;
+    padding-bottom: 0;
     max-width: 650px;
     overflow: hidden;
 
@@ -135,11 +139,12 @@
       .pictureContainer {
         margin: 45px 0;
         min-width: 290px;
-        max-width: none;
+        max-width: 500px;
         overflow: hidden;
         margin-left: auto;
         margin-right: auto;
-        box-shadow: 0px 0px 2px 1px;
+        border: 1px solid $dark-gray;
+        // box-shadow: 0px 0px 2px 1px;
 
         .picture {
           max-width: 550px;
@@ -163,6 +168,7 @@
 
         .gif {
           max-width: 550px;
+          width: 500px;
           box-shadow: 0px 0px 2px 1px;
           // border-radius: 8px;
         }
@@ -192,7 +198,7 @@
   margin: 45px 0;
   border: 1px solid $gray;
   background-color: white;
-  // min-width: 320px;
+  max-width: 500px;
   width: 100%;
   overflow: hidden;
   margin-left: auto;
@@ -217,6 +223,7 @@
 .screengradeContainer {
   justify-content: center;
   border-bottom: 1px solid black;
+  border-bottom: none;
 }
 
 .screengradeHeader {
@@ -258,9 +265,11 @@
 .screengradeBlogText {
   font-family: "Inconsolata", monospace;
   font-size: 17px;
-  line-height: 125%;
+  line-height: 170%;
   background-color: $light-orange;
-  padding: 20px;
+  padding: 30px;
+  padding-bottom: 0;
+  padding-top: 0;
   max-width: 650px;
   overflow: hidden;
 
@@ -323,6 +332,12 @@
 @media screen and (max-width: 693px) {
   .screengradePictureContainer {
     max-height: 400px;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .picture {
+    transform: translateX(-25px);
   }
 }
 

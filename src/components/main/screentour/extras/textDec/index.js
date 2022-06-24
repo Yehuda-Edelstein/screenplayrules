@@ -37,13 +37,8 @@ function TextDec(props) {
           of <span id="courrier">COURRIER</span>
           <sup>*</sup> font. Having your sceenplay be in any other, is a
           guaranteed way to have it end up in the trash.
-          <div className="gifContainer">
-            <img
-              src="https://media.giphy.com/media/lvrIj7cbnaOy3GWMxe/giphy.gif"
-              alt="straight trash, bro"
-              className="gif"
-            />
-          </div>
+          <br></br>
+          <br></br>
           Similarly, if you have a <span id="bold">sentence</span> in{" "}
           <span id="italic">your</span> script that's{" "}
           <span id="underline">decorated</span> like{" "}
@@ -75,10 +70,8 @@ function TextDec(props) {
           <br></br>
           <br></br>
           Any other bold making it into your script is going to bring your
-          screengrade down, and turn your readers off.
-          <br></br>
-          <br></br>
-          Like overusing any text dec' it reeks of amateur writing.
+          screengrade down, and turn your readers off. Like overusing any text
+          dec' it reeks of amateur writing.
           <br></br>
           <br></br>
           <div id="border"></div>
@@ -134,6 +127,8 @@ function TextDec(props) {
           <br></br>
           The worst you could do is use caps to emphasize a word in dialogue,
           instead of italicizing or underlining.
+          <br></br>
+          <br></br>
         </div>
       </div>
       <div className="localGlossary">

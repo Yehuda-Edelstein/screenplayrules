@@ -34,34 +34,30 @@ function Language(props) {
       <div className="blog">
         <div className="blogText">
           If you think this section is talking about actual language, you're
-          dead fucking wrong, you fat piece of shit -- I don't give a fuck how
+          dead fucking wrong, you fat piece of shit. I don't give a fuck how
           vulgar you make your dumb little bitch scipt. It's not like you're
           selling the shit?
           <br></br>
           <br></br>
           That being said, it looks bad if you keep using profanity as a crutch.
           A lot of amatuar writers think all intense scenes require a barrage of
-          explatives, but they don't. So, use them wisely. Fucker.
-          <div className="pictureContainer">
-            <div className="pictureLabel">
-              <a
-                href="https://www.scriptslug.com/script/the-wolf-of-wall-street-2013"
-                rel="noreferrer noopener"
-                target="_blank"
-              >
-                The Wolf of Wall Street (2013)
-              </a>
-            </div>
+          explatives, but they don't. So, use them wisely.
+          <br></br>
+          <br></br>
+          <span className="divider">Fucker</span>
+          <div className="gifContainer">
             <img
-              className="picture"
-              src={wolfSample}
-              alt="The Wolf of Wall Street (2013)"
+              src="https://media.giphy.com/media/t0005w3YYbuIU/giphy.gif"
+              alt="Jeo Belcaprio"
+              className="gif"
             />
           </div>
           Anyways, this section is actually talking about foriegn languages and
-          subtitles. It's pretty simple, conceptially. You have a character
-          that's from a foriegn country or different galaxy, and you want them
-          to speak in a specific language.
+          subtitles. It's pretty simple, conceptially:
+          <br></br>
+          <br></br>
+          You have a character that's from a foriegn country or different
+          galaxy, and you want them to speak in a specific language.
           <br></br>
           <br></br>
           This is totally fine, just make sure to not spell out the foriegn
@@ -83,9 +79,9 @@ function Language(props) {
           <br></br>A few things to note:
           <br></br>
           <br></br>
-          1. if a foriegn langauge will be spoken for an extended period of time
-          (I'd say for more than half a scene) introduce the langauge shift in
-          the preceding description and screw the wrylys:
+          <span id="bold">1.</span> if a foriegn langauge will be spoken for an
+          extended period of time (I'd say for more than half a scene) introduce
+          the langauge shift in the preceding description and screw the wrylys:
           <div className="pictureContainer">
             <img
               className="picture"
@@ -93,24 +89,29 @@ function Language(props) {
               alt="langauge explained in preceding description"
             />
           </div>
-          2. on the other hand, if your character is speaking the language badly
-          for comedic effect, you <span id="italic">can</span> write out the
-          foriegn words in English or whatever langugae you write in. Just make
-          sure to use a wryly here as well for clarification.
+          <span id="bold">2.</span> on the other hand, if your character is
+          speaking the language badly for comedic effect, you{" "}
+          <span id="italic">can</span> write out the foriegn words in English or
+          whatever langugae you write in. Just make sure to use a wryly here as
+          well for clarification.
           <br></br>
           <br></br>
-          3. if the language is made up (like our alien one from earlier) you'll
-          still need either a preceding description or wryly for explanation.
+          <span id="bold">3.</span> if the language is made up (like our alien
+          one from earlier) you'll still need either a preceding description or
+          wryly for explanation.
           <br></br>
           <br></br>
-          Note: the difference here is that if we, the audience, are supposed to
-          know what the aliens are saying, the dialogue written will be
-          subtitled when it appears on screen. So, it's probably best to let the
-          reader know this with wrylys as well.
+          <span id="bold">3.a.</span> the difference here is that if we, the
+          audience, are supposed to know what the aliens are saying, the
+          dialogue written will be subtitled when it appears on screen. So, it's
+          probably best to let the reader know this with wrylys as well.
           <br></br>
           <br></br>
-          p.s.: the words for bathroom and bathrobe happen to be similar in
-          Mandarin as they are in english, so it works out.
+          <span id="bold">p.s.:</span> the words for bathroom and bathrobe
+          happen to be similar in Mandarin as they are in english, so it works
+          out.
+          <br></br>
+          <br></br>
         </div>
       </div>
     </div>

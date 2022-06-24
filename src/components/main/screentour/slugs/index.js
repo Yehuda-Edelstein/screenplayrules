@@ -63,13 +63,15 @@ function Slugs(props) {
           <span className="divider">
             The longer the slug, the grosser it is
           </span>
-          <div className="gifContainer">
+          {/* <div className="gifContainer">
             <img
               className="gif"
               src="https://media.giphy.com/media/5pUwbYWSX35GygAKTY/giphy.gif"
               alt="Eat slugs, Weasel bitch"
             />
-          </div>
+          </div> */}
+          <br></br>
+          <br></br>
           <div id="border"></div>
           <div className="blogSubHeader">LAYOUT</div>A slugline is made up of
           three parts:
@@ -89,8 +91,8 @@ function Slugs(props) {
           scenes that switch between the two.
           <br></br>
           <br></br>
-          Note: if you're new to screenwriting, which you probably are, refrain
-          from using "<span id="courrier">INT.</span>/
+          <span id="bold">Note:</span> if you're new to screenwriting, which you
+          probably are, refrain from using "<span id="courrier">INT.</span>/
           <span id="courrier">EXT.</span>" Instead, use description to establish
           a location change, or just cut to a new scene.
           <div className="sluglineExamplePart">
@@ -238,6 +240,8 @@ function Slugs(props) {
             <img className="picture" src={estabExample2} alt="estab." />
           </div>
           Yeah. For real though, Twilight sucks.
+          <br></br>
+          <br></br>
         </div>
       </div>
       {!handleShow ? (
@@ -258,6 +262,7 @@ function Slugs(props) {
         {/* add better animation to drop down */}
         {handleShow && (
           <div className="screengradeBlogText">
+            <br></br>
             As I hinted at earlier, it's a definite plus to land slugs at the
             tops of your pages, although, it's usually a best case scenario and
             not always possible.

@@ -37,8 +37,10 @@ function Montages(props) {
         <div className="blogText">
           You'll be hard pressed to find a movie these days without some type of
           montage. Whether it happens in one location or throught multiple
-          locations -- go on, try for yourslef. Find me a movie that doesn't
-          have a montage in it and send it over to{" "}
+          locations -- go on, try for yourslef:
+          <br></br>
+          <br></br>
+          Find me a movie that doesn't have a montage in it and send it over to{" "}
           <a href="mailto:screenplayrules@gmail.com">
             screenplayrules@gmail.com
           </a>
@@ -46,13 +48,12 @@ function Montages(props) {
           {/* GIF */}
           <br></br>
           <br></br>
-          There are two basic types of montages: single-scene and
-          multiple-scene.
+          Regardless, there are two basic types of montages: single-scene and
+          multi-scene.
           <br></br>
           <br></br>
-          <div className="blogSubHeader" id="courrier">
-            SINGLE-SCENE
-          </div>
+          <div id="border"></div>
+          <div className="blogSubHeader">SINGLE-SCENE</div>
           Obviously, a single-scene montage is a montage that takes place over a
           single scene. Obviously:
           <div className="pictureContainer">
@@ -75,9 +76,8 @@ function Montages(props) {
           montage closer as well.
           <br></br>
           <br></br>
-          <div className="blogSubHeader" id="courrier">
-            MULTIPLE-SCENE
-          </div>
+          <div id="border"></div>
+          <div className="blogSubHeader">MULTI-SCENE</div>
           Obviously, a multiple-scene montage is -- you get the point:
           <div className="pictureContainer">
             <img
@@ -90,9 +90,10 @@ function Montages(props) {
           so don't get fooled. They can be tricky.
           <br></br>
           <br></br>
-          Note: the elipses (i.e., "<span id="courrier">...</span>") before each
-          montage line is one way to do it, but I've scene dashes as well, so as
-          always, whichever you prefer:
+          <span id="bold">Note:</span> the elipses (i.e., "
+          <span id="courrier">...</span>") before each montage line is one way
+          to do it, but I've scene dashes as well, so as always, whichever you
+          prefer:
           <div className="pictureContainer">
             <img className="picture" src={elipses} alt="elipses" />
             <div className="pictureLabel">VS.</div>

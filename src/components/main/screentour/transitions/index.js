@@ -51,29 +51,27 @@ function Transitions(props) {
       </div>
       <div className="blog">
         <div className="blogText">
-          <span className="divider">Wow</span>
-          <br></br>
-          <br></br>
-          That was a lot to take in.
-          <div className="gifContainer">
+          <span className="divider">Wow. That was a lot</span>
+          {/* <div className="gifContainer">
             <img
               src="https://media.giphy.com/media/l1KVaj5UcbHwrBMqI/giphy.gif"
               alt="phew"
               className="gif"
             />
-          </div>
+          </div> */}
+          <br></br>
+          <br></br>
           Trust me, it gets easier. At least this part does. Understanding the
-          rules of it all.
+          rules of it all. Just wait. Once you know how to write a screenplay,
+          then you'll actually have to write one. And that's the hard part.
           <br></br>
           <br></br>
-          Just wait. Once you know how to write a screenplay, then you'll
-          actually have to write one. And that's the hard part.
+          But, congrats! You've made it through your first basic scene.
           <br></br>
           <br></br>
-          But, congrats! You've made it through your first basic scene. Every
-          other scene you write after this will just be a variation made up from
-          the previous sections (along with some extras that we'll be getting to
-          shortly, if you've got the stomach for it).
+          Every other scene you write after this will just be a variation made
+          up from the previous sections (along with some extras that we'll be
+          getting to shortly, if you've got the stomach for it).
           <br></br>
           <br></br>
           The only thing holding us back from jumping between scenes, getting to
@@ -111,7 +109,6 @@ function Transitions(props) {
           to decide anyway. So, why write it?
           <br></br>
           <br></br>
-          <div id="border"></div>
           Now, if you really feel the scene needs some kind of a distinct
           transition, here's a list of acceptable ones to choose from:
           <div>
@@ -195,6 +192,8 @@ function Transitions(props) {
           <span id="bold">Note:</span> only use intercut slugs when the scene is
           continuous. If time has passed, it's a totally new scene and will
           require a new slug.
+          <br></br>
+          <br></br>
         </div>
       </div>
       {/* </div> */}
@@ -223,6 +222,8 @@ function Transitions(props) {
             </div>
             Some simple corrections will do the trick. I think you can handle
             it.
+            <br></br>
+            <br></br>
           </div>
         </div>
       )}

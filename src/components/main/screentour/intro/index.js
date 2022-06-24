@@ -103,13 +103,15 @@ function Intro(props) {
             <br></br>
             <br></br>
             So, it sometimes pays to follow the "rules", you know?
-            <div className="gifContainer">
+            {/* <div className="gifContainer">
               <img
                 className="gif"
                 src="https://media.giphy.com/media/iB4PoTVka0Xnul7UaC/giphy.gif"
                 alt="Kramer"
               />
-            </div>
+            </div> */}
+            <br></br>
+            <br></br>
             <div id="border"></div>
             <div className="blogSubHeader">WHO AM I</div>
             My name's Eddy.
@@ -165,14 +167,18 @@ function Intro(props) {
               />
             </div>
             <div id="border"></div>
-            p.s.: the min-width for screenplay example pictures is about 350px
-            (to fit content), so if the device you're using is smaller than
-            that, I suggest you wait until you're by a larger screen for a
-            better learning experience. 690px and above is preferable
+            <span id="bold">p.s.:</span> the min-width for screenplay example
+            pictures is about 350px (to fit content), so if the device you're
+            using is smaller than that, I suggest you wait until you're by a
+            larger screen for a better learning experience. 690px and above is
+            preferable
             <br></br>
             <br></br>
-            p.p.s: feel free to contact me with any comments or questions.{" "}
+            <span id="bold">p.p.s:</span> feel free to contact me with any
+            comments or questions.{" "}
             <span id="italic">Where's the contact form</span> -- See: footer.
+            <br></br>
+            <br></br>
           </div>
         </div>
       </div>

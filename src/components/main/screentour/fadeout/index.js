@@ -49,10 +49,15 @@ function FadeOut(props) {
         <div className="blogText">
           Alright. Here's where you deserve your real congratulations, as well
           as a place to reap the fruits of your labor.
-          <br></br>
-          <br></br>
-          First off, feel free to continue writing about our story -- any ideas
-          or finished scripts about what happens to{" "}
+          <div className="gifContainer">
+            <img
+              src="https://media.giphy.com/media/3o6fJ1BM7R2EBRDnxK/giphy.gif"
+              alt="congrats bro!"
+              className="gif"
+            />
+          </div>
+          First off, feel free to continue writing about our story. Any ideas or
+          finished scripts about what happens to{" "}
           <span id="courrier">Brady</span> and <span id="courrier">Jules</span>,
           please send to{" "}
           <a href="mailto:screenplayrules@gmail.com">
@@ -70,7 +75,7 @@ function FadeOut(props) {
           the question mark and/or refer to the section on "
           <span id="courrier">FADE IN</span>".<br></br>
           <br></br>
-          Good luck and get writing!
+          <span className="divider">Good luck and get writing!</span>
           <div className="pictureContainer">
             <div className="pictureLabel">NO RULES</div>
             <img className="picture" src={sceneNoRules} alt="without rules" />
@@ -104,7 +109,6 @@ function FadeOut(props) {
                 alt="with screengrade rules"
               />
             </div>
-            Now, that's just darn pretty.
           </div>
         </div>
       )}

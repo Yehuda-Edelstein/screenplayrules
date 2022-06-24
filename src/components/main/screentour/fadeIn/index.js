@@ -39,18 +39,20 @@ function FadeIn(props) {
             first words found in a screenplay, written as such:
             <br></br>
             <br></br>
-            <span id="dividerCourrier">FADE IN:</span>
+            <span className="dividerCourrier">FADE IN:</span>
             <br></br>
             <br></br>
             Their point is to introduce the shift from black screen (before the
             movie starts) to the first scene we, the audience, get to see.
-            <div className="gifContainer">
+            {/* <div className="gifContainer">
               <img
                 className="gif"
                 src="https://media.giphy.com/media/rHlfYmdLr6SK7thB9n/giphy.gif"
                 alt="The Wolf of Wall Street opening scene"
               />
-            </div>
+            </div> */}
+            <br></br>
+            <br></br>
             Simply put, every line of script that goes beneath them will be
             acted, spoken, filmed, and produced, up until the last words "
             <span id="courrier">FADE OUT</span>" which we will get to later.
@@ -101,8 +103,10 @@ function FadeIn(props) {
             cleaner start. Trim the fat, you know?
             <br></br>
             <br></br>
-            Note: the second line will be explained in the next section, don't
-            worry.
+            <span id="bold">Note:</span> the second line will be explained in
+            the next section, don't worry.
+            <br></br>
+            <br></br>
           </div>
         </div>
         <div className="localGlossary">

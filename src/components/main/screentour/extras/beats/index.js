@@ -57,10 +57,12 @@ function Beats(props) {
           <span id="italic">a</span> block.
           <br></br>
           <br></br>
-          Note: if you ever think of putting a "
+          <span id="bold">Note:</span> if you ever think of putting a "
           <span id="courrier">(beat)</span>" before any dialogue has been
           spoken, think again. It belongs in the description before. Wryly beats
           only break up existing dialogue.
+          <br></br>
+          <br></br>
         </div>
       </div>
     </div>

@@ -1,0 +1,32 @@
+@import "../../../../../index.scss";
+
+.superimposeComponentExamplePart {
+  margin: 45px auto;
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  display: flex;
+  background-color: $gray;
+  border: 1px solid $dark-gray;
+  padding: 25px 0;
+}
+
+.superimposeComponentExample {
+  font-family: "Courier Final Draft", Courier, monospace;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+@media screen and (max-width: 550px) {
+  .superimposeComponentExample {
+    font-size: 4.5vw;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .superimposeComponentExample {
+    font-size: 15.5px;
+  }
+}

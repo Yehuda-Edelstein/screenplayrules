@@ -34,13 +34,15 @@ function Extras(props) {
           <div className="blogText">
             <span id="italic">I'm confused -- aren't we done here?</span> Yes
             and no.
-            <div className="gifContainer">
+            {/* <div className="gifContainer">
               <img
                 src="https://media.giphy.com/media/118p3q768COZhu/giphy.gif"
                 alt="what's happening"
                 className="gif"
               />
-            </div>
+            </div> */}
+            <br></br>
+            <br></br>
             <div className="blogSubHeader">WHAT'S HAPPENING</div>
             In truth, you could write an entire script just using the blocks I
             previously described in the main screentour section, but your
@@ -49,6 +51,13 @@ function Extras(props) {
             <br></br>
             What if you want your protagonist to have a flashback? Or articulate
             a montage? You could figure these things out for yourself or...
+            <div className="gifContainer">
+              <img
+                className="gif"
+                src="https://media.giphy.com/media/1132uJKzZQc4ow/giphy.gif"
+                alt="Willy Winka Tripping Balls"
+              />
+            </div>
           </div>
         </div>
       </div>

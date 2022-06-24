@@ -34,49 +34,52 @@ function Slang(props) {
         <div className="blogText">
           When I use the word slang, I'm referring to the changing, shortening,
           or combining of ordinary words in order to garner more natural
-          dialogue. I am <span id="italic">not</span> talking about actual
-          slang, in the way it's normally used:
+          dialogue.
           <br></br>
-          <br></br>"<span id="courrier">Chopper</span>" isn't slang unless it's
-          "<span id="courrier">Choppa</span>"<sup>*</sup>. You understand?
-          <br></br>
-          <br></br>
+          <br></br>I am <span id="italic">not</span> talking about actual slang,
+          in the way it's normally used: "<span id="courrier">Chopper</span>"
+          isn't slang unless it's "<span id="courrier">Choppa</span>"
+          <sup>*</sup>. Understand?
+          <div className="gifContainer">
+            <img
+              src="https://media.giphy.com/media/Wpa3DZwTyJPxKsr0bl/giphy.gif"
+              alt="NLE CHOPPA SUX"
+              className="gif"
+            />
+          </div>
           See, writing good dialogue is crucial in developing a good screenplay.
-          And a key to writing good dialogue is humanizing it. People sound like
-          people, not like aliens trying to blend in. "
+          And a key to writing good dialogue is humanizing it.
+          <br></br>
+          <br></br>
+          People sound like people, not like aliens trying to blend in. "
           <span id="courrier">What is up?</span>" should be "
           <span id="courrier">What's up?</span>" or "
           <span id="courrier">Wazzup?</span>" depending on the character.
           <br></br>
           <br></br>
-          Note: obviously sometimes dialogue is supposed to sound like it was
-          written by bots for comedic effect or whatever, so use your
-          discretion. Pretty much, don't be a bot.
+          <span id="bold">Note:</span> obviously sometimes dialogue is supposed
+          to sound like it was written by bots for comedic effect or whatever,
+          so use your discretion. Pretty much, don't be a bot.
           <div className="pictureContainer">
             <img className="picture" src={awfulDialogue} alt="bot dialogue" />
           </div>
-          Some things to note:
+          <span id="bold">Note:</span> when you have two totally equal
+          characters (usually extras or side characters) they should be
+          introduced with an accompanying number like so:{" "}
+          <span id="courrier">(1)</span>, <span id="courrier">(2)</span>, etc.
           <br></br>
           <br></br>
-          When you have two totally equal characters (usually extras or side
-          characters) they should be introduced with an accompanying number like
-          so: <span id="courrier">(1)</span>, <span id="courrier">(2)</span>,
-          etc.
-          <br></br>
-          <br></br>
-          Note within a note: it looks nicer to wrap the number in parentheses
-          in my opinion, but you don't have to. "
+          <span id="bold">Note within a note:</span> it looks nicer to wrap the
+          number in parentheses in my opinion, but you don't have to. "
           <span id="courrier">CHARACTER (1)</span>" vs.{" "}
           <span id="courrier">CHARACTER #1</span>" vs. "
-          <span id="courrier">CHARACTER 1</span>".
+          <span id="courrier">CHARACTER 1</span>". Your call as always.
           <br></br>
           <br></br>
-          Your call as always.
-          <br></br>
-          <br></br>
-          Note cubed: if you think you noticed an inconsistency with my
-          numbering rule, you didn't (re: wrylies section). Only number both
-          characters when they have equally important or unimportant roles.
+          <span id="bold">Note cubed:</span> if you think you noticed an
+          inconsistency with my numbering rule, you didn't (re: wrylies
+          section). Only number both characters when they have equally important
+          or unimportant roles.
           <div className="pictureContainer">
             <div className="pictureLabel">
               <a
@@ -101,8 +104,11 @@ function Slang(props) {
           in the script.
           <br></br>
           <br></br>
-          p.s.: if I don't note something you're confused by, it'll probably be
-          covered in a further section, so keep your britches on.
+          <span id="bold">p.s.:</span> if I don't note something you're confused
+          by, it'll probably be covered in a further section, so keep your
+          britches on.
+          <br></br>
+          <br></br>
         </div>
       </div>
       <div className="localGlossary">

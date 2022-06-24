@@ -109,12 +109,9 @@ function Action(props) {
               alt="long description with edits"
             />
           </div>
-          1. For starters, it's too long -- like I said before, trim the fat.
-          Any lines I crossed out were unnecessary.
-          <br></br>
-          <br></br>
-          This isn't a Russian novel, we don't need vivid imagery. Keep it
-          simple.
+          <span id="bold">1.</span> For starters, it's too long -- like I said
+          before, trim the fat. Any lines I crossed out were unnecessary. This
+          isn't a Russian novel, we don't need vivid imagery. Keep it simple.
           <br></br>
           <br></br>
           Obviously, if you're writing a sci-fi piece set in 3022, some of your
@@ -129,19 +126,16 @@ function Action(props) {
           <span className="divider">Hopefully</span>
           <br></br>
           <br></br>
-          <div id="border"></div>
-          2. The words highlighted in <span id="yellow">yellow</span> are "
-          <span id="courrier">PROPS</span>" and should be in{" "}
-          <span id="courrier">ALL CAPS</span> at first mention. This lets the
-          reader know these items need to be in the script, and are integral to
-          the scene.
+          <span id="bold">2.</span> The words highlighted in{" "}
+          <span id="yellow">yellow</span> are "<span id="courrier">PROPS</span>"
+          and should be in <span id="courrier">ALL CAPS</span> at first mention.
+          This lets the reader know these items need to be in the script, and
+          are integral to the scene.
           <br></br>
           <br></br>
-          Note: any prop that you put in your script{" "}
-          <span id="italic">should</span> be plot related.
-          <br></br>
-          <br></br>
-          Props that help establish tone are for the{" "}
+          <span id="bold">Note:</span> any prop that you put in your script{" "}
+          <span id="italic">should</span> be plot related. Props that help
+          establish tone are for the{" "}
           <a
             href="https://en.m.wikipedia.org/wiki/Property_master"
             rel="noreferrer noopener"
@@ -153,8 +147,7 @@ function Action(props) {
           character intros (as we'll see below) once introduced, they need not
           remain <span id="courrier">CAPPED</span>.<br></br>
           <br></br>
-          <div id="border"></div>
-          3. "
+          <span id="bold">3.</span> "
           <span id="red">
             <span id="courrier">Marlboro Red</span>
           </span>
@@ -167,8 +160,9 @@ function Action(props) {
           the first time mentioned.
           <br></br>
           <br></br>
-          Note: This doesn't apply for scripts whose plots must include certain
-          products (i.e., car movies or era pieces) although writing a spec
+          <span id="bold">Note:</span> This doesn't apply for scripts whose
+          plots must include certain products (i.e., car movies or era pieces)
+          although writing a spec
           <sup>1</sup> that hinges on specific merchandise is a risky move
           better left to those who can make it happen.
           <br></br>
@@ -186,6 +180,8 @@ function Action(props) {
             />
           </div>
           Not to shabby, huh. Okay. Now, let's fix that intro.
+          <br></br>
+          <br></br>
         </div>
       </div>
       {!handleShow ? (
@@ -204,6 +200,7 @@ function Action(props) {
       {handleShow && (
         <div className="screengradeContainer">
           <div className="screengradeBlogText">
+            <br></br>
             For a cleaner look:
             <div className="screengradePictureContainer">
               <img
@@ -214,16 +211,14 @@ function Action(props) {
               />
             </div>
             {/* fix the stacked caps for 'a' */}
-            3. Long paragraphs are bad, just like long sentences are.
+            <span id="bold">3.</span> Long paragraphs are bad, just like long
+            sentences are. Better to have three separate blocks<sup>2</sup> for
+            a total of five lines (seven, including white lines<sup>3</sup>)
+            than having one block for a total of five lines.
             <br></br>
             <br></br>
-            Better to have three separate blocks<sup>2</sup> for a total of five
-            lines (seven, including white lines<sup>3</sup>) than having one
-            block for a total of five lines.
-            <br></br>
-            <br></br>
-            <div id="screengradeBorder"></div>
-            4. The "
+            {/* <div id="screengradeBorder"></div> */}
+            <span id="bold">4.</span> The "
             <span id="yellow">
               <span id="courrier">S</span>
             </span>
@@ -232,10 +227,7 @@ function Action(props) {
               <span id="courrier">B</span>
             </span>
             " are highlighted because stacked capitalized letters<sup>4</sup>{" "}
-            (or stacked caps) are off-putting.
-            <br></br>
-            <br></br>
-            Now, even though only the "
+            (or stacked caps) are off-putting. Now, even though only the "
             <span id="yellow">
               <span id="courrier">B</span>
             </span>
@@ -243,36 +235,29 @@ function Action(props) {
             on the issue.
             <br></br>
             <br></br>
-            <div id="screengradeBorder"></div>
-            5. Similarly, the two "
+            {/* <div id="screengradeBorder"></div> */}
+            <span id="bold">5. </span>Similarly, the two "
             <span id="red">
               <span id="courrier">a</span>
             </span>
             "s are equally (if not more) problematic because they are the same
-            letter.
+            letter. Whether capitalized or not, stacked letters<sup>5</sup> are
+            never good for your screengrade.
             <br></br>
             <br></br>
-            Whether capitalized or not, stacked letters<sup>5</sup> are never
-            good for your screengrade.
-            <br></br>
-            <br></br>
-            <div id="screengradeBorder"></div>
-            Note: 4. and 5. apply whether they appear at the start of the line,
-            end of the line, or anywhere in between.
-            <br></br>
-            <br></br>
-            You may think it's nuts, but I've done my research and readers do
+            {/* <div id="screengradeBorder"></div> */}
+            <span id="bold">Note:</span> 4. and 5. apply whether they appear at
+            the start of the line, end of the line, or anywhere in between. You
+            may think it's nuts, but I've done my research and readers do
             respond better to scripts that minimize stacked caps and stacked
             letters<sup>**</sup>
             <br></br>
             <br></br>
             Worse than stacking individual letters is doing it with full words,
             which is just horrifying, and something only AI should be able to
-            get away with.
-            <br></br>
-            <br></br>
-            Personally, I wouldn't even start succeeding paragraphs with the
-            same word or letter either. But, hey, that's just me.
+            get away with. Personally, I wouldn't even start succeeding
+            paragraphs with the same word or letter either. But, hey, that's
+            just me.
             <br></br>
             <br></br>
             Anyways, the fix here is easy -- we just add the word{" "}
@@ -280,8 +265,8 @@ function Action(props) {
             <span id="courrier">DUMPSTER</span>" as you'll see shortly.
             <br></br>
             <br></br>
-            <div id="screengradeBorder"></div>
-            6. Finally, for the{" "}
+            {/* <div id="screengradeBorder"></div> */}
+            <span id="bold">6.</span> Finally, for the{" "}
             <span id="red">
               "<span id="courrier">Brady</span>"
             </span>
@@ -381,6 +366,8 @@ function Action(props) {
             <img className="picture" src={withAge} alt="with age" />
           </div>
           Me like.
+          <br></br>
+          <br></br>
         </div>
       </div>
       {!handleShowSecond ? (
@@ -399,6 +386,7 @@ function Action(props) {
       {handleShowSecond && (
         <div className="screengradeContainer">
           <div className="screengradeBlogText">
+            <br></br>
             It's always better for your screengrade to include the age:
             <br></br>
             <div className="screengradePictureContainer">
@@ -426,10 +414,11 @@ function Action(props) {
             <br></br>
             Though less severe is still severe so let's just change the line to
             "<span id="courrier">In his hand is a CIGARETTE</span>"<br></br>
+            <br></br>
+            <div id="screengradeBorder"></div>
             <div className="screengradePictureContainer">
               <img className="picture" src={hh} alt="stacked letters" />
             </div>
-            <div id="screengradeBorder"></div>
             Another quick adjustment --
             <br></br>
             <div className="screengradePictureContainer">
@@ -439,6 +428,8 @@ function Action(props) {
             <span id="courrier">drag</span>" and we're golden. See? Not so
             difficult. Screengrading on the go will become second nature to you
             in no time.
+            <br></br>
+            <br></br>
           </div>
         </div>
       )}

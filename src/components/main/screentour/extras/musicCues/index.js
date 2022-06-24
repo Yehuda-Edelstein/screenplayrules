@@ -34,14 +34,23 @@ function MusicCues(props) {
       <div className="blog">
         <div className="blogText">
           A classic mistake amatuar screenwriters make is thinking that you have
-          the rights to all music in existence. In reality, the song you think
-          is perfect for the scene is irrelevant if the studio doesn't want to
-          license it, and a lot of the time, they don't. And won't.
+          the rights to all music in existence.
+          <br></br>
+          <br></br>
+          In reality, the song you think is perfect for the scene is irrelevant
+          if the studio doesn't want to license it, and a lot of the time, they
+          don't.
+          <br></br>
+          <br></br>
+          <span className="divider">And won't</span>
           <br></br>
           <br></br>
           That being said, there are specs that get optioned that have music
           cues of famous songs in them, it's just rare and seen as a bit of a
-          rookie move. But, then again, this site was made for rookie moves:
+          rookie move.
+          <br></br>
+          <br></br>
+          But, then again, this site was made for rookie moves:
           <div className="pictureContainer">
             <img className="picture" src={musicCue} alt="music cue example" />
           </div>
@@ -50,6 +59,7 @@ function MusicCues(props) {
           them. Not for the characters in the script.
           <br></br>
           <br></br>
+          <div id="border"></div>
           If the song was happening in-scene, for the characters, I'd write it
           differently:
           <div className="pictureContainer">
@@ -71,8 +81,8 @@ function MusicCues(props) {
           enough.
           <br></br>
           <br></br>
-          Note: as in the previous section, music cues are often found together
-          with/extending for a couple of blocks:
+          <span id="bold">Note:</span> as in the previous section, music cues
+          are often found together with/extending for a couple of blocks:
           <div className="pictureContainer">
             <img
               className="picture"
@@ -80,10 +90,16 @@ function MusicCues(props) {
               alt="music cue, flashback, montage all together example"
             />
           </div>
-          Noteception: the order in which you introduce music cues, flashbacks,
-          and montages should be in the order in which the audience will
-          interact with them. Basically, use your head.
-          {/* GIF of Rex using his head from Toy Story 2 */}
+          <span id="bold">Noteception:</span> the order in which you introduce
+          music cues, flashbacks, and montages should be in the order in which
+          the audience will interact with them. Basically, use your head.
+          <div className="gifContainer">
+            <img
+              src="https://media.giphy.com/media/VEsfbW0pBu145PPhOi/giphy.gif"
+              alt="use your head"
+              className="gif"
+            />
+          </div>
         </div>
       </div>
     </div>
