@@ -1,4 +1,8 @@
-.mainLink {
-  font-family: 'Courier Final Draft', Courier, monospace;
-  font-size: 13pt;
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap");
+@import "../../../index.scss";
+
+.screentour-link {
+  &:hover {
+    background-color: $dark-blue;
+  }
 }

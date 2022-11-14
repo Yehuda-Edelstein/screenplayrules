@@ -116,21 +116,9 @@ function Intro(props) {
             <br></br>
             <div id="border"></div>
             <div className="blogSubHeader">WHO AM I</div>
-            My name's Eddy.
-            <br></br>
-            <br></br>
-            <span className="divider" id="italic">
-              Hi, Eddy
-            </span>
-            <br></br>
-            <br></br>
-            I'm a spec screenwriter/software engineer and I made this website
-            both as a project, but also as a way to give back to the
+            I'm a software engineer who enjoys screenwriting. I made this
+            website both as a project, but also as a way to give back to the
             screenwriting community.
-            <br></br>
-            <br></br>
-            The layout is loosly based on Reddit, Stack Overflow, and Urban
-            Dictionary.
             <br></br>
             <br></br>
             To give a little background, I started writing screenplays a while
@@ -177,9 +165,11 @@ function Intro(props) {
             <br></br>
             <br></br>
             <span id="bold">p.p.s:</span> feel free to contact me with any
-            comments or questions.{" "}
-            <span id="italic">Where's the contact form</span> -- See: footer.
-            <br></br>
+            comments or questions at{" "}
+            <a href="mailto:screenplayrules@gmail.com">
+              screenplayrules@gmail.com
+            </a>
+            .<br></br>
             <br></br>
           </div>
         </div>

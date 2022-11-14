@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function About(props) {
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    document.title = "Screenplay Rules - About";
+  }, []);
+
   return (
     <div className="homeContainer">
       <h1>About the project</h1>
