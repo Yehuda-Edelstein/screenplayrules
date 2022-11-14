@@ -1,6 +1,6 @@
 {
-  "homepage": "https://yehuda-edelstein.github.io/screeplayrules",
-  "name": "screenstyle",
+  "homepage": "https://yehuda-edelstein.github.io/screenplayrules",
+  "name": "screenplayrules",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
