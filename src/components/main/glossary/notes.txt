@@ -1,3 +1,0 @@
-1. maybe make example an actual block if needed.
-2. have searched name be highlighted.
-3. onClick right hand side shows example of term if it's a screenplay term.

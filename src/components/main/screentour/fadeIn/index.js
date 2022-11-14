@@ -7,6 +7,7 @@ import withoutFadeIn from "../../../../images/fadeIn/withoutFadeIn.png";
 
 function FadeIn(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Fade In?";
   }, []);
 

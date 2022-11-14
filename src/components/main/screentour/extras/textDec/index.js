@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 function TextDec(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Text Decoration";
   }, []);
   return (

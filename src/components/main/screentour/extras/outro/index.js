@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 function Outro(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Over Black";
   }, []);
   return (
@@ -34,9 +35,7 @@ function Outro(props) {
           Okay, now <span id="italic">I'm</span> tired. I mean, that was a lot,
           right? For both of us.<br></br>
           <br></br>Anyways, I hope you enjoyed. I hope you learned some stuff.
-          And, yeah, go check out the glossary (I'm always uploading new terms
-          when I hear of them). Shoot me a message. Check out what's coming
-          soon.
+          Feel free to show this to aspiring screenwriters.
           <br></br>
           <br></br>
           Or just get the hell off the site.

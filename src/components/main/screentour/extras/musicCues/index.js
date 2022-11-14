@@ -8,6 +8,7 @@ import allTogether from "../../../../../images/extras/musicCues/allTogether.png"
 
 function MusicCues(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Please Don't Stop The Music";
   }, []);
   return (

@@ -7,6 +7,7 @@ import flashbackMontageEx from "../../../../../images/extras/flashbacks/flashbac
 
 function Flashbacks(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Flashbacks";
   }, []);
   return (

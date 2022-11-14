@@ -7,6 +7,7 @@ import differentLine from "../../../../../images/extras/cameraShots/differentLin
 
 function CameraShots(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Camera Shots";
   }, []);
   return (

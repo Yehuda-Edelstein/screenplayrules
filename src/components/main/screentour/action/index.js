@@ -23,6 +23,7 @@ function Action(props) {
   const [handleShowSecond, setHandleShowSecond] = useState(false);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Action";
   }, []);
 

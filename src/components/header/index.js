@@ -17,40 +17,12 @@ function Header(props) {
           </div>
         </Link>
 
-        <div className="navBar">
-          {/* <Link to='blog' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>BLOG</div></Link> */}
-          {/* <Link to='questions' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>QUESTIONS</div></Link> */}
-          {/* <Link to='rulebook' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>RULEBOOK</div></Link> */}
-          <Link
-            to="glossary"
-            style={{ color: "inherit", textDecoration: "inherit" }}
-          >
-            <div className="headerLink">GLOSSARY</div>
-          </Link>
-          {/* <Link to='slanglist' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='headerLink'>SLANGLIST</div></Link> */}
-        </div>
+        <div className="navBar"></div>
 
         <div className="smallScreenMenu">
           <FontAwesomeIcon icon={faEllipsis} />
         </div>
-
-        {/* <div className='userAuth'>
-                        <Link to='login' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='logInLink'>LOG IN</div></Link>
-                        <Link to='signup' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='signUpLink'>SIGN UP</div></Link>
-                    </div> */}
       </div>
-
-      {/* add animation that slides to smaller title */}
-
-      {/* <div className='smallScreenHeader'>
-                <Link to='/' style={{ color: 'inherit', textDecoration: 'inherit'}}><div className='title'><FontAwesomeIcon className='headerIcon' icon={faClapperboard}/><span className='screenplayTitle'>SCREENPLAY</span><span className='rules'>RULES</span></div></Link>
-                <div className='dropDownMenu'><FontAwesomeIcon className='menuIcon' icon={faEllipsis} />
-                    <div className='dropDownBox'>
-                        <a href="glossary">GLOSSARY</a>
-                        <a href="about">ABOUT</a>
-                    </div>
-                </div>
-            </div> */}
     </div>
   );
 }

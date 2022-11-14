@@ -7,6 +7,7 @@ import toyStoryExample from "../../../../../images/slang/toyStoryExample.png";
 
 function Slang(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Slang";
   }, []);
   return (

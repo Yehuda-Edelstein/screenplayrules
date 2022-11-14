@@ -1,2 +1,0 @@
-1. add tags for block model, maybe a rating for a blog to (i.e., G, PG, PG-13, etc.)
-2. Have a markdown capability for screenplays.

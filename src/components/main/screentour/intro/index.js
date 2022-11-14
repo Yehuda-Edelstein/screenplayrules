@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 
 function Intro(props) {
   useEffect(() => {
+    // 👇️ scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Introduction";
   }, []);
 

@@ -19,39 +19,17 @@ import CameraShots from "./screentour//extras/camerashots";
 import Superimpose from "./screentour//extras/superimpose";
 import OverBlack from "./screentour//extras/overBlack";
 import Outro from "./screentour//extras/outro";
-import Rulebook from "./rulebook";
-import Glossary from "./glossary";
-import Contact from "./contact";
-import SimpleContact from "./simpleContact";
 import Extras from "./screentour//extras";
-import LogIn from "./logIn";
-import BlogList from "./blog/blogList";
-import BlogDetail from "./blog/blogDetail";
-import NewBlog from "./blog/newBlog";
-import EditBlog from "./blog/editBlog";
-import SignUp from "./signUp";
 import Language from "./screentour//extras/language";
 import PageNotFound from "./404";
 import Reading from "./screentour//extras/reading";
+import About from "./about";
 
 function Main(props) {
   return (
     <div className="main">
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* USER ROUTES */}
-        {/* <Route path='login' element={<LogIn />} /> */}
-        {/* <Route path='signup' element={<SignUp />} />  */}
-        {/* NAV ROUTES */}
-        {/* <Route path="rulebook" element={<Rulebook />} /> */}
-        <Route path="glossary" element={<Glossary />} />
-        {/* <Route path="contact" element={<Contact />} /> */}
-        <Route path="contact" element={<SimpleContact />} />
-        {/* BLOG ROUTES */}
-        {/* <Route path='blog' element={<BlogList />} /> 
-                <Route path='blog/:id' element={<BlogDetail />} />
-                <Route path='blog/:id/edit' element={<EditBlog />} />
-                <Route path='blog/new' element={<NewBlog />} />     */}
         <Route path="screentour/intro" element={<Intro />} />
         {/* SCREENTOUR ROUTES */}
         <Route path="screentour/fadein" element={<FadeIn />} />
@@ -76,6 +54,7 @@ function Main(props) {
         <Route path="screentour/outro" element={<Outro />} />
         {/* OTHER */}
         <Route path="*" element={<PageNotFound />} />
+        <Route path="about" element={<About />} />
       </Routes>
     </div>
   );

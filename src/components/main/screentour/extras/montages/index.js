@@ -10,6 +10,7 @@ import elipses from "../../../../../images/extras/montages/elipses.png";
 
 function Montages(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Montages";
   }, []);
   return (

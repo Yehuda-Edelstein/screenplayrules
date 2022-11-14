@@ -11,18 +11,6 @@ function Footer(props) {
       <Link to="about" style={{ color: "inherit", textDecoration: "inherit" }}>
         <div className="footerLink">ABOUT</div>
       </Link>
-      <Link
-        to="contact"
-        style={{ color: "inherit", textDecoration: "inherit" }}
-      >
-        <div className="footerLink">CONTACT</div>
-      </Link>
-      <Link
-        to="comingsoon"
-        style={{ color: "inherit", textDecoration: "inherit" }}
-      >
-        <div className="footerLink">COMING SOON</div>
-      </Link>
     </div>
   );
 }

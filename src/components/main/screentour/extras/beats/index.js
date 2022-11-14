@@ -7,6 +7,7 @@ import wrylyBeat from "../../../../../images/extras/beats/wrylyBeat.png";
 
 function Beats(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - Beats";
   }, []);
   return (

@@ -8,6 +8,7 @@ import secondMandarinSample from "../../../../../images/extras/language/secondMa
 
 function Language(props) {
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     document.title = "How To Write A Screenplay - F**king language, bro!";
   }, []);
   return (
