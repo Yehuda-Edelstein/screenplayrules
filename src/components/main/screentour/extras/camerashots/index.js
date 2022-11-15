@@ -101,6 +101,20 @@ function CameraShots(props) {
           up of something that was in the previous shot.
           <br></br>
           <br></br>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/slang"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/screentour/language"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">NEXT PAGE</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

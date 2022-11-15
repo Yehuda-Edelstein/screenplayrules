@@ -54,8 +54,8 @@ function Intro(props) {
               />
             </div>
             <div id="border"></div>
-            Furthermore, this tour will not be coverng formatting constants such
-            as margins or spacing.
+            Furthermore, this tour will not be covering formatting constants
+            such as margins or spacing.
             <br></br>
             <br></br>
             If you don't already have a screenwriting software that does those
@@ -171,6 +171,27 @@ function Intro(props) {
             </a>
             .<br></br>
             <br></br>
+            <span id="bold">
+              p.s.³ (well not really cubed, but you get the point):
+            </span>{" "}
+            these rules are not set in stone. As I mature as a writer so will
+            the rules. Reason will prevail!
+            <br></br>
+            <br></br>
+            <div className="screentour-footer">
+              <Link
+                to="/"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+              >
+                <span className="screentour-footer-link">HOME</span>
+              </Link>
+              <Link
+                to="/screentour/fadein"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+              >
+                <span className="screentour-footer-link">NEXT PAGE</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

@@ -59,6 +59,20 @@ function Extras(props) {
                 alt="Willy Winka Tripping Balls"
               />
             </div>
+            <div className="screentour-footer">
+              <Link
+                to="/screentour/fadeout"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+              >
+                <span className="screentour-footer-link">BACK</span>
+              </Link>
+              <Link
+                to="/screentour/textdecoration"
+                style={{ color: "inherit", textDecoration: "inherit" }}
+              >
+                <span className="screentour-footer-link">NEXT PAGE</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>

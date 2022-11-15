@@ -110,6 +110,20 @@ function Slang(props) {
           britches on.
           <br></br>
           <br></br>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/textdecoration"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/screentour/camerashots"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">NEXT PAGE</span>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="localGlossary">

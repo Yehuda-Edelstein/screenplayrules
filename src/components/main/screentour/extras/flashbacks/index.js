@@ -77,6 +77,20 @@ function Flashbacks(props) {
           them.
           <br></br>
           <br></br>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/montages"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/screentour/musiccues"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">NEXT PAGE</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -62,6 +62,20 @@ function Reading(props) {
           just as long as whatever is being read is in quotes.
           <br></br>
           <br></br>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/languages"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/screentour/montages"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">NEXT PAGE</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -109,6 +109,20 @@ function FadeIn(props) {
             <br></br>
             <br></br>
           </div>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/intro"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/screentour/slugs"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">NEXT PAGE</span>
+            </Link>
+          </div>
         </div>
         <div className="localGlossary">
           <div className="localGlossaryHeader">LOCAL GLOSS'</div>

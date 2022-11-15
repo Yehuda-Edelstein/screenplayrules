@@ -86,6 +86,20 @@ function FadeOut(props) {
             <img className="picture" src={sceneWithRules} alt="with rules" />
           </div>
         </div>
+        <div className="screentour-footer">
+          <Link
+            to="/screentour/transitions"
+            style={{ color: "inherit", textDecoration: "inherit" }}
+          >
+            <span className="screentour-footer-link">BACK</span>
+          </Link>
+          <Link
+            to="/screentour/extras"
+            style={{ color: "inherit", textDecoration: "inherit" }}
+          >
+            <span className="screentour-footer-link">THERE'S MORE?</span>
+          </Link>
+        </div>
       </div>
       {!handleShow ? (
         <div className="screengradeHeader" onClick={show}>

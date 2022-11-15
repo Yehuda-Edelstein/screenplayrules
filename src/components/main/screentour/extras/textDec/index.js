@@ -130,6 +130,20 @@ function TextDec(props) {
           instead of italicizing or underlining.
           <br></br>
           <br></br>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/extras"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/screentour/slang"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">NEXT PAGE</span>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="localGlossary">

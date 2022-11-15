@@ -101,6 +101,20 @@ function MusicCues(props) {
               className="gif"
             />
           </div>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/flashbacks"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/screentour/beats"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">NEXT PAGE</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

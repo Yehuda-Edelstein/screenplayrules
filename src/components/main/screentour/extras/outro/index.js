@@ -46,6 +46,20 @@ function Outro(props) {
               className="gif"
             />
           </div>
+          <div className="screentour-footer">
+            <Link
+              to="/screentour/overblack"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">BACK</span>
+            </Link>
+            <Link
+              to="/"
+              style={{ color: "inherit", textDecoration: "inherit" }}
+            >
+              <span className="screentour-footer-link">HOME</span>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
