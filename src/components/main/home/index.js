@@ -8,19 +8,20 @@ function Home(props) {
     document.title = "Screenplay Rules - Get Good, Get Optioned, Get Rich";
   }, []);
   return (
-    <div className="homeContainer">
+    <div className="home-container">
       {/* ADD A TV PLAYING DIFFERENT GIFS FROM THE SCREENTOUR OR JUST OTHER GOOD MOVIES. TO FILL SPACE */}
       <h1>How To Write A Screenplay</h1>
-      <div className="screentour-link">
-        <Link
-          to="screentour/intro"
-          style={{ color: "inherit", textDecoration: "inherit" }}
-        >
-          New to screenwriting? Click here to take the screentour for everything
-          you need to know!
-        </Link>{" "}
-      </div>
-      <br></br>
+      <p>
+        <span>
+          <Link
+            to="screentour/intro"
+            style={{ color: "inherit", textDecoration: "inherit" }}
+          >
+            New to screenwriting? Click here to take the screentour for
+            everything you need to know!
+          </Link>{" "}
+        </span>
+      </p>
       <br></br>
       <div>
         [p.s.: I'm not done with the site yet, so there are times in the

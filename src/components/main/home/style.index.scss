@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&family=Raleway:wght@100&display=swap");
 @import "../../../index.scss";
 
-h1 {
-  line-height: 100%;
-}
+.home-container {
+  line-height: 150%;
+  padding: 10px;
+  h1 {
+    line-height: 100%;
+  }
 
-a {
-  display: inline;
+  p {
+    span,
+    a {
+      &:hover {
+        background-color: $dark-blue;
+        text-decoration: underline;
+      }
+    }
+  }
 }
 
 .screentour-link {
