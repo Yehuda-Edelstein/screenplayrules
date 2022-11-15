@@ -33,6 +33,12 @@ function About(props) {
         been. We've all come up with movie ideas in the past that we thought
         were good. Now you can finally sit down and write them.
         <br></br>
+        <br></br>
+        [also, I think I mention it somewhere in the screentour, but as I,
+        myself, mature as a writer, the rules in said screentour will probably
+        change to reflect that. As in, I'll come back and change them 1984
+        style. Because it's my site. I'm Big Brother.]
+        <br></br>
         <br></br>~ Y.E.
       </p>
     </div>

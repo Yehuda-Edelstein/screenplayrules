@@ -244,6 +244,20 @@ function Slugs(props) {
           <br></br>
           <br></br>
         </div>
+        <div className="screentour-footer">
+          <Link
+            to="/screentour/fadein"
+            style={{ color: "inherit", textDecoration: "inherit" }}
+          >
+            <span className="screentour-footer-link">BACK</span>
+          </Link>
+          <Link
+            to="/screentour/action"
+            style={{ color: "inherit", textDecoration: "inherit" }}
+          >
+            <span className="screentour-footer-link">NEXT PAGE</span>
+          </Link>
+        </div>
       </div>
       {!handleShow ? (
         <div className="screengradeHeader" onClick={show}>

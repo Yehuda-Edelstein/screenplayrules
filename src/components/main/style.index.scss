@@ -5,6 +5,15 @@
 
 .homeContainer {
   padding: 10px;
+  min-width: 340px;
+}
+
+.screentour-footer {
+  border-top: 1px solid $dark-gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 20px;
 }
 
 .main {
