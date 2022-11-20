@@ -24,6 +24,7 @@ import Language from "./screentour//extras/language";
 import PageNotFound from "./404";
 import Reading from "./screentour//extras/reading";
 import About from "./about";
+import Resources from "./resources";
 
 function Main(props) {
   return (
@@ -55,6 +56,7 @@ function Main(props) {
         {/* OTHER */}
         <Route path="*" element={<PageNotFound />} />
         <Route path="about" element={<About />} />
+        <Route path="resources" element={<Resources />} />
       </Routes>
     </div>
   );

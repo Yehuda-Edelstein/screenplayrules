@@ -8,9 +8,15 @@ function Footer(props) {
       <div className="copyright">
         ©️2022 <span className="websiteName">Screenplay Rules</span>
       </div>
-      <Link to="about" style={{ color: "inherit", textDecoration: "inherit" }}>
+      {/* <Link to="about" style={{ color: "inherit", textDecoration: "inherit" }}>
         <div className="footerLink">ABOUT</div>
-      </Link>
+      </Link> */}
+      {/* <Link
+        to="resources"
+        style={{ color: "inherit", textDecoration: "inherit" }}
+      >
+        <div className="footerLink">RESOURCES</div>
+      </Link> */}
     </div>
   );
 }
