@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import wolfSample from "../../../../../images/extras/language/wolfSample.png";
 import mandarinSample from "../../../../../images/extras/language/mandarinExample.png";
 import secondMandarinSample from "../../../../../images/extras/language/secondMandarinExample.png";
+import "./style.index.scss";
 
 function Language(props) {
   useEffect(() => {
@@ -35,17 +36,24 @@ function Language(props) {
       <div className="blog">
         <div className="blogText">
           If you think this section is talking about actual language, you're
-          dead fucking wrong, you fat piece of shit. I don't give a fuck how
-          vulgar you make your dumb little bitch scipt. It's not like you're
-          selling the shit?
-          <br></br>
+          dead <span className="curse">friggin</span> wrong, you fat piece of{" "}
+          <span className="curse">poop</span>. I don't give a{" "}
+          <span className="curse">heck</span> how vulgar you make your dumb
+          little <span className="curse">pansy</span> scipt. It's not like
+          you're selling the <span className="curse">poop</span>?<br></br>
           <br></br>
           That being said, it looks bad if you keep using profanity as a crutch.
           A lot of amatuar writers think all intense scenes require a barrage of
           explatives, but they don't. So, use them wisely.
           <br></br>
           <br></br>
-          <span className="divider">Fucker</span>
+          <span className="divider">
+            <span className="curse">Loser</span>
+          </span>
+          <br></br>
+          <br></br>
+          <span id="bold">edit:</span> swear words were redacted on account of
+          my better judgement.
           <div className="gifContainer">
             <img
               src="https://media.giphy.com/media/t0005w3YYbuIU/giphy.gif"

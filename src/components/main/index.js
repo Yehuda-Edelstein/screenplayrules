@@ -25,6 +25,7 @@ import PageNotFound from "./404";
 import Reading from "./screentour//extras/reading";
 import About from "./about";
 import Resources from "./resources";
+import Glossary from "./glossary";
 
 function Main(props) {
   return (
@@ -53,6 +54,8 @@ function Main(props) {
         <Route path="screentour/superimpose" element={<Superimpose />} />
         <Route path="screentour/overblack" element={<OverBlack />} />
         <Route path="screentour/outro" element={<Outro />} />
+        {/* GLOSSARY */}
+        <Route path="glossary" element={<Glossary />} />
         {/* OTHER */}
         <Route path="*" element={<PageNotFound />} />
         <Route path="about" element={<About />} />
