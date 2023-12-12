@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.98d66c86.css",
-    "main.js": "/static/js/main.db6300bb.js",
+    "main.css": "/static/css/main.4ca03fc7.css",
+    "main.js": "/static/js/main.de3d910c.js",
     "static/media/regularSlugs.png": "/static/media/regularSlugs.1508ec3902ab391e9886.png",
     "static/media/intercutSlugs.png": "/static/media/intercutSlugs.5f0ec2e8765adaa257f0.png",
     "static/media/awfulDialogue.png": "/static/media/awfulDialogue.ed456ecb9f1a76520783.png",
@@ -27,7 +27,6 @@
     "static/media/cutToExample.png": "/static/media/cutToExample.2012f838eab25ce6fb49.png",
     "static/media/flashbackEx.png": "/static/media/flashbackEx.571b9c4acc644d32edc0.png",
     "static/media/voiceoverContinued.png": "/static/media/voiceoverContinued.01ea6176dc0af5eec5c1.png",
-    "static/media/wolfSample.png": "/static/media/wolfSample.a5a000665c9f2d0ac8ff.png",
     "static/media/screengradeCleanWithAgeAndHighlights.png": "/static/media/screengradeCleanWithAgeAndHighlights.06396897eb88d310c9c3.png",
     "static/media/clean.png": "/static/media/clean.a0c699f786ec8e85d1b6.png",
     "static/media/singleSceneMontageExample.png": "/static/media/singleSceneMontageExample.a64012832cbb308329a8.png",
@@ -66,11 +65,11 @@
     "static/media/withoutFadeIn.png": "/static/media/withoutFadeIn.8007b5ce517b61ac3981.png",
     "static/media/withBold.png": "/static/media/withBold.8d611562482cb986a3ae.png",
     "index.html": "/index.html",
-    "main.98d66c86.css.map": "/static/css/main.98d66c86.css.map",
-    "main.db6300bb.js.map": "/static/js/main.db6300bb.js.map"
+    "main.4ca03fc7.css.map": "/static/css/main.4ca03fc7.css.map",
+    "main.de3d910c.js.map": "/static/js/main.de3d910c.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d66c86.css",
-    "static/js/main.db6300bb.js"
+    "static/css/main.4ca03fc7.css",
+    "static/js/main.de3d910c.js"
   ]
 }
