@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-import wolfSample from "../../../../../images/extras/language/wolfSample.png";
+// import wolfSample from "../../../../../images/extras/language/wolfSample.png";
 import mandarinSample from "../../../../../images/extras/language/mandarinExample.png";
 import secondMandarinSample from "../../../../../images/extras/language/secondMandarinExample.png";
 import "./style.index.scss";
@@ -16,7 +16,7 @@ function Language(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/camerashots"
+          to="/camerashots"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -25,7 +25,7 @@ function Language(props) {
         </Link>
         <span>LANGUAGE</span>
         <Link
-          to="/screentour/reading"
+          to="/reading"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -123,13 +123,13 @@ function Language(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/camerashots"
+              to="/camerashots"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/reading"
+              to="/reading"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

@@ -14,7 +14,7 @@ function Extras(props) {
       <div className="container">
         <div className="extrasContainerHeader">
           <Link
-            to="/screentour/fadeout"
+            to="/fadeout"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="startLink">
@@ -23,7 +23,7 @@ function Extras(props) {
           </Link>
           <span>EXTRAS</span>
           <Link
-            to="/screentour/textdecoration"
+            to="/textdecoration"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="startLink">
@@ -61,13 +61,13 @@ function Extras(props) {
             </div>
             <div className="screentour-footer">
               <Link
-                to="/screentour/fadeout"
+                to="/fadeout"
                 style={{ color: "inherit", textDecoration: "inherit" }}
               >
                 <span className="screentour-footer-link">BACK</span>
               </Link>
               <Link
-                to="/screentour/textdecoration"
+                to="/textdecoration"
                 style={{ color: "inherit", textDecoration: "inherit" }}
               >
                 <span className="screentour-footer-link">NEXT PAGE</span>

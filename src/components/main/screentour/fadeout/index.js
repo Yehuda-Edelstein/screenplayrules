@@ -29,7 +29,7 @@ function FadeOut(props) {
     <div className="container">
       <div className="containerHeader">
         <Link
-          to="/screentour/transitions"
+          to="/transitions"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -38,7 +38,7 @@ function FadeOut(props) {
         </Link>
         <span>FADE OUT?</span>
         <Link
-          to="/screentour/extras"
+          to="/extras"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -88,13 +88,13 @@ function FadeOut(props) {
         </div>
         <div className="screentour-footer">
           <Link
-            to="/screentour/transitions"
+            to="/transitions"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="screentour-footer-link">BACK</span>
           </Link>
           <Link
-            to="/screentour/extras"
+            to="/extras"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="screentour-footer-link">THERE'S MORE?</span>

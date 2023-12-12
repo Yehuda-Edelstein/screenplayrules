@@ -32,7 +32,7 @@ function Slugs(props) {
     <div className="container">
       <div className="containerHeader">
         <Link
-          to="/screentour/fadein"
+          to="/fadein"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -41,7 +41,7 @@ function Slugs(props) {
         </Link>
         <span>SLUGS</span>
         <Link
-          to="/screentour/action"
+          to="/action"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -246,13 +246,13 @@ function Slugs(props) {
         </div>
         <div className="screentour-footer">
           <Link
-            to="/screentour/fadein"
+            to="/fadein"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="screentour-footer-link">BACK</span>
           </Link>
           <Link
-            to="/screentour/action"
+            to="/action"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="screentour-footer-link">NEXT PAGE</span>

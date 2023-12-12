@@ -16,7 +16,7 @@ function Intro(props) {
         <div className="containerHeader">
           <span>INTRODUCTION</span>
           <Link
-            to="/screentour/fadein"
+            to="/fadein"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="startLink">
@@ -186,7 +186,7 @@ function Intro(props) {
                 <span className="screentour-footer-link">HOME</span>
               </Link>
               <Link
-                to="/screentour/fadein"
+                to="/fadein"
                 style={{ color: "inherit", textDecoration: "inherit" }}
               >
                 <span className="screentour-footer-link">NEXT PAGE</span>

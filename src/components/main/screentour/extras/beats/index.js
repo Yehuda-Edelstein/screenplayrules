@@ -14,7 +14,7 @@ function Beats(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/musiccues"
+          to="/musiccues"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -23,7 +23,7 @@ function Beats(props) {
         </Link>
         <span>BEATS</span>
         <Link
-          to="/screentour/superimpose"
+          to="/superimpose"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -66,13 +66,13 @@ function Beats(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/musiccues"
+              to="/musiccues"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/superimpose"
+              to="/superimpose"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

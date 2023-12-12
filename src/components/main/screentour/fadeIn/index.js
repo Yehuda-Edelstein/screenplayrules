@@ -16,17 +16,14 @@ function FadeIn(props) {
       {/* Screentour Header maybe have outline/extras along it */}
       <div className="container">
         <div className="containerHeader">
-          <Link
-            to="/screentour/intro"
-            style={{ color: "inherit", textDecoration: "inherit" }}
-          >
+          <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
             <span className="startLink">
               <FontAwesomeIcon icon={faArrowLeft} />
             </span>
           </Link>
           <span>FADE IN?</span>
           <Link
-            to="/screentour/slugs"
+            to="/slugs"
             style={{ color: "inherit", textDecoration: "inherit" }}
           >
             <span className="startLink">
@@ -111,13 +108,13 @@ function FadeIn(props) {
           </div>
           <div className="screentour-footer">
             <Link
-              to="/screentour/intro"
+              to="/"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/slugs"
+              to="/slugs"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

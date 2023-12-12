@@ -15,7 +15,7 @@ function TextDec(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/extras"
+          to="/extras"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -24,7 +24,7 @@ function TextDec(props) {
         </Link>
         <span>TEXT DEC'</span>
         <Link
-          to="/screentour/slang"
+          to="/slang"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -132,13 +132,13 @@ function TextDec(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/extras"
+              to="/extras"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/slang"
+              to="/slang"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

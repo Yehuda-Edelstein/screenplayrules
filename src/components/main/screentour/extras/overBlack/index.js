@@ -12,7 +12,7 @@ function OverBlack(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/superimpose"
+          to="/superimpose"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -21,7 +21,7 @@ function OverBlack(props) {
         </Link>
         <span>OVER BLACK</span>
         <Link
-          to="/screentour/outro"
+          to="/outro"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -81,13 +81,13 @@ function OverBlack(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/superimpose"
+              to="/superimpose"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/outro"
+              to="/outro"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

@@ -16,7 +16,7 @@ function Outro(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/overblack"
+          to="/overblack"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -48,7 +48,7 @@ function Outro(props) {
           </div>
           <div className="screentour-footer">
             <Link
-              to="/screentour/overblack"
+              to="/overblack"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>

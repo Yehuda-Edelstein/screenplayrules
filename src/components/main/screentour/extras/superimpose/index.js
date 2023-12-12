@@ -15,7 +15,7 @@ function Superimpose(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/beats"
+          to="/beats"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -24,7 +24,7 @@ function Superimpose(props) {
         </Link>
         <span>SUPERIMPOSE</span>
         <Link
-          to="/screentour/overblack"
+          to="/overblack"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -152,13 +152,13 @@ function Superimpose(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/beats"
+              to="/beats"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/overblack"
+              to="/overblack"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

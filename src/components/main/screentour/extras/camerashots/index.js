@@ -14,7 +14,7 @@ function CameraShots(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/slang"
+          to="/slang"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -23,7 +23,7 @@ function CameraShots(props) {
         </Link>
         <span>CAMERA SHOTS</span>
         <Link
-          to="/screentour/language"
+          to="/language"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -103,13 +103,13 @@ function CameraShots(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/slang"
+              to="/slang"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/language"
+              to="/language"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

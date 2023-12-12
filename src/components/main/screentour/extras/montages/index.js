@@ -17,7 +17,7 @@ function Montages(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/reading"
+          to="/reading"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -26,7 +26,7 @@ function Montages(props) {
         </Link>
         <span>MONTAGES</span>
         <Link
-          to="/screentour/flashbacks"
+          to="/flashbacks"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -102,13 +102,13 @@ function Montages(props) {
           </div>
           <div className="screentour-footer">
             <Link
-              to="/screentour/reading"
+              to="/reading"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/flashbacks"
+              to="/flashbacks"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>
