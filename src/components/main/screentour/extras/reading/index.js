@@ -13,7 +13,7 @@ function Reading(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/language"
+          to="/language"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -22,7 +22,7 @@ function Reading(props) {
         </Link>
         <span>READING</span>
         <Link
-          to="/screentour/montages"
+          to="/montages"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -64,13 +64,13 @@ function Reading(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/languages"
+              to="/languages"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/montages"
+              to="/montages"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

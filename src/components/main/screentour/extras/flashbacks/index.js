@@ -14,7 +14,7 @@ function Flashbacks(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/montages"
+          to="/montages"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -23,7 +23,7 @@ function Flashbacks(props) {
         </Link>
         <span>FLASHBACKS</span>
         <Link
-          to="/screentour/musiccues"
+          to="/musiccues"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -79,13 +79,13 @@ function Flashbacks(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/montages"
+              to="/montages"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/musiccues"
+              to="/musiccues"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

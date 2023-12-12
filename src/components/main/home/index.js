@@ -13,10 +13,7 @@ function Home(props) {
       <h1>How To Write A Screenplay</h1>
       <p>
         <span>
-          <Link
-            to="screentour/intro"
-            style={{ color: "inherit", textDecoration: "inherit" }}
-          >
+          <Link to="/" style={{ color: "inherit", textDecoration: "inherit" }}>
             New to screenwriting? Click here to take the screentour for
             everything you need to know!
           </Link>{" "}

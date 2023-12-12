@@ -33,7 +33,7 @@ function Transitions(props) {
     <div className="container">
       <div className="containerHeader">
         <Link
-          to="/screentour/dialogue"
+          to="/dialogue"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -42,7 +42,7 @@ function Transitions(props) {
         </Link>
         <span>TRANSITIONS</span>
         <Link
-          to="/screentour/fadeout"
+          to="/fadeout"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -197,13 +197,13 @@ function Transitions(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/dialogue"
+              to="/dialogue"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/fadeout"
+              to="/fadeout"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

@@ -14,7 +14,7 @@ function Slang(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/textdecoration"
+          to="/textdecoration"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -23,7 +23,7 @@ function Slang(props) {
         </Link>
         <span>SLANG</span>
         <Link
-          to="/screentour/camerashots"
+          to="/camerashots"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -112,13 +112,13 @@ function Slang(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/textdecoration"
+              to="/textdecoration"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/camerashots"
+              to="/camerashots"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

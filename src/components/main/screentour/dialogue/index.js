@@ -49,7 +49,7 @@ function Dialogue(props) {
     <div className="container">
       <div className="containerHeader">
         <Link
-          to="/screentour/action"
+          to="/action"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -58,7 +58,7 @@ function Dialogue(props) {
         </Link>
         <span>DIALOGUE</span>
         <Link
-          to="/screentour/transitions"
+          to="/transitions"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -505,13 +505,13 @@ function Dialogue(props) {
           <br></br>
           <div className="screentour-footer">
             <Link
-              to="/screentour/action"
+              to="/action"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/transitions"
+              to="/transitions"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

@@ -15,7 +15,7 @@ function MusicCues(props) {
     <div className="container">
       <div className="extrasContainerHeader">
         <Link
-          to="/screentour/flashbacks"
+          to="/flashbacks"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -24,7 +24,7 @@ function MusicCues(props) {
         </Link>
         <span>MUSIC CUES</span>
         <Link
-          to="/screentour/beats"
+          to="/beats"
           style={{ color: "inherit", textDecoration: "inherit" }}
         >
           <span className="startLink">
@@ -103,13 +103,13 @@ function MusicCues(props) {
           </div>
           <div className="screentour-footer">
             <Link
-              to="/screentour/flashbacks"
+              to="/flashbacks"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">BACK</span>
             </Link>
             <Link
-              to="/screentour/beats"
+              to="/beats"
               style={{ color: "inherit", textDecoration: "inherit" }}
             >
               <span className="screentour-footer-link">NEXT PAGE</span>

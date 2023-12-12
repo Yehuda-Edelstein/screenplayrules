@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router";
 import "./style.index.scss";
 import Intro from "./screentour//intro";
-import Home from "./home";
+// import Home from "./home";
 import FadeIn from "./screentour//fadeIn";
 import Slugs from "./screentour//slugs";
 import Action from "./screentour//action";
@@ -31,29 +31,29 @@ function Main(props) {
   return (
     <div className="main">
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="screentour/intro" element={<Intro />} />
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Intro />} />
         {/* SCREENTOUR ROUTES */}
-        <Route path="screentour/fadein" element={<FadeIn />} />
-        <Route path="screentour/slugs" element={<Slugs />} />
-        <Route path="screentour/action" element={<Action />} />
-        <Route path="screentour/dialogue" element={<Dialogue />} />
-        <Route path="screentour/transitions" element={<Transitions />} />
-        <Route path="screentour/fadeout" element={<FadeOut />} />
+        <Route path="fadein" element={<FadeIn />} />
+        <Route path="slugs" element={<Slugs />} />
+        <Route path="action" element={<Action />} />
+        <Route path="dialogue" element={<Dialogue />} />
+        <Route path="transitions" element={<Transitions />} />
+        <Route path="fadeout" element={<FadeOut />} />
         {/* SCREENTOUR EXTRA ROUTES */}
-        <Route path="screentour/extras" element={<Extras />} />
-        <Route path="screentour/textdecoration" element={<TextDec />} />
-        <Route path="screentour/slang" element={<Slang />} />
-        <Route path="screentour/camerashots" element={<CameraShots />} />
-        <Route path="screentour/language" element={<Language />} />
-        <Route path="screentour/reading" element={<Reading />} />
-        <Route path="screentour/montages" element={<Montages />} />
-        <Route path="screentour/flashbacks" element={<Flashbacks />} />
-        <Route path="screentour/musiccues" element={<MusicCues />} />
-        <Route path="screentour/beats" element={<Beats />} />
-        <Route path="screentour/superimpose" element={<Superimpose />} />
-        <Route path="screentour/overblack" element={<OverBlack />} />
-        <Route path="screentour/outro" element={<Outro />} />
+        <Route path="extras" element={<Extras />} />
+        <Route path="textdecoration" element={<TextDec />} />
+        <Route path="slang" element={<Slang />} />
+        <Route path="camerashots" element={<CameraShots />} />
+        <Route path="language" element={<Language />} />
+        <Route path="reading" element={<Reading />} />
+        <Route path="montages" element={<Montages />} />
+        <Route path="flashbacks" element={<Flashbacks />} />
+        <Route path="musiccues" element={<MusicCues />} />
+        <Route path="beats" element={<Beats />} />
+        <Route path="superimpose" element={<Superimpose />} />
+        <Route path="overblack" element={<OverBlack />} />
+        <Route path="outro" element={<Outro />} />
         {/* GLOSSARY */}
         <Route path="glossary" element={<Glossary />} />
         {/* OTHER */}
